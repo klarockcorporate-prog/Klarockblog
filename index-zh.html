@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klarock 企业地产 | 墨西哥工业与商业地产服务</title>
+<meta name="description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
+<link rel="canonical" href="https://klarock.mx/index-zh.html">
+<link rel="alternate" hreflang="es" href="https://klarock.mx/">
+<link rel="alternate" hreflang="en" href="https://klarock.mx/index-en.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://klarock.mx/index-zh.html">
+<link rel="alternate" hreflang="x-default" href="https://klarock.mx/">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Klarock Corporate Real Estate">
+<meta property="og:title" content="Klarock 企业地产 | 墨西哥工业与商业地产服务">
+<meta property="og:description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
+<meta property="og:image" content="https://klarock.mx/assets/images/logo.png">
+<meta property="og:url" content="https://klarock.mx/index-zh.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Klarock 企业地产 | 墨西哥工业与商业地产服务">
+<meta name="twitter:description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
+<meta name="twitter:image" content="https://klarock.mx/assets/images/logo.png">
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Klarock Corporate Real Estate",
+  "url": "https://klarock.mx/index-zh.html",
+  "logo": "https://klarock.mx/assets/images/logo.png",
+  "image": "https://klarock.mx/assets/images/logo.png",
+  "description": "Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。",
+  "areaServed": {
+    "@type": "Country",
+    "name": "墨西哥"
+  },
+  "knowsLanguage": ["es", "en", "zh"],
+  "sameAs": []
+}
+</script>
+
+<!-- 字体 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Leaflet（地图） -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950:'#070f1c', 900:'#0b1626', 800:'#0f1f38', 700:'#16294a', 600:'#203a63' },
+          gold: { 300:'#e6cf94', 400:'#d4b45f', 500:'#c19a3f', 600:'#a5812f' },
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          sans: ['"Noto Sans SC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0b1626; }
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(212,180,95,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,180,95,0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .hero-glow {
+    background: radial-gradient(60% 60% at 75% 20%, rgba(212,180,95,0.16) 0%, rgba(11,22,38,0) 70%);
+  }
+  .card-hover { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(212,180,95,0.5); box-shadow: 0 20px 40px -20px rgba(0,0,0,0.6); }
+  .nav-blur { backdrop-filter: blur(10px); }
+  ::selection { background: #d4b45f; color: #0b1626; }
+</style>
+</head>
+
+<body class="bg-navy-900 text-slate-200 font-sans antialiased">
+
+<!-- ============ NAV ============ -->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 border-b border-white/0 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center">
+      <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-12 w-auto" onerror="this.style.display='none'">
+    </a>
+    <nav class="hidden lg:flex items-center gap-10 text-sm font-medium text-slate-300">
+      <a href="#servicios" class="hover:text-gold-400 transition-colors">服务</a>
+      <a href="#propiedades" class="hover:text-gold-400 transition-colors">房源</a>
+      <a href="#mercados" class="hover:text-gold-400 transition-colors">市场</a>
+      <a href="blog-zh.html" class="hover:text-gold-400 transition-colors">洞察</a>
+      <a href="#autoridad" class="hover:text-gold-400 transition-colors">为何选择Klarock</a>
+      <a href="#metricas" class="hover:text-gold-400 transition-colors">业绩</a>
+      <a href="#contacto" class="hover:text-gold-400 transition-colors">联系我们</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2">
+      <a href="index.html" class="hover:text-gold-400 transition-colors">ES</a>
+      <span class="text-white/15">|</span>
+      <a href="index-en.html" class="hover:text-gold-400 transition-colors">EN</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="打开菜单">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed top-20 inset-x-0 z-40 bg-navy-950 border-t border-white/10 px-6 py-8 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto">
+    <a href="#servicios" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">服务</a>
+    <a href="#propiedades" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">房源</a>
+    <a href="#mercados" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">市场</a>
+    <a href="blog-zh.html" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">洞察</a>
+    <a href="#autoridad" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">为何选择Klarock</a>
+    <a href="#metricas" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">业绩</a>
+    <a href="#contacto" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">联系我们</a>
+    <div class="flex gap-4 py-3 text-base font-medium text-slate-400">
+      <a href="index.html" class="hover:text-gold-400">ES</a>
+      <a href="index-en.html" class="hover:text-gold-400">EN</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative pt-40 pb-28 lg:pt-52 lg:pb-36 bg-grid hero-glow overflow-hidden">
+  <video autoplay muted loop playsinline class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 h-full object-cover opacity-60" onerror="this.remove()">
+    <source src="assets/video/hero-intro.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 bg-gradient-to-r from-navy-900 via-navy-900/40 to-transparent"></div>
+  <div class="absolute inset-0 bg-navy-900/30"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+    <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-6">
+      企业与工业地产 · 墨西哥
+    </p>
+    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.15] text-white max-w-4xl">
+      推动墨西哥商业与工业增长。
+    </h1>
+    <p class="mt-7 text-lg text-slate-300 max-w-2xl leading-relaxed">
+      Klarock 为在墨西哥运营和扩张的跨国企业管理企业地产组合，销售商业空间和大型厂房，并制定租赁与扩张战略。
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+      <a href="#contacto" class="inline-flex justify-center items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
+        预约高管咨询
+      </a>
+      <a href="#servicios" class="inline-flex justify-center items-center gap-2 border border-white/20 hover:border-gold-400 text-white font-medium px-7 py-4 rounded-sm transition-colors">
+        查看机构级房源组合
+      </a>
+    </div>
+
+    <!-- Trust metrics strip -->
+    <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/10 pt-10">
+      <div>
+        <p class="font-serif text-3xl lg:text-4xl text-white">100,000<span class="text-gold-400">+ 平方米</span></p>
+        <p class="mt-1 text-xs uppercase tracking-wider text-slate-400">已销售与开发</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl lg:text-4xl text-white">20<span class="text-gold-400">+</span></p>
+        <p class="mt-1 text-xs uppercase tracking-wider text-slate-400">机构客户</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl lg:text-4xl text-white">5</p>
+        <p class="mt-1 text-xs uppercase tracking-wider text-slate-400">活跃工业走廊</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl lg:text-4xl text-white">$12M<span class="text-gold-400"> 美元</span></p>
+        <p class="mt-1 text-xs uppercase tracking-wider text-slate-400">已完成交易额</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGOS DE CLIENTES ============ -->
+<section id="clientes" class="py-16 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <p class="text-center text-xs font-semibold tracking-[0.25em] uppercase text-slate-500 mb-10">
+      全球企业信赖Klarock
+    </p>
+    <div class="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center max-w-4xl mx-auto">
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">COMEX</span>
+      </div>
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">KFC</span>
+      </div>
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">GRUMA</span>
+      </div>
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">PAQUETEXPRESS</span>
+      </div>
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">PKT1</span>
+      </div>
+      <div class="flex items-center justify-center h-14">
+        <span class="text-slate-400 text-sm font-semibold tracking-wide">MERCADOLIBRE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTORIDAD / PROPUESTA DE VALOR ============ -->
+<section id="autoridad" class="py-24 lg:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">为何选择Klarock</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">
+        跨国企业进入墨西哥的门户
+      </h2>
+    </div>
+
+    <div class="max-w-3xl">
+      <span class="font-serif text-6xl text-gold-400/40 leading-none">"</span>
+      <p class="font-serif text-xl lg:text-2xl text-white leading-relaxed -mt-6">
+        我们相信，管理这种规模的工业与商业资产，需要的不仅仅是完成交易。因此每一个委托都建立在全面尽职调查和稳健投资架构之上——当一笔操作涉及九位数金额时，法律保障没有商量的余地。
+      </p>
+      <p class="mt-6 text-slate-300 leading-relaxed">
+        也正因如此，我们维护着一个开发商与基金的合作网络，让我们能接触到从未进入公开市场的资产——真正能左右局面的房源，几乎从不会出现在公开平台上。同样也正因如此，我们深知轻工业、重工业与物流对场地要求的不同之处——判断失误，代价就是数月的运营停滞。
+      </p>
+      <p class="mt-6 text-slate-300 leading-relaxed">
+        归根结底，这一切都指向一个理念：从选址到资产运营管理，由同一支团队对最终结果负责。我们不会把责任拆分给不同的供应商——从头到尾，都由我们承担。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 我们的工作方式 ============ -->
+<section class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">我们的工作方式</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">
+        从第一次沟通到运营正式启动
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <span class="text-gold-400 font-serif text-3xl">01</span>
+        <h3 class="text-white font-semibold text-lg mt-4 mb-2">诊断</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">在提出任何方案之前，我们会先了解您的业务、时间安排与限制条件。每一份需求都由合伙人董事亲自审核。</p>
+      </div>
+      <div>
+        <span class="text-gold-400 font-serif text-3xl">02</span>
+        <h3 class="text-white font-semibold text-lg mt-4 mb-2">策略</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">根据您业务的真实需求，设计路径：资产管理、销售，或选址顾问——也可能是三者的组合。</p>
+      </div>
+      <div>
+        <span class="text-gold-400 font-serif text-3xl">03</span>
+        <h3 class="text-white font-semibold text-lg mt-4 mb-2">执行</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">由同一支团队从头到尾执行，不会在各个阶段之间把您的业务转手给不同的供应商。</p>
+      </div>
+      <div>
+        <span class="text-gold-400 font-serif text-3xl">04</span>
+        <h3 class="text-white font-semibold text-lg mt-4 mb-2">持续管理</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">合作关系不会在交易完成后结束。只要资产仍在运营，我们就持续进行管理、报告与优化。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS (3 PILARES) ============ -->
+<section id="servicios" class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">服务</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">
+        三大业务，同一执行标准
+      </h2>
+      <p class="mt-4 text-sm text-slate-400">服务领域：<span class="text-slate-300">工业 · 写字楼 · 零售 · 综合用途 · 土地</span></p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-px bg-white/10">
+      <!-- Pilar 1 -->
+      <div class="bg-navy-950 p-9 flex flex-col">
+        <span class="text-gold-400 font-serif text-3xl mb-6">01</span>
+        <h3 class="text-white text-xl font-semibold mb-3">企业资产组合管理</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">为墨西哥规模最大的企业提供一站式工业与企业资产组合管理服务。</p>
+        <ul class="space-y-3 text-sm text-slate-300 mt-auto">
+          <li class="flex gap-3"><span class="text-gold-400">—</span>全国性多站点资产组合管理</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>机构级财务与运营报告</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>成本与服务合同优化</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>法规、环保与安全合规管理</li>
+        </ul>
+        <a href="servicio-administracion-portafolios-zh.html" class="mt-6 inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">了解更多 →</a>
+      </div>
+      <!-- Pilar 2 -->
+      <div class="bg-navy-950 p-9 flex flex-col">
+        <span class="text-gold-400 font-serif text-3xl mb-6">02</span>
+        <h3 class="text-white text-xl font-semibold mb-3">大型地产销售与招商</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">工业厂房、商业资产及甲级写字楼，以大型交易所需的专业水准操作。</p>
+        <ul class="space-y-3 text-sm text-slate-300 mt-auto">
+          <li class="flex gap-3"><span class="text-gold-400">—</span>大型工业厂房与物流园区</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>战略工业走廊土地</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>商业资产：商场、零售及综合用途开发项目</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>甲级企业写字楼</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>售后回租及投资架构设计</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>按客户需求定制开发项目（build to suit）</li>
+        </ul>
+        <a href="servicio-venta-inmuebles-zh.html" class="mt-6 inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">了解更多 →</a>
+      </div>
+      <!-- Pilar 3 -->
+      <div class="bg-navy-950 p-9 flex flex-col">
+        <span class="text-gold-400 font-serif text-3xl mb-6">03</span>
+        <h3 class="text-white text-xl font-semibold mb-3">选址与扩张顾问</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">我们陪伴全球企业从决定落户墨西哥，直至其运营场地全面投产。</p>
+        <ul class="space-y-3 text-sm text-slate-300 mt-auto">
+          <li class="flex gap-3"><span class="text-gold-400">—</span>选址评估与对比分析</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>可行性鉴定与预评估：土地用途、市政设施可行性及法规</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>法规审批与适用合规指导</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>州政府协调与优惠政策申请</li>
+          <li class="flex gap-3"><span class="text-gold-400">—</span>业务扩张与运营规模化管理</li>
+        </ul>
+        <a href="servicio-asesoria-industrial-zh.html" class="mt-6 inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">了解更多 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPIEDADES / LISTING ============ -->
+<section id="propiedades" class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-10">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">房源组合</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">可选房源</h2>
+      <p class="mt-5 text-slate-300 leading-relaxed">我们目前为机构客户管理的工业、商业与企业资产组合。</p>
+    </div>
+
+    <!-- 覆盖地图 -->
+    <div class="grid lg:grid-cols-5 gap-8 mb-16 items-stretch">
+      <div class="lg:col-span-2 border border-white/10 rounded-sm p-8 flex flex-col justify-center bg-navy-900">
+        <h3 class="font-serif text-2xl text-white mb-3">全国布局</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6">我们的在管房源分布在墨西哥最具战略意义的走廊——从美墨边境到太平洋沿岸。</p>
+        <a href="#propiedades-grid" class="inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">查看全部房源 ↓</a>
+      </div>
+      <div class="lg:col-span-3">
+        <div id="properties-map" class="h-80 lg:h-full min-h-[360px] rounded-sm overflow-hidden border border-white/10"></div>
+      </div>
+    </div>
+
+    <!-- 筛选器 -->
+    <div class="space-y-4 mb-12">
+      <div id="filtro-tipo" class="flex flex-wrap gap-2"></div>
+      <div id="filtro-corredor" class="flex flex-wrap gap-2"></div>
+    </div>
+
+    <p id="propiedades-count" class="text-sm text-slate-400 mb-6"></p>
+
+    <div id="propiedades-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+    <p id="propiedades-empty" class="hidden text-center text-slate-400 py-16 border border-dashed border-white/10 rounded-sm">
+      没有符合该筛选条件的房源。
+    </p>
+
+    <div class="mt-16 text-center border-t border-white/10 pt-12">
+      <p class="text-slate-300 mb-5">没有找到您需要的房源？我们还有更多场外房源资源。</p>
+      <a href="#contacto" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
+        索取完整房源组合
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MERCADOS / CORREDORES ============ -->
+<section id="mercados" class="py-24 lg:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">市场</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">
+        布局引领墨西哥发展的走廊
+      </h2>
+      <p class="mt-5 text-slate-300 leading-relaxed">
+        从边境到巴希奥地区，我们深知每个区域对世界级商业或工业运营的独特要求。
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div class="border border-white/10 rounded-sm p-7 card-hover">
+        <p class="text-xs uppercase tracking-widest text-gold-400 mb-3">走廊</p>
+        <h3 class="text-white font-semibold text-lg mb-2">边境走廊</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Tijuana · Juárez · Reynosa · Nuevo Laredo</p>
+        <p class="text-sm text-slate-400 leading-relaxed">出口制造、近岸外包及IMMEX保税业务，直接对接美国市场。</p>
+      </div>
+      <div class="border border-white/10 rounded-sm p-7 card-hover">
+        <p class="text-xs uppercase tracking-widest text-gold-400 mb-3">走廊</p>
+        <h3 class="text-white font-semibold text-lg mb-2">北部走廊</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Monterrey · Saltillo · Chihuahua</p>
+        <p class="text-sm text-slate-400 leading-relaxed">重工业制造、汽车产业及成熟的工业集群，配备一流基础设施。</p>
+      </div>
+      <div class="border border-white/10 rounded-sm p-7 card-hover">
+        <p class="text-xs uppercase tracking-widest text-gold-400 mb-3">走廊</p>
+        <h3 class="text-white font-semibold text-lg mb-2">巴希奥走廊</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Querétaro · Guanajuato · San Luis Potosí · Aguascalientes</p>
+        <p class="text-sm text-slate-400 leading-relaxed">汽车、航空航天及先进制造业，拥有全国最优质的技术劳动力。</p>
+      </div>
+      <div class="border border-white/10 rounded-sm p-7 card-hover">
+        <p class="text-xs uppercase tracking-widest text-gold-400 mb-3">走廊</p>
+        <h3 class="text-white font-semibold text-lg mb-2">中部走廊</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">CDMX · Estado de México · Puebla</p>
+        <p class="text-sm text-slate-400 leading-relaxed">面向内需市场的配送、末端物流及企业总部选址。</p>
+      </div>
+      <div class="border border-white/10 rounded-sm p-7 card-hover">
+        <p class="text-xs uppercase tracking-widest text-gold-400 mb-3">走廊</p>
+        <h3 class="text-white font-semibold text-lg mb-2">太平洋走廊</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Guadalajara · Hermosillo · Culiacán · Mazatlán · Los Mochis · Manzanillo · Colima · Lázaro Cárdenas (Michoacán) · La Paz · Los Cabos</p>
+        <p class="text-sm text-slate-400 leading-relaxed">从索诺拉到南下加利福尼亚州，覆盖整个太平洋沿岸的先进制造、科技、农业及港口物流产业。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTRICAS / CREDIBILIDAD ============ -->
+<section id="metricas" class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">业绩</p>
+        <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight mb-6">
+          十余年深耕墨西哥企业地产
+        </h2>
+        <p class="text-slate-300 leading-relaxed">
+          我们管理的每一平方米、促成的每一笔交易，都由一支曾在投资方、开发商和政府三方均有实战经验的团队保驾护航——为客户带来更快、更稳妥的决策优势。
+        </p>
+      </div>
+      <div class="border border-white/10 rounded-sm p-10 lg:p-12 flex flex-col items-start justify-center">
+        <p class="font-serif text-6xl lg:text-7xl text-white leading-none">12<span class="text-gold-400">+</span></p>
+        <p class="mt-4 text-sm uppercase tracking-wider text-slate-400">年深耕墨西哥企业地产</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULARIO DE CONTACTO ============ -->
+<section id="contacto" class="py-24 lg:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
+    <div>
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">联系我们</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight mb-6">
+        联系合伙人董事
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-8">
+        请告诉我们您的业务需求。Klarock合伙人董事将审核您的请求，并在24个工作小时内与您联系。
+      </p>
+      <ul class="space-y-4 text-sm text-slate-300">
+        <li class="flex gap-3 items-start"><span class="text-gold-400 mt-0.5">✓</span>由合伙人亲自回复，而非呼叫中心</li>
+        <li class="flex gap-3 items-start"><span class="text-gold-400 mt-0.5">✓</span>您的业务与数据信息将被严格保密</li>
+        <li class="flex gap-3 items-start"><span class="text-gold-400 mt-0.5">✓</span>免费初步评估</li>
+      </ul>
+    </div>
+
+    <form id="contact-form" class="bg-navy-950 border border-white/10 rounded-sm p-8 space-y-5">
+      <input type="hidden" name="_subject" value="来自 klarock.mx 的新咨询">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">姓名</label>
+          <input type="text" name="nombre" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="姓名">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">职位</label>
+          <input type="text" name="cargo" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="例如：拓展总监">
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">公司名称</label>
+        <input type="text" name="empresa" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="公司名称">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">企业邮箱</label>
+          <input type="email" name="correo" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="name@company.com">
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">电话</label>
+          <input type="tel" name="telefono" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="+52 ...">
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">需求类型</label>
+        <select name="necesidad" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+          <option value="">请选择…</option>
+          <option>资产组合管理</option>
+          <option>地产买卖</option>
+          <option>选址与扩张顾问</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">项目详情</label>
+        <textarea name="mensaje" rows="4" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="请简要描述您的业务或需求…"></textarea>
+      </div>
+      <button id="contact-submit" type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
+        联系合伙人董事
+      </button>
+      <p id="contact-error" class="hidden text-xs text-red-400 text-center">提交时出现问题，请重试或直接联系我们。</p>
+      <p class="text-xs text-slate-500 text-center">您的信息将被严格保密。Klarock不会与第三方共享客户数据。</p>
+    </form>
+    <div id="contact-success" class="hidden bg-navy-950 border border-gold-400/40 rounded-sm p-8 text-center">
+      <p class="text-gold-400 text-2xl mb-3">✓</p>
+      <h3 class="text-white text-xl font-semibold mb-2">请求已发送</h3>
+      <p class="text-slate-300 text-sm">感谢您。Klarock合伙人董事将审核您的请求，并在24个工作小时内与您联系。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-950 border-t border-white/10 pt-20 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
+      <div class="lg:col-span-2">
+        <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-11 w-auto mb-5" onerror="this.style.display='none'">
+        <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+          为塑造墨西哥经济未来的企业提供工业与商业地产服务。
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold mb-4">服务</h4>
+        <ul class="space-y-3 text-sm text-slate-400">
+          <li><a href="#servicios" class="hover:text-gold-400">资产组合管理</a></li>
+          <li><a href="#servicios" class="hover:text-gold-400">大型地产销售</a></li>
+          <li><a href="#servicios" class="hover:text-gold-400">工业顾问</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold mb-4">公司</h4>
+        <ul class="space-y-3 text-sm text-slate-400">
+          <li><a href="#autoridad" class="hover:text-gold-400">为何选择Klarock</a></li>
+          <li><a href="#mercados" class="hover:text-gold-400">市场</a></li>
+          <li><a href="#contacto" class="hover:text-gold-400">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <p>© 2026 Klarock Corporate Real Estate. 保留所有权利。</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-gold-400">隐私声明</a>
+        <a href="#" class="hover:text-gold-400">条款与条件</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav background on scroll
+  const nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('bg-navy-950/95','nav-blur','border-white/10');
+    } else {
+      nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
+    }
+  });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    nav.classList.toggle('bg-navy-950/95', !mobileMenu.classList.contains('hidden'));
+    nav.classList.toggle('nav-blur', !mobileMenu.classList.contains('hidden'));
+    nav.classList.toggle('border-white/10', !mobileMenu.classList.contains('hidden'));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    if (window.scrollY <= 20) {
+      nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
+    }
+  }));
+
+  // ===== 房源：数据 + 筛选 =====
+  const PROPERTY_TYPES = ['工业厂房', '工业用地', '商业用地', '甲级写字楼', '商业资产'];
+  const CORRIDORS = ['边境走廊', '北部走廊', '巴希奥走廊', '中部走廊', '太平洋走廊'];
+
+  const TYPE_ICONS = {
+    '工业厂房': 'M3 21h18M5 21V7l8-4v18M13 21V11l6 3v7M9 9h1m-1 4h1m-1 4h1',
+    '工业用地': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
+    '商业用地': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
+    '甲级写字楼': 'M3 21h18M6 21V9l6-4 6 4v12M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01',
+    '商业资产': 'M3 9l1-5h16l1 5M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9M4 9h16M9 21v-6h6v6',
+  };
+
+  // 真实房源。每新增一处房源，请添加到此数组中。
+  const properties = [
+    { name: 'Nave Industrial El Cardenal — Culiacán', city: 'Culiacán, Sinaloa（西纳罗亚州库利亚坎）', size: '2,006 平方米', type: '工业厂房', corridor: '太平洋走廊', status: '2026年交付', mode: '出租', url: 'nave-cardenal-culiacan-zh.html', lat: 24.8091, lng: -107.3940,
+      photos: [
+        'assets/images/properties/cardenal-culiacan/interior-2.jpeg',
+        'assets/images/properties/cardenal-culiacan/aerial-1.png',
+      ] },
+    { name: 'Nave Industrial Clase A — San Luis Río Colorado', city: 'San Luis Río Colorado, Sonora（索诺拉州圣路易斯里奥科罗拉多）', size: '19,880 平方米 (214,000 平方英尺)', type: '工业厂房', corridor: '边境走廊', status: '现房可租', mode: '出租', url: 'nave-san-luis-rio-colorado-zh.html', lat: 32.4570, lng: -114.7728,
+      photos: [
+        'assets/images/properties/nave-san-luis-rio-colorado/exterior-2.jpeg',
+        'assets/images/properties/nave-san-luis-rio-colorado/exterior-1.jpeg',
+        'assets/images/properties/nave-san-luis-rio-colorado/exterior-3.jpeg',
+      ] },
+    { name: 'Nave Industrial Clase A — Edificio 1, INPARK San Luis Río Colorado', city: 'San Luis Río Colorado, Sonora（索诺拉州圣路易斯里奥科罗拉多）', size: '16,964 平方米 (182,600 平方英尺)', type: '工业厂房', corridor: '边境走廊', status: '现房可租', mode: '详询', url: 'nave-edificio1-inpark-san-luis-rio-colorado-zh.html', lat: 32.4518, lng: -114.7695,
+      photos: [
+        'assets/images/properties/edificio1-san-luis-rio-colorado/exterior-1.jpeg',
+        'assets/images/properties/edificio1-san-luis-rio-colorado/interior-1.jpeg',
+        'assets/images/properties/edificio1-san-luis-rio-colorado/aerial-1.jpeg',
+      ] },
+    { name: 'Land & Commercial Asset — Blvd. Emiliano Zapata, Culiacán', city: 'Culiacán, Sinaloa（西纳罗亚州库利亚坎）', size: '10,248.70 平方米土地（建筑面积2,434.54平方米）', type: '商业资产', corridor: '太平洋走廊', status: '现房可售', mode: '出售', url: 'terreno-blvd-emiliano-zapata-culiacan-zh.html', lat: 24.77796, lng: -107.44174,
+      photos: [
+        'assets/images/properties/terreno-blvd-emiliano-zapata-culiacan/fachada-principal.jpeg',
+        'assets/images/properties/terreno-blvd-emiliano-zapata-culiacan/entrada-oficinas.jpeg',
+        'assets/images/properties/terreno-blvd-emiliano-zapata-culiacan/patio-maniobras.jpeg',
+        'assets/images/properties/terreno-blvd-emiliano-zapata-culiacan/acceso-blvd-zapata.jpeg',
+      ] },
+    { name: '2 Premium Lots — Calzada Camarón Sábalo, Mazatlán', city: 'Mazatlán, Sinaloa（西纳罗亚州马萨特兰）', size: '703.58 平方米（1号地块527.83平方米 + 2号地块175.75平方米）', type: '商业用地', corridor: '太平洋走廊', status: '现房可售', mode: '出售', url: 'terreno-camaron-sabalo-mazatlan-zh.html', lat: 23.2350, lng: -106.4170,
+      photos: [
+        'assets/images/properties/terreno-camaron-sabalo-mazatlan/aerial-lotes.jpeg',
+        'assets/images/properties/terreno-camaron-sabalo-mazatlan/ubicacion-zona-dorada.jpeg',
+      ] },
+  ];
+
+  const state = { tipo: '全部', corredor: '全部' };
+
+  function renderFilters() {
+    const tipoWrap = document.getElementById('filtro-tipo');
+    const corredorWrap = document.getElementById('filtro-corredor');
+
+    const tipoBtn = (label) => `<button data-tipo="${label}" class="filtro-tipo-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.tipo === label ? 'bg-gold-500 border-gold-500 text-navy-950 font-semibold' : 'border-white/15 text-slate-300 hover:border-gold-400'}">${label}</button>`;
+    tipoWrap.innerHTML = tipoBtn('全部') + PROPERTY_TYPES.map(tipoBtn).join('');
+
+    const corredorBtn = (label) => `<button data-corredor="${label}" class="filtro-corredor-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.corredor === label ? 'bg-navy-700 border-gold-400 text-white' : 'border-white/10 text-slate-400 hover:border-gold-400'}">${label}</button>`;
+    corredorWrap.innerHTML = corredorBtn('全部') + CORRIDORS.map(corredorBtn).join('');
+
+    tipoWrap.querySelectorAll('.filtro-tipo-btn').forEach(btn => btn.addEventListener('click', () => {
+      state.tipo = btn.dataset.tipo;
+      renderFilters();
+      renderProperties();
+    }));
+    corredorWrap.querySelectorAll('.filtro-corredor-btn').forEach(btn => btn.addEventListener('click', () => {
+      state.corredor = btn.dataset.corredor;
+      renderFilters();
+      renderProperties();
+    }));
+  }
+
+  function propertyCard(p) {
+    const badgeClass = p.status === '现房可租'
+      ? 'bg-gold-500 text-navy-950'
+      : 'border border-gold-400/60 text-gold-400';
+    const photo = p.photos && p.photos.length ? p.photos[0] : '';
+    const media = photo
+      ? `<img src="${photo}" alt="${p.name}" class="absolute inset-0 h-full w-full object-cover" onerror="this.remove()">`
+      : `<svg class="h-12 w-12 text-white/15" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="${TYPE_ICONS[p.type] || ''}"/></svg>`;
+    const photoCount = p.photos && p.photos.length > 1
+      ? `<span class="absolute bottom-3 right-3 bg-navy-950/80 text-white text-xs px-2 py-1 rounded-sm">1 / ${p.photos.length}</span>`
+      : '';
+    return `
+      <div class="border border-white/10 rounded-sm overflow-hidden card-hover">
+        <div class="h-44 bg-grid bg-navy-800 relative flex items-center justify-center">
+          ${media}
+          <span class="absolute top-4 left-4 z-10 text-xs font-semibold px-3 py-1 rounded-sm ${badgeClass}">${p.status}</span>
+          ${photoCount}
+        </div>
+        <div class="p-6">
+          <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">${p.type} · ${p.corridor}</p>
+          <h3 class="text-white font-semibold text-lg mb-2">${p.name}</h3>
+          <p class="text-sm text-slate-400 mb-4">${p.city}</p>
+          <div class="flex items-center gap-3 text-sm text-slate-300 border-t border-white/10 pt-4">
+            <span>${p.size}</span>
+            <span class="text-white/20">·</span>
+            <span>${p.mode}</span>
+          </div>
+          ${p.url ? `<a href="${p.url}" class="mt-4 inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">查看详情 →</a>` : ''}
+        </div>
+      </div>`;
+  }
+
+  function renderProperties() {
+    const filtered = properties.filter(p =>
+      (state.tipo === '全部' || p.type === state.tipo) &&
+      (state.corredor === '全部' || p.corridor === state.corredor)
+    );
+    document.getElementById('propiedades-grid').innerHTML = filtered.map(propertyCard).join('');
+    document.getElementById('propiedades-grid').classList.toggle('hidden', filtered.length === 0);
+    document.getElementById('propiedades-empty').classList.toggle('hidden', filtered.length !== 0);
+    document.getElementById('propiedades-count').textContent = `显示 ${filtered.length} / ${properties.length} 个房源`;
+  }
+
+  renderFilters();
+  renderProperties();
+
+  // ===== 房源地图 =====
+  function initPropertiesMap() {
+    const mapEl = document.getElementById('properties-map');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    const map = L.map('properties-map', { scrollWheelZoom: false }).setView([23.6, -102.5], 5);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      maxZoom: 18,
+    }).addTo(map);
+
+    const goldIcon = L.divIcon({
+      className: '',
+      html: '<div style="width:16px;height:16px;border-radius:50%;background:#d4b45f;border:3px solid #0b1626;box-shadow:0 0 0 2px #d4b45f;"></div>',
+      iconSize: [16, 16],
+      iconAnchor: [8, 8],
+      popupAnchor: [0, -8],
+    });
+
+    const withCoords = properties.filter(p => p.lat && p.lng);
+    const bounds = [];
+
+    withCoords.forEach(p => {
+      const marker = L.marker([p.lat, p.lng], { icon: goldIcon }).addTo(map);
+      const photo = p.photos && p.photos[0] ? p.photos[0] : '';
+      const popupHtml = `
+        <div style="width:200px;font-family:'Noto Sans SC',sans-serif;">
+          ${photo ? `<img src="${photo}" alt="${p.name}" style="width:100%;height:100px;object-fit:cover;border-radius:2px;margin-bottom:8px;">` : ''}
+          <p style="font-size:10px;text-transform:uppercase;letter-spacing:0.05em;color:#a5812f;margin:0 0 4px;">${p.type}</p>
+          <p style="font-size:13px;font-weight:600;color:#0b1626;margin:0 0 4px;line-height:1.3;">${p.name}</p>
+          <p style="font-size:11px;color:#4b5563;margin:0 0 8px;">${p.city}</p>
+          ${p.url ? `<a href="${p.url}" style="font-size:12px;color:#a5812f;font-weight:600;text-decoration:none;">查看详情 →</a>` : ''}
+        </div>`;
+      marker.bindPopup(popupHtml);
+      bounds.push([p.lat, p.lng]);
+    });
+
+    if (bounds.length > 1) {
+      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 7 });
+    } else if (bounds.length === 1) {
+      map.setView(bounds[0], 6);
+    }
+  }
+  initPropertiesMap();
+
+  // Contact form: submits to Formspree via AJAX
+  const FORMSPREE_ID = 'mgogjlkw';
+  const contactForm = document.getElementById('contact-form');
+  const contactSubmit = document.getElementById('contact-submit');
+  const contactError = document.getElementById('contact-error');
+  const contactSuccess = document.getElementById('contact-success');
+
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    contactError.classList.add('hidden');
+    contactSubmit.disabled = true;
+    contactSubmit.textContent = '发送中…';
+
+    fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        contactForm.classList.add('hidden');
+        contactSuccess.classList.remove('hidden');
+      } else {
+        throw new Error('submit failed');
+      }
+    }).catch(() => {
+      contactError.classList.remove('hidden');
+      contactSubmit.disabled = false;
+      contactSubmit.textContent = '联系合伙人董事';
+    });
+  });
+</script>
+
+</body>
+</html>

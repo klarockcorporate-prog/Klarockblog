@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">RETAIL &amp; LOGÍSTICA URBANA</text>
+  <text x="80" y="216" fill="#ffffff" font-size="32" font-weight="600">La reconfiguración silenciosa</text>
+  <text x="80" y="256" fill="#ffffff" font-size="32" font-weight="600">del retail</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Por qué Walmart, Rappi y las farmacias apuestan por las dark stores</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Centerpiece: Walmart Tepotzotlán -->
+  <g transform="translate(80,356)">
+    <rect width="1040" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="40" y="38" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL CASO WALMART · FULFILLMENT CENTER TEPOTZOTLÁN</text>
+    <text x="40" y="98" fill="#ffffff" font-size="46" font-weight="600">$400M<tspan font-size="18" fill="#d4b45f"> MXN</tspan></text>
+    <text x="40" y="126" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Inversión en el centro de distribución automatizado</text>
+    <text x="620" y="78" fill="#ffffff" font-size="30" font-weight="600" text-anchor="middle">10x</text>
+    <text x="620" y="100" fill="#9aa5b1" font-size="11" font-family="Arial, sans-serif" text-anchor="middle">Capacidad de</text>
+    <text x="620" y="114" fill="#9aa5b1" font-size="11" font-family="Arial, sans-serif" text-anchor="middle">almacenamiento</text>
+    <text x="850" y="78" fill="#ffffff" font-size="30" font-weight="600" text-anchor="middle">4x</text>
+    <text x="850" y="100" fill="#9aa5b1" font-size="11" font-family="Arial, sans-serif" text-anchor="middle">Pedidos</text>
+    <text x="850" y="114" fill="#9aa5b1" font-size="11" font-family="Arial, sans-serif" text-anchor="middle">procesados</text>
+  </g>
+
+  <!-- 3 player cards -->
+  <text x="80" y="580" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">TRES JUGADORES, UNA MISMA APUESTA</text>
+  <g transform="translate(80,600)">
+    <rect width="335" height="270" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="270" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">RETAIL TRADICIONAL</text>
+    <text x="32" y="76" fill="#ffffff" font-size="23" font-weight="600">Walmart</text>
+    <text x="32" y="118" fill="#ffffff" font-size="32" font-weight="600">3,500<tspan font-size="14" fill="#d4b45f">+</tspan></text>
+    <text x="32" y="138" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">unidades convertidas en</text>
+    <text x="32" y="153" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">nodos logísticos</text>
+    <text x="32" y="185" fill="#ffffff" font-size="22" font-weight="600">&lt;2h</text>
+    <text x="32" y="204" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">entrega desde la tienda</text>
+    <text x="32" y="219" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">más cercana</text>
+    <text x="32" y="250" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">Bodega Aurrera · Supercenter</text>
+    <text x="32" y="265" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">Sam's Club · Superama</text>
+  </g>
+  <g transform="translate(432,600)">
+    <rect width="335" height="270" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="270" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">QUICK COMMERCE</text>
+    <text x="32" y="76" fill="#ffffff" font-size="23" font-weight="600">Rappi Turbo</text>
+    <text x="32" y="118" fill="#ffffff" font-size="32" font-weight="600">10 <tspan font-size="16" fill="#d4b45f">min</tspan></text>
+    <text x="32" y="138" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">promesa de entrega en</text>
+    <text x="32" y="153" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">su vertical Turbo</text>
+    <text x="32" y="185" fill="#ffffff" font-size="22" font-weight="600">2&#8211;3 km</text>
+    <text x="32" y="204" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">radio de proximidad entre</text>
+    <text x="32" y="219" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">dark store y cliente</text>
+    <text x="32" y="250" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">CDMX, su plaza más fuerte —</text>
+    <text x="32" y="265" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">top LatAm junto a Brasil y Colombia</text>
+  </g>
+  <g transform="translate(784,600)">
+    <rect width="336" height="270" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="270" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">SALUD A DOMICILIO</text>
+    <text x="32" y="76" fill="#ffffff" font-size="21" font-weight="600">Farmacias</text>
+    <text x="32" y="118" fill="#ffffff" font-size="26" font-weight="600">7 <tspan font-size="14" fill="#d4b45f">días</tspan></text>
+    <text x="32" y="138" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">del Ahorro: dark store nacional,</text>
+    <text x="32" y="153" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">horario extendido</text>
+    <text x="32" y="185" fill="#ffffff" font-size="22" font-weight="600">24h</text>
+    <text x="32" y="204" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">lockers y mismo día en</text>
+    <text x="32" y="219" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Guadalajara Metropolitana</text>
+    <text x="32" y="250" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">Farmacias Guadalajara ajusta</text>
+    <text x="32" y="265" fill="#c3cad9" font-size="12" font-family="Arial, sans-serif">tiempos según demanda y clima</text>
+  </g>
+
+  <!-- Real estate insight banner -->
+  <g transform="translate(80,910)">
+    <rect width="1040" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.3"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LO QUE ESTO SIGNIFICA PARA EL SUELO URBANO</text>
+    <text x="40" y="84" fill="#ffffff" font-size="21" font-weight="600">Nueva demanda de naves pequeñas y locales</text>
+    <text x="40" y="112" fill="#ffffff" font-size="21" font-weight="600">adaptables dentro de la mancha urbana.</text>
+    <text x="40" y="136" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Quien controle el último kilómetro, controla el consumo digital.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: reportes de industria y declaraciones públicas de Walmart de México, Rappi y cadenas farmacéuticas</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>

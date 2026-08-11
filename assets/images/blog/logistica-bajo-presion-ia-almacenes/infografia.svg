@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200 M0,192 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">LOGÍSTICA BAJO PRESIÓN</text>
+  <text x="80" y="216" fill="#ffffff" font-size="33" font-weight="600">¿Listos para la era de la</text>
+  <text x="80" y="256" fill="#ffffff" font-size="33" font-weight="600">Inteligencia Artificial?</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">La brecha entre la ambición tecnológica y la operación real del inventario</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- ===== Centerpiece: the AI gap ===== -->
+  <g transform="translate(80,356)">
+    <rect width="1040" height="290" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="520" y="34" fill="#9aa5b1" font-size="12" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">LA BRECHA DE ADOPCIÓN DE IA EN INVENTARIOS</text>
+
+    <!-- left: want -->
+    <text x="260" y="90" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif" text-anchor="middle" letter-spacing="1">QUIEREN INTEGRAR IA</text>
+    <text x="260" y="185" fill="#e6cf94" font-size="88" font-weight="600" text-anchor="middle">81.2%</text>
+    <text x="260" y="220" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">de los operadores de inventario</text>
+
+    <!-- divider -->
+    <line x1="520" y1="60" x2="520" y2="250" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="520" cy="155" r="22" fill="#0b1626" stroke="#d4b45f" stroke-opacity="0.4"/>
+    <text x="520" y="161" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="middle" font-weight="700">VS</text>
+
+    <!-- right: use -->
+    <text x="780" y="90" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif" text-anchor="middle" letter-spacing="1">YA LA UTILIZAN HOY</text>
+    <text x="780" y="185" fill="#ffffff" font-size="88" font-weight="600" text-anchor="middle">11%</text>
+    <text x="780" y="220" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">en su gestión diaria</text>
+
+    <text x="520" y="264" fill="#6d7690" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">Fuente: State of Inventory Management 2026 — inFlow Inventory</text>
+  </g>
+
+  <!-- ===== Supporting stat grid ===== -->
+  <!-- Row 1 -->
+  <g transform="translate(80,672)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">84.8%</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Sigue usando hojas de cálculo (Excel)</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">para controlar su inventario</text>
+  </g>
+  <g transform="translate(620,672)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">44%</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Sufre desabastecimiento</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">al menos una vez al mes</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(80,838)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">52%</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Señala la confiabilidad de proveedores</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">como su mayor dolor de cabeza operativo</text>
+  </g>
+  <g transform="translate(620,838)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">2/3</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">De las empresas sufrió alza en costos</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">de transporte y materiales este año</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(80,1004)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">83.8%</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Compra inventario por adelantado</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">para esquivar alzas o bloqueos futuros</text>
+  </g>
+  <g transform="translate(620,1004)">
+    <rect width="500" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="150" fill="#d4b45f"/>
+    <text x="32" y="52" fill="#e6cf94" font-size="40" font-weight="600">+10%</text>
+    <text x="32" y="82" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Del valor del inventario se va</text>
+    <text x="32" y="104" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">en costos de almacenaje (más de la mitad)</text>
+  </g>
+
+  <!-- Bottom banner -->
+  <g transform="translate(80,1188)">
+    <rect width="1040" height="140" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.3"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL NUEVO ESTÁNDAR INDUSTRIAL</text>
+    <text x="40" y="82" fill="#ffffff" font-size="21" font-weight="600">Los parques industriales del futuro ya no compiten</text>
+    <text x="40" y="110" fill="#ffffff" font-size="21" font-weight="600">solo por m² — compiten por infraestructura lista para IA.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1370" x2="1120" y2="1370" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1350" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: State of Inventory Management 2026, inFlow Inventory — análisis Klarock</text>
+  <text x="1120" y="1350" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>

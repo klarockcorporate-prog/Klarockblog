@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">RETAIL · EL BLINDAJE FRENTE AL E-COMMERCE</text>
+  <text x="80" y="216" fill="#ffffff" font-size="32" font-weight="600">Wellness, gastronomía y</text>
+  <text x="80" y="256" fill="#ffffff" font-size="32" font-weight="600">entretenimiento</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Las categorías que el e-commerce no puede replicar</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Centerpiece: shoppingtainment MX -->
+  <g transform="translate(80,356)">
+    <rect width="1040" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="40" y="38" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">SHOPPINGTAINMENT · MÉXICO</text>
+    <text x="40" y="100" fill="#ffffff" font-size="48" font-weight="600">$2,000M<tspan font-size="18" fill="#d4b45f"> USD</tspan></text>
+    <text x="40" y="128" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Tamaño estimado del mercado hoy</text>
+    <text x="700" y="90" fill="#ffffff" font-size="26" font-weight="600" text-anchor="middle">2&#8211;3x</text>
+    <text x="700" y="118" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">Crecimiento proyectado</text>
+    <text x="700" y="134" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">en 5&#8211;7 años</text>
+  </g>
+
+  <!-- Stat grid -->
+  <text x="80" y="590" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL ESTUDIO JLL · "¡QUE EMPIECE EL JUEGO!" (EE.UU. Y CANADÁ, 2026)</text>
+
+  <g transform="translate(80,610)">
+    <rect width="500" height="170" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="170" fill="#d4b45f"/>
+    <text x="32" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ALCANCE DEL ESTUDIO</text>
+    <text x="32" y="108" fill="#ffffff" font-size="44" font-weight="600">207<tspan font-size="18" fill="#d4b45f"> conceptos</tspan></text>
+    <text x="32" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">operando en 4,746 ubicaciones</text>
+  </g>
+  <g transform="translate(620,610)">
+    <rect width="500" height="170" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="170" fill="#d4b45f"/>
+    <text x="32" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">DEMANDA EN EXPANSIÓN</text>
+    <text x="32" y="108" fill="#ffffff" font-size="44" font-weight="600">16.5M<tspan font-size="18" fill="#d4b45f"> ft²</tspan></text>
+    <text x="32" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">721 ubicaciones planeadas o anunciadas</text>
+  </g>
+
+  <g transform="translate(80,800)">
+    <rect width="500" height="170" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="170" fill="#d4b45f"/>
+    <text x="32" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PARQUES DE TRAMPOLINES</text>
+    <text x="32" y="108" fill="#ffffff" font-size="44" font-weight="600">1,355<tspan font-size="18" fill="#d4b45f"> +355</tspan></text>
+    <text x="32" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">existentes, más 355 en proyecto</text>
+  </g>
+  <g transform="translate(620,800)">
+    <rect width="500" height="170" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="170" fill="#d4b45f"/>
+    <text x="32" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL SEGMENTO LÍDER</text>
+    <text x="32" y="108" fill="#ffffff" font-size="44" font-weight="600">61<tspan font-size="18" fill="#d4b45f">%</tspan></text>
+    <text x="32" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">de la superficie planeada — 10M ft² anunciados</text>
+  </g>
+
+  <text x="80" y="1030" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONSUMO EN AMÉRICA LATINA · PERÚ (IPSOS)</text>
+
+  <g transform="translate(80,1050)">
+    <rect width="325" height="165" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="70" fill="#ffffff" font-size="38" font-weight="600" text-anchor="start">52<tspan font-size="18" fill="#d4b45f">%</tspan></text>
+    <text x="28" y="98" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Come en patio de comida</text>
+    <text x="28" y="115" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">o restaurantes al visitar</text>
+    <text x="28" y="132" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">un centro comercial</text>
+  </g>
+  <g transform="translate(437,1050)">
+    <rect width="325" height="165" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="70" fill="#ffffff" font-size="38" font-weight="600">32<tspan font-size="18" fill="#d4b45f">%</tspan></text>
+    <text x="28" y="98" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Busca un espacio</text>
+    <text x="28" y="115" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">gastronómico de lujo</text>
+  </g>
+  <g transform="translate(795,1050)">
+    <rect width="325" height="165" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="70" fill="#ffffff" font-size="38" font-weight="600">29<tspan font-size="18" fill="#d4b45f">%</tspan></text>
+    <text x="28" y="98" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Busca un espacio ideal</text>
+    <text x="28" y="115" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">para el after office</text>
+  </g>
+
+  <!-- Insight banner -->
+  <g transform="translate(80,1260)">
+    <rect width="1040" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL GIRO ESTRATÉGICO</text>
+    <text x="40" y="84" fill="#ffffff" font-size="21" font-weight="600">De amenidades a anclas: wellness, gastronomía y</text>
+    <text x="40" y="112" fill="#ffffff" font-size="21" font-weight="600">entretenimiento sostienen hoy el centro comercial.</text>
+    <text x="40" y="136" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Lo que ningún clic puede replicar: tiempo, conexión social y bienestar.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: JLL "¡Qué empiece el juego!" (2026) e Ipsos Perú — análisis Klarock</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>

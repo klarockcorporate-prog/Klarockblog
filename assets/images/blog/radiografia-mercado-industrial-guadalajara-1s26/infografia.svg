@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200 M0,192 H1200 M0,240 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,64)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="185" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">MERCADO INDUSTRIAL · GUADALAJARA · 1S26</text>
+  <text x="80" y="232" fill="#ffffff" font-size="38" font-weight="600">Radiografía del mercado industrial</text>
+  <text x="80" y="272" fill="#c3cad9" font-size="17" font-family="Arial, sans-serif">Resiliencia y expansión controlada en la ZMG</text>
+  <rect x="80" y="298" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- ===== Stat grid ===== -->
+  <!-- card template: 500x190, two columns, x=80 / x=620, gaps 40 -->
+
+  <!-- Row 1 -->
+  <g transform="translate(80,340)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">IED NACIONAL · 1T26</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$23,591<tspan font-size="20" fill="#d4b45f"> M USD</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Máximo histórico — 94.2% vía reinversión de utilidades</text>
+  </g>
+  <g transform="translate(620,340)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">IED JALISCO · 1T26</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$723<tspan font-size="20" fill="#d4b45f"> M USD</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">3.1% del total nacional — manufactura avanzada y talento</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(80,555)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN BRUTA · 1S26</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">255,000<tspan font-size="20" fill="#d4b45f"> m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Prearrendamientos y rentas directas, 6,000–35,000 m²</text>
+  </g>
+  <g transform="translate(620,555)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN NETA · 1S26</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">136,500<tspan font-size="20" fill="#d4b45f"> m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Manufactura avanzada, electrónica y logística de alta especificación</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(80,770)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INVENTARIO CLASE A</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">5.9<tspan font-size="20" fill="#d4b45f"> M m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+45,300 m² incorporados en el 2T26</text>
+  </g>
+  <g transform="translate(620,770)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">VACANCIA</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">6.0<tspan font-size="20" fill="#d4b45f">%</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">352,500 m² disponibles</text>
+  </g>
+
+  <!-- Row 4 -->
+  <g transform="translate(80,985)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PRECIO PROMEDIO DE LISTA</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$7.51<tspan font-size="20" fill="#d4b45f"> USD/m²/mes</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Presión al alza por mejores especificaciones técnicas</text>
+  </g>
+  <g transform="translate(620,985)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EN CONSTRUCCIÓN</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">424,900<tspan font-size="20" fill="#d4b45f"> m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Especulativo y build-to-suit, liderado por El Salto</text>
+  </g>
+
+  <!-- Bottom banner: parques industriales -->
+  <g transform="translate(80,1200)">
+    <rect width="1040" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.3"/>
+    <text x="40" y="55" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ECOSISTEMA DE PARQUES INDUSTRIALES (APIEJ)</text>
+    <text x="40" y="112" fill="#ffffff" font-size="52" font-weight="600">139 <tspan font-size="18" fill="#c3cad9" font-family="Arial, sans-serif">parques industriales en la ZMG</tspan></text>
+    <text x="620" y="80" fill="#e0c37a" font-size="13" font-family="Arial, sans-serif" font-weight="700">EL SALTO</text>
+    <text x="620" y="100" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Manufactura pesada, automotriz, electrónica</text>
+    <text x="620" y="130" fill="#e0c37a" font-size="13" font-family="Arial, sans-serif" font-weight="700">ZAPOPAN NORTE · TLAJOMULCO</text>
+    <text x="620" y="150" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Tecnología / logística ligera · CEDIS y naves modernas</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1420" x2="1120" y2="1420" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1400" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: análisis de mercado Klarock, con datos de APIEJ y cifras oficiales de IED</text>
+  <text x="1120" y="1400" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+
+  <!-- Grid texture -->
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200 M0,192 H1200 M0,240 H1200 M0,288 H1200 M0,336 H1200 M0,384 H1200 M0,432 H1200 M0,480 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,70)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="200" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">GUÍA DE REFERENCIA · MÉXICO</text>
+  <text x="80" y="255" fill="#ffffff" font-size="46" font-weight="600">Los 5 corredores</text>
+  <text x="80" y="305" fill="#ffffff" font-size="46" font-weight="600">industriales de México</text>
+  <text x="80" y="345" fill="#c3cad9" font-size="17" font-family="Arial, sans-serif">Dónde invertir, expandirse o reubicar manufactura y logística.</text>
+
+  <rect x="80" y="375" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- ===== Corridor rows ===== -->
+  <!-- Row template: y offset per row = 430 + i*205 -->
+
+  <!-- 1. FRONTERA -->
+  <g transform="translate(80,430)">
+    <rect x="0" y="0" width="1040" height="180" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="180" fill="#d4b45f"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700">CORREDOR 01</text>
+    <text x="40" y="90" fill="#ffffff" font-size="34" font-weight="600">Frontera</text>
+    <text x="40" y="130" fill="#9aa5b1" font-size="15" font-family="Arial, sans-serif">Tijuana · Juárez · Reynosa · Nuevo Laredo</text>
+    <text x="40" y="158" fill="#c3cad9" font-size="15" font-family="Arial, sans-serif">Manufactura de exportación, nearshoring y operaciones IMMEX</text>
+    <text x="1000" y="105" fill="#d4b45f" font-size="15" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">ACCESO DIRECTO A EE.UU.</text>
+  </g>
+
+  <!-- 2. NORTE -->
+  <g transform="translate(80,635)">
+    <rect x="0" y="0" width="1040" height="180" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="180" fill="#d4b45f"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700">CORREDOR 02</text>
+    <text x="40" y="90" fill="#ffffff" font-size="34" font-weight="600">Norte</text>
+    <text x="40" y="130" fill="#9aa5b1" font-size="15" font-family="Arial, sans-serif">Monterrey · Saltillo · Chihuahua</text>
+    <text x="40" y="158" fill="#c3cad9" font-size="15" font-family="Arial, sans-serif">Manufactura pesada, automotriz y clústeres industriales consolidados</text>
+    <text x="1000" y="105" fill="#d4b45f" font-size="15" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">INFRAESTRUCTURA DE PRIMER NIVEL</text>
+  </g>
+
+  <!-- 3. BAJÍO -->
+  <g transform="translate(80,840)">
+    <rect x="0" y="0" width="1040" height="180" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="180" fill="#d4b45f"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700">CORREDOR 03</text>
+    <text x="40" y="90" fill="#ffffff" font-size="34" font-weight="600">Bajío</text>
+    <text x="40" y="130" fill="#9aa5b1" font-size="15" font-family="Arial, sans-serif">Querétaro · Guanajuato · San Luis Potosí · Aguascalientes</text>
+    <text x="40" y="158" fill="#c3cad9" font-size="15" font-family="Arial, sans-serif">Automotriz, aeroespacial y manufactura avanzada</text>
+    <text x="1000" y="105" fill="#d4b45f" font-size="15" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">MEJOR MANO DE OBRA CALIFICADA</text>
+  </g>
+
+  <!-- 4. CENTRO -->
+  <g transform="translate(80,1045)">
+    <rect x="0" y="0" width="1040" height="180" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="180" fill="#d4b45f"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700">CORREDOR 04</text>
+    <text x="40" y="90" fill="#ffffff" font-size="34" font-weight="600">Centro</text>
+    <text x="40" y="130" fill="#9aa5b1" font-size="15" font-family="Arial, sans-serif">CDMX · Estado de México · Puebla</text>
+    <text x="40" y="158" fill="#c3cad9" font-size="15" font-family="Arial, sans-serif">Distribución, last-mile logístico y sedes corporativas</text>
+    <text x="1000" y="105" fill="#d4b45f" font-size="15" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">FOCO EN MERCADO INTERNO</text>
+  </g>
+
+  <!-- 5. PACÍFICO -->
+  <g transform="translate(80,1250)">
+    <rect x="0" y="0" width="1040" height="180" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="180" fill="#d4b45f"/>
+    <text x="40" y="46" fill="#d4b45f" font-size="13" letter-spacing="3" font-family="Arial, sans-serif" font-weight="700">CORREDOR 05</text>
+    <text x="40" y="90" fill="#ffffff" font-size="34" font-weight="600">Pacífico</text>
+    <text x="40" y="130" fill="#9aa5b1" font-size="14" font-family="Arial, sans-serif">Guadalajara · Hermosillo · Culiacán · Mazatlán · Manzanillo · Los Cabos</text>
+    <text x="40" y="158" fill="#c3cad9" font-size="15" font-family="Arial, sans-serif">Tecnología, agroindustria y logística portuaria</text>
+    <text x="1000" y="105" fill="#d4b45f" font-size="15" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">DE SONORA A BCS</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: Klarock Corporate Real Estate — análisis de mercado propio</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">GEOPOLÍTICA INDUSTRIAL · SONORA-ARIZONA</text>
+  <text x="80" y="216" fill="#ffffff" font-size="32" font-weight="600">Sonora, la llave del éxito en la</text>
+  <text x="80" y="256" fill="#ffffff" font-size="32" font-weight="600">revolución de los semiconductores</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Cómo el auge de Arizona empuja el bienes raíces industrial sonorense</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Arizona panel -->
+  <g transform="translate(80,356)">
+    <rect width="1040" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="40" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL EPICENTRO · ARIZONA, EE.UU.</text>
+    <text x="40" y="78" fill="#ffffff" font-size="26" font-weight="600">El nuevo polo mundial de semiconductores</text>
+    <text x="40" y="108" fill="#9aa5b1" font-size="14" font-family="Arial, sans-serif">TSMC · Intel · CHIPS and Science Act — replicando el modelo de Taiwán</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <g transform="translate(600,486)">
+    <line x1="0" y1="0" x2="0" y2="46" stroke="#d4b45f" stroke-width="2"/>
+    <path d="M-10,36 L0,50 L10,36" fill="none" stroke="#d4b45f" stroke-width="2"/>
+  </g>
+  <text x="600" y="560" fill="#6d7690" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">resuelve su cuello de botella de energía, espacio y proveeduría en</text>
+
+  <!-- Sonora ecosystem eyebrow -->
+  <text x="80" y="612" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">SONORA · ECOSISTEMA INTEGRAL DE SOPORTE INDUSTRIAL</text>
+
+  <!-- 3 city cards -->
+  <g transform="translate(80,632)">
+    <rect width="335" height="230" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="230" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">01 · LOGÍSTICA</text>
+    <text x="32" y="76" fill="#ffffff" font-size="21" font-weight="600">San Luis</text>
+    <text x="32" y="102" fill="#ffffff" font-size="21" font-weight="600">Río Colorado</text>
+    <text x="32" y="134" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La puerta logística</text>
+    <text x="32" y="152" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">de la megarregión</text>
+    <text x="32" y="182" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">Colindancia directa con Arizona:</text>
+    <text x="32" y="200" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">cruces rápidos y parques</text>
+    <text x="32" y="218" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">evolucionando a alta tecnología.</text>
+  </g>
+  <g transform="translate(432,632)">
+    <rect width="335" height="230" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="230" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">02 · INNOVACIÓN</text>
+    <text x="32" y="76" fill="#ffffff" font-size="21" font-weight="600">Hermosillo</text>
+    <text x="32" y="134" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Centro de capital humano</text>
+    <text x="32" y="152" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">y energía sostenible</text>
+    <text x="32" y="182" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">Bajo el Plan Sonora de Energías</text>
+    <text x="32" y="200" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">Sostenibles: innovación y</text>
+    <text x="32" y="218" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">vinculación académica.</text>
+  </g>
+  <g transform="translate(784,632)">
+    <rect width="336" height="230" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="230" fill="#d4b45f"/>
+    <text x="32" y="42" fill="#e6cf94" font-size="13" font-family="Arial, sans-serif" font-weight="700">03 · MANUFACTURA</text>
+    <text x="32" y="76" fill="#ffffff" font-size="21" font-weight="600">Nogales</text>
+    <text x="32" y="134" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Infraestructura industrial</text>
+    <text x="32" y="152" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">consolidada</text>
+    <text x="32" y="182" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">Se adapta a la manufactura de</text>
+    <text x="32" y="200" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">componentes de alta precisión</text>
+    <text x="32" y="218" fill="#c3cad9" font-size="12.5" font-family="Arial, sans-serif">para el clúster tecnológico.</text>
+  </g>
+
+  <!-- La Simbiosis del Plan Sonora -->
+  <text x="80" y="920" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA SIMBIOSIS DEL PLAN SONORA</text>
+  <g transform="translate(80,940)">
+    <rect width="510" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="40" fill="#ffffff" font-size="17" font-weight="600">Suministro energético</text>
+    <text x="32" y="62" fill="#ffffff" font-size="17" font-weight="600">sustentable</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Proveedor natural de energía verde</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">para el clúster de Arizona — planta</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">solar de Puerto Peñasco.</text>
+  </g>
+  <g transform="translate(610,940)">
+    <rect width="510" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="40" fill="#ffffff" font-size="17" font-weight="600">Mentofactura y talento</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Vinculación académica para la</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">transferencia tecnológica y formación</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">de especialistas en chips.</text>
+  </g>
+
+  <!-- El boom del bienes raíces industrial -->
+  <text x="80" y="1140" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL BOOM DEL BIENES RAÍCES INDUSTRIAL</text>
+  <g transform="translate(80,1160)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="40" fill="#ffffff" font-size="17" font-weight="600">Demanda de naves</text>
+    <text x="32" y="62" fill="#ffffff" font-size="17" font-weight="600">inteligentes</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Migración hacia espacios con</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">especificaciones técnicas rigurosas y</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">conectividad de alta velocidad.</text>
+  </g>
+  <g transform="translate(610,1160)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="40" fill="#ffffff" font-size="17" font-weight="600">Parques tecnológicos</text>
+    <text x="32" y="62" fill="#ffffff" font-size="17" font-weight="600">mixtos</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Complejos que combinan manufactura</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">especializada con áreas de</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">investigación y desarrollo.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Klarock tiene presencia activa en San Luis Río Colorado, Sonora</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
