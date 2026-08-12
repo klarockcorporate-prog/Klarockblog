@@ -1,0 +1,20 @@
+Data Centers en México: el activo industrial que choca con el límite eléctrico del país
+
+Ningún otro segmento del mercado industrial mexicano ha crecido tan rápido en los últimos dos años como el data center. Impulsado por el boom global de inteligencia artificial y la migración masiva a la nube, Querétaro se consolidó como epicentro absoluto: concentra el 79% de la capacidad nacional (298.2 MW al 1T26, según CBRE) tras un crecimiento interanual de 450%.
+
+Los proyectos que están detrás de ese número:
+— CloudHQ invierte $4,800 millones de dólares en un campus de seis edificios y 900 MW de capacidad total.
+— ODATA inauguró su campus QR03, escalable hasta 300 MW hacia finales de 2026.
+— Desde 2021, al menos 12 desarrollos mayores han comprometido cerca de $15,000 millones de dólares en el estado.
+
+Pero el crecimiento se topó con un límite físico: la región Bajío-Querétaro ya opera al límite de su capacidad de transmisión eléctrica. El sector requiere hasta 900 MW adicionales solo para sostener lo ya anunciado, y CFE/Cenace pueden retrasar un proyecto hasta 24 meses por temas de interconexión — poniendo en riesgo hasta el 35% de la inversión industrial planeada entre 2024 y 2026.
+
+La CFE ya está respondiendo: en julio de 2026 conectó una nueva línea de 400,000 V para abastecer al proyecto O'DATA, con hasta 800 MW adicionales de transmisión en camino.
+
+Para desarrolladores e inversionistas, la disponibilidad de interconexión eléctrica certificada se ha vuelto tan determinante como la ubicación misma al evaluar un predio industrial.
+
+En Klarock damos seguimiento puntual a la disponibilidad energética por corredor y submercado para asesorar con datos reales cada decisión de expansión en el ecosistema industrial mexicano.
+
+Artículo completo: https://klarock.mx/blog-data-centers-mexico-limite-electrico.html
+
+#RealEstateIndustrial #DataCenters #Nearshoring #MexicoIndustrial #Queretaro
