@@ -1,0 +1,148 @@
+/* Klarock — mejoras de ficha de propiedad (galería lightbox, specs, compartir) */
+
+.property-gallery img {
+  cursor: zoom-in;
+  transition: opacity .2s ease;
+}
+.property-gallery img:hover { opacity: .85; }
+
+.kl-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background: rgba(7, 15, 28, .96);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.kl-lightbox.is-open { opacity: 1; pointer-events: auto; }
+
+.kl-lightbox__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  color: #fff;
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+.kl-lightbox__stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 0;
+  padding: 0 1rem;
+  touch-action: pan-y;
+}
+.kl-lightbox__stage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+  user-select: none;
+}
+.kl-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  cursor: pointer;
+}
+.kl-lightbox__nav:hover { background: rgba(212,180,95,.25); border-color: rgba(212,180,95,.5); }
+.kl-lightbox__nav--prev { left: .5rem; }
+.kl-lightbox__nav--next { right: .5rem; }
+.kl-lightbox__close {
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.kl-lightbox__close:hover { background: rgba(255,255,255,.1); }
+.kl-lightbox__thumbs {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  padding: .75rem 1rem 1.25rem;
+  flex-shrink: 0;
+}
+.kl-lightbox__thumbs img {
+  width: 4.5rem;
+  height: 3.25rem;
+  object-fit: cover;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+}
+.kl-lightbox__thumbs img.is-active {
+  opacity: 1;
+  border-color: #d4b45f;
+}
+
+@media (max-width: 640px) {
+  .kl-lightbox__nav { width: 2.25rem; height: 2.25rem; }
+  .kl-lightbox__thumbs img { width: 3.5rem; height: 2.5rem; }
+}
+
+/* Modal genérico (ficha técnica / compartir) */
+.kl-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(7, 15, 28, .85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.kl-modal-backdrop.is-open { opacity: 1; pointer-events: auto; }
+.kl-modal {
+  background: #0b1626;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 4px;
+  max-width: 26rem;
+  width: 100%;
+  padding: 1.75rem;
+  transform: translateY(8px);
+  transition: transform .2s ease;
+}
+.kl-modal-backdrop.is-open .kl-modal { transform: translateY(0); }
+
+.kl-toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #16294a;
+  border: 1px solid rgba(212,180,95,.4);
+  color: #fff;
+  font-size: .85rem;
+  padding: .75rem 1.25rem;
+  border-radius: 3px;
+  z-index: 110;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.kl-toast.is-open { opacity: 1; transform: translateX(-50%) translateY(0); }

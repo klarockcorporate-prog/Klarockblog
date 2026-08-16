@@ -462,6 +462,9 @@
 
     <form id="contact-form" class="bg-navy-950 border border-white/10 rounded-sm p-8 space-y-5">
       <input type="hidden" name="_subject" value="Nueva solicitud desde klarock.mx">
+      <input type="hidden" id="field-property-id" name="property_id" value="">
+      <input type="hidden" id="field-property-name" name="property_name" value="">
+      <input type="hidden" id="field-property-url" name="property_url" value="">
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
           <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Nombre completo</label>
@@ -788,6 +791,37 @@
   const contactError = document.getElementById('contact-error');
   const contactSuccess = document.getElementById('contact-success');
 
+  // Autorelleno cuando se llega desde el CTA de una ficha de propiedad
+  // (?propiedad_id=...&propiedad=...&ubicacion=...&tipo=...&operacion=...&origen=archivo.html#contacto)
+  (function prefillFromProperty(){
+    const params = new URLSearchParams(window.location.search);
+    const propertyId = params.get('propiedad_id');
+    if (!propertyId) return;
+
+    const propertyName = params.get('propiedad') || '';
+    const ubicacion = params.get('ubicacion') || '';
+    const operacion = params.get('operacion') || '';
+    const origen = params.get('origen') || '';
+
+    const fieldId = document.getElementById('field-property-id');
+    const fieldName = document.getElementById('field-property-name');
+    const fieldUrl = document.getElementById('field-property-url');
+    if (fieldId) fieldId.value = propertyId;
+    if (fieldName) fieldName.value = propertyName;
+    if (fieldUrl) fieldUrl.value = origen ? new URL(origen, window.location.href).href : '';
+
+    const mensaje = contactForm.querySelector('[name="mensaje"]');
+    if (mensaje && !mensaje.value) {
+      mensaje.value = `Hola, requiero información y disponibilidad sobre ${propertyName} (ID: ${propertyId}, Ubicación: ${ubicacion}).`;
+    }
+
+    const necesidad = contactForm.querySelector('[name="necesidad"]');
+    if (necesidad) {
+      const match = operacion === 'Venta' ? 'Venta o Adquisición de Inmueble' : 'Asesoría en Selección de Sitio y Expansión';
+      [...necesidad.options].some(opt => opt.value === match && (necesidad.value = match, true));
+    }
+  })();
+
   contactForm.addEventListener('submit', function(e){
     e.preventDefault();
     contactError.classList.add('hidden');
@@ -802,6 +836,15 @@
       if (response.ok) {
         contactForm.classList.add('hidden');
         contactSuccess.classList.remove('hidden');
+        try {
+          const leadParams = {
+            property_id: contactForm.querySelector('[name="property_id"]').value || undefined,
+            property_name: contactForm.querySelector('[name="property_name"]').value || undefined,
+            necesidad: contactForm.querySelector('[name="necesidad"]').value || undefined
+          };
+          if (typeof gtag === 'function') gtag('event', 'generate_lead_property', leadParams);
+          if (typeof fbq === 'function') fbq('trackCustom', 'generate_lead_property', leadParams);
+        } catch (err) { /* nunca romper la confirmación por un error de tracking */ }
       } else {
         throw new Error('submit failed');
       }

@@ -462,6 +462,9 @@
 
     <form id="contact-form" class="bg-navy-950 border border-white/10 rounded-sm p-8 space-y-5">
       <input type="hidden" name="_subject" value="来自 klarock.mx 的新咨询">
+      <input type="hidden" id="field-property-id" name="property_id" value="">
+      <input type="hidden" id="field-property-name" name="property_name" value="">
+      <input type="hidden" id="field-property-url" name="property_url" value="">
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
           <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">姓名</label>
@@ -786,6 +789,37 @@
   const contactError = document.getElementById('contact-error');
   const contactSuccess = document.getElementById('contact-success');
 
+  // 当从某个房源详情页的按钮跳转过来时自动填充
+  // (?propiedad_id=...&propiedad=...&ubicacion=...&tipo=...&operacion=...&origen=文件名.html#contacto)
+  (function prefillFromProperty(){
+    const params = new URLSearchParams(window.location.search);
+    const propertyId = params.get('propiedad_id');
+    if (!propertyId) return;
+
+    const propertyName = params.get('propiedad') || '';
+    const ubicacion = params.get('ubicacion') || '';
+    const operacion = params.get('operacion') || '';
+    const origen = params.get('origen') || '';
+
+    const fieldId = document.getElementById('field-property-id');
+    const fieldName = document.getElementById('field-property-name');
+    const fieldUrl = document.getElementById('field-property-url');
+    if (fieldId) fieldId.value = propertyId;
+    if (fieldName) fieldName.value = propertyName;
+    if (fieldUrl) fieldUrl.value = origen ? new URL(origen, window.location.href).href : '';
+
+    const mensaje = contactForm.querySelector('[name="mensaje"]');
+    if (mensaje && !mensaje.value) {
+      mensaje.value = `您好，我想了解 ${propertyName}（编号：${propertyId}，位置：${ubicacion}）的详细信息及可用情况。`;
+    }
+
+    const necesidad = contactForm.querySelector('[name="necesidad"]');
+    if (necesidad) {
+      const match = operacion === '出售' ? '地产买卖' : '选址与扩张顾问';
+      [...necesidad.options].some(opt => opt.value === match && (necesidad.value = match, true));
+    }
+  })();
+
   contactForm.addEventListener('submit', function(e){
     e.preventDefault();
     contactError.classList.add('hidden');
@@ -800,6 +834,15 @@
       if (response.ok) {
         contactForm.classList.add('hidden');
         contactSuccess.classList.remove('hidden');
+        try {
+          const leadParams = {
+            property_id: contactForm.querySelector('[name="property_id"]').value || undefined,
+            property_name: contactForm.querySelector('[name="property_name"]').value || undefined,
+            necesidad: contactForm.querySelector('[name="necesidad"]').value || undefined
+          };
+          if (typeof gtag === 'function') gtag('event', 'generate_lead_property', leadParams);
+          if (typeof fbq === 'function') fbq('trackCustom', 'generate_lead_property', leadParams);
+        } catch (err) { /* 追踪出错也不能影响提交确认 */ }
       } else {
         throw new Error('submit failed');
       }
