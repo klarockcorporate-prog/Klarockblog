@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">MACROECONÓMICO · POLÍTICA MONETARIA</text>
+  <text x="80" y="216" fill="#ffffff" font-size="28" font-weight="600">Tasa en pausa, costo al alza: la nueva</text>
+  <text x="80" y="256" fill="#ffffff" font-size="28" font-weight="600">ecuación de plusvalía industrial</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Banxico, inflación en construcción y el mapa de valor por corredor</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">TASA BANXICO · AGO 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">6.50%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Sin cambios por 2° mes</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">consecutivo, meta 3% en 2027</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INFLACIÓN CONSTRUCCIÓN 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">~5%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Proyectada, vs. 3.93% en</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">2025 (CMIC)</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INVERSIÓN CORREDOR BAJÍO</text>
+    <text x="30" y="118" fill="#ffffff" font-size="48" font-weight="700">$18,000M</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">USD anunciados, trienio</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">reciente (CBRE / Colliers)</text>
+  </g>
+
+  <!-- Costo por m2 eyebrow -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">COSTO DE CONSTRUCCIÓN INDUSTRIAL POR CIUDAD</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">MONTERREY</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,275 / m² &middot; el más alto de América Latina</text>
+    <rect x="620" y="24" width="380" height="14" rx="7" fill="#203a63"/>
+    <rect x="620" y="24" width="380" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">CIUDAD DE MÉXICO</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,198 / m² &middot; en levantamiento industrial</text>
+    <rect x="620" y="24" width="380" height="14" rx="7" fill="#203a63"/>
+    <rect x="620" y="24" width="367" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+
+  <!-- Insumos -->
+  <text x="80" y="858" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INSUMOS CRÍTICOS · ALZA INTERANUAL (CMIC)</text>
+  <g transform="translate(80,878)">
+    <rect width="335" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="30" font-weight="700">+7.5%</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Pinturas</text>
+  </g>
+  <g transform="translate(432,878)">
+    <rect width="335" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="30" font-weight="700">+7.3%</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Bloques de concreto</text>
+  </g>
+  <g transform="translate(784,878)">
+    <rect width="336" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="30" font-weight="700">+5.7%</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Paneles de yeso</text>
+  </g>
+
+  <!-- Rent growth -->
+  <text x="80" y="1074" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CRECIMIENTO DE RENTA EN CORREDORES MÁS AJUSTADOS</text>
+  <g transform="translate(80,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Saltillo &middot; +26.5%</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Crecimiento de renta interanual</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">con vacancia de apenas 0.8%</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">&mdash; el corredor más ajustado del país</text>
+  </g>
+  <g transform="translate(610,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Tijuana &middot; +18.2%</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Crecimiento de renta interanual</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">con vacancia de 4.1%, reflejo de</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">demanda fronteriza sostenida</text>
+  </g>
+
+  <!-- Contexto inflación -->
+  <text x="80" y="1286" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONTEXTO · INFLACIÓN GENERAL (INPC, JULIO 2026)</text>
+  <g transform="translate(80,1306)">
+    <rect width="1040" height="120" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">Inflación general anual en 3.12%, subyacente en 3.95% (INEGI)</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Cede frente al ciclo anterior, pero la convergencia a la meta de 3% se</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">aplaza hasta finales de 2027, según la propia Junta de Gobierno de Banxico</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: Banxico, INEGI, El Financiero, CMIC, CBRE, Colliers. Cifras de inversión y Cap Rate: rangos ilustrativos, verificar contra reporte fuente.</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
