@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200 M0,192 H1200 M0,240 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,64)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="185" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">E-COMMERCE · CEDIS · ÚLTIMA MILLA · 2026</text>
+  <text x="80" y="232" fill="#ffffff" font-size="36" font-weight="600">El nuevo mapa del CEDIS</text>
+  <text x="80" y="272" fill="#c3cad9" font-size="17" font-family="Arial, sans-serif">De CTT a Zumpango&ndash;AIFA: la migración de la última milla</text>
+  <rect x="80" y="298" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- ===== Stat grid ===== -->
+  <!-- card template: 500x190, two columns, x=80 / x=620, gaps 40 -->
+
+  <!-- Row 1 -->
+  <g transform="translate(80,340)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INVERSIÓN MERCADO LIBRE · 2026</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$4,600<tspan font-size="20" fill="#d4b45f"> M USD</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">Récord de inversión en México, para CEDIS y última milla</text>
+  </g>
+  <g transform="translate(620,340)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">MERCADO E-COMMERCE MÉXICO</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$941<tspan font-size="20" fill="#d4b45f"> MMDP</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+19.2% anual — más de 67 millones de compradores digitales</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(80,555)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN BRUTA ZMVM · 1T26</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">619,769<tspan font-size="20" fill="#d4b45f"> m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+100% anual vs. 1T25</text>
+  </g>
+  <g transform="translate(620,555)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PIPELINE METROPOLITANO 2026</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">3+<tspan font-size="20" fill="#d4b45f"> M m²</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">En planeación hacia finales de 2026</text>
+  </g>
+
+  <!-- Row 3: corridor share -->
+  <g transform="translate(80,770)">
+    <rect width="1040" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="40" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PARTICIPACIÓN EN TRANSACCIONES · PIPELINE FUTURO</text>
+    <g transform="translate(36,58)" font-family="Arial, sans-serif">
+      <text x="0" y="45" fill="#ffffff" font-size="16" font-weight="600">Zumpango&ndash;AIFA</text>
+      <rect x="0" y="55" width="560" height="16" rx="3" fill="#16294a"/>
+      <rect x="0" y="55" width="325" height="16" rx="3" fill="url(#goldbar)"/>
+      <text x="335" y="68" fill="#d4b45f" font-size="15" font-weight="700">58%</text>
+
+      <text x="0" y="115" fill="#ffffff" font-size="16" font-weight="600">Cuautitlán (CTT)</text>
+      <rect x="0" y="125" width="560" height="16" rx="3" fill="#16294a"/>
+      <rect x="0" y="125" width="145" height="16" rx="3" fill="url(#goldbar)"/>
+      <text x="155" y="138" fill="#d4b45f" font-size="15" font-weight="700">26%</text>
+
+      <text x="620" y="45" fill="#e0c37a" font-size="14" font-weight="700">ZUMPANGO&ndash;AIFA + CTT</text>
+      <text x="620" y="72" fill="#ffffff" font-size="34" font-weight="600">90%</text>
+      <text x="620" y="98" fill="#c3cad9" font-size="13">del pipeline total de proyectos futuros</text>
+      <text x="620" y="140" fill="#c3cad9" font-size="13">Huehuetoca: renta desde US$9/m² &mdash; hasta 20% más bajo que CTT</text>
+    </g>
+  </g>
+
+  <!-- Row 4: pricing + operational -->
+  <g transform="translate(80,985)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">RENTA PROMEDIO MÁS ALTA DEL PAÍS</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$9.9<tspan font-size="20" fill="#d4b45f"> USD/m²/mes</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+7% anual — rango de salida $8.50&ndash;$15.36</text>
+  </g>
+  <g transform="translate(620,985)">
+    <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
+    <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ENTREGAS FALLIDAS POR DIRECCIÓN</text>
+    <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">31<tspan font-size="20" fill="#d4b45f">%</tspan></text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+ 20&ndash;25% de excepciones en temporada alta</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1420" x2="1120" y2="1420" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1400" fill="#6d7690" font-size="13" font-family="Arial, sans-serif">Fuente: Mercado Libre, Inmobiliare y cobertura de mercado (2026). Rangos ilustrativos donde no hubo cifra exacta verificada.</text>
+  <text x="1120" y="1400" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
