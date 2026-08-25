@@ -31,7 +31,7 @@
 
   <text x="80" y="185" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">E-COMMERCE · CEDIS · ÚLTIMA MILLA · 2026</text>
   <text x="80" y="232" fill="#ffffff" font-size="36" font-weight="600">El nuevo mapa del CEDIS</text>
-  <text x="80" y="272" fill="#c3cad9" font-size="17" font-family="Arial, sans-serif">De CTT a Zumpango&ndash;AIFA: la migración de la última milla</text>
+  <text x="80" y="272" fill="#c3cad9" font-size="17" font-family="Arial, sans-serif">De CTT a Zumpango–AIFA: la migración de la última milla</text>
   <rect x="80" y="298" width="120" height="4" fill="url(#goldbar)"/>
 
   <!-- ===== Stat grid ===== -->
@@ -75,7 +75,7 @@
     <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
     <text x="36" y="40" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PARTICIPACIÓN EN TRANSACCIONES · PIPELINE FUTURO</text>
     <g transform="translate(36,58)" font-family="Arial, sans-serif">
-      <text x="0" y="45" fill="#ffffff" font-size="16" font-weight="600">Zumpango&ndash;AIFA</text>
+      <text x="0" y="45" fill="#ffffff" font-size="16" font-weight="600">Zumpango–AIFA</text>
       <rect x="0" y="55" width="560" height="16" rx="3" fill="#16294a"/>
       <rect x="0" y="55" width="325" height="16" rx="3" fill="url(#goldbar)"/>
       <text x="335" y="68" fill="#d4b45f" font-size="15" font-weight="700">58%</text>
@@ -85,10 +85,10 @@
       <rect x="0" y="125" width="145" height="16" rx="3" fill="url(#goldbar)"/>
       <text x="155" y="138" fill="#d4b45f" font-size="15" font-weight="700">26%</text>
 
-      <text x="620" y="45" fill="#e0c37a" font-size="14" font-weight="700">ZUMPANGO&ndash;AIFA + CTT</text>
+      <text x="620" y="45" fill="#e0c37a" font-size="14" font-weight="700">ZUMPANGO–AIFA + CTT</text>
       <text x="620" y="72" fill="#ffffff" font-size="34" font-weight="600">90%</text>
       <text x="620" y="98" fill="#c3cad9" font-size="13">del pipeline total de proyectos futuros</text>
-      <text x="620" y="140" fill="#c3cad9" font-size="13">Huehuetoca: renta desde US$9/m² &mdash; hasta 20% más bajo que CTT</text>
+      <text x="620" y="140" fill="#c3cad9" font-size="13">Huehuetoca: renta desde US$9/m² — hasta 20% más bajo que CTT</text>
     </g>
   </g>
 
@@ -98,14 +98,14 @@
     <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
     <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">RENTA PROMEDIO MÁS ALTA DEL PAÍS</text>
     <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">$9.9<tspan font-size="20" fill="#d4b45f"> USD/m²/mes</tspan></text>
-    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+7% anual — rango de salida $8.50&ndash;$15.36</text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+7% anual — rango de salida $8.50–$15.36</text>
   </g>
   <g transform="translate(620,985)">
     <rect width="500" height="190" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
     <rect x="0" y="0" width="6" height="190" fill="#d4b45f"/>
     <text x="36" y="46" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ENTREGAS FALLIDAS POR DIRECCIÓN</text>
     <text x="36" y="108" fill="#ffffff" font-size="48" font-weight="600">31<tspan font-size="20" fill="#d4b45f">%</tspan></text>
-    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+ 20&ndash;25% de excepciones en temporada alta</text>
+    <text x="36" y="140" fill="#c3cad9" font-size="14" font-family="Arial, sans-serif">+ 20–25% de excepciones en temporada alta</text>
   </g>
 
   <!-- Footer -->
