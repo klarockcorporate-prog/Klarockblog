@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">MACRO · MERCADO DE CAPITALES</text>
+  <text x="80" y="216" fill="#ffffff" font-size="27" font-weight="600">El capital bursátil financia</text>
+  <text x="80" y="256" fill="#ffffff" font-size="27" font-weight="600">la nueva ola industrial</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">El Índice de Fibras acumula +10.5% en 2026 y ya se traduce en adquisiciones industriales</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">&#205;NDICE DE FIBRAS · ACUM. 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">+10.5%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Más del doble del 4.1%</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">del IPC en el mismo periodo</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">RENDIMIENTO 2025 · CON DISTRIBUCIONES</text>
+    <text x="30" y="118" fill="#ffffff" font-size="46" font-weight="700">37.45%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Segundo mejor año en la</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">historia del instrumento</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ACUMULADO A 5 A&#209;OS</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">+114%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Consistencia de las Fibras</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">como clase de activo</text>
+  </g>
+
+  <!-- Por qué el mercado premia -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">POR QU&#201; EL MERCADO EST&#193; PREMIANDO A LAS FIBRAS</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">13 FIBRAS EN LA BMV · $350,000M MXN DE CAPITALIZACI&#211;N</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">Dividendos trimestrales de 7% a 11% anual, con acceso desde $100 pesos por título</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="230" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">OCUPACI&#211;N CONJUNTA SUPERIOR A 91%</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">Industrial y comercial lideran el desempeño operativo del sector, según Amefibra</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="210" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+
+  <!-- Nueva adquisición -->
+  <text x="80" y="858" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA NUEVA ADQUISICI&#211;N QUE CAPITALIZA EL IMPULSO</text>
+  <g transform="translate(80,878)">
+    <rect width="335" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="24" font-weight="700">Portafolio Atlas</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">USD $138.3M &#8212; Fibra Next,</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">15 propiedades industriales premium</text>
+  </g>
+  <g transform="translate(432,878)">
+    <rect width="335" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="24" font-weight="700">183,000 m&#178;</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">de área bruta rentable con</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">99.6% de ocupación</text>
+  </g>
+  <g transform="translate(784,878)">
+    <rect width="336" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="24" font-weight="700">Fibra Next</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">División industrial de Fibra Uno,</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">activa desde julio de 2025</text>
+  </g>
+
+  <!-- Dividendos y acceso -->
+  <text x="80" y="1074" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">DIVIDENDOS Y ACCESO AL MERCADO</text>
+  <g transform="translate(80,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">$100 MXN</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Acceso mínimo por título, el mismo</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">mercado industrial sin comprar el inmueble</text>
+  </g>
+  <g transform="translate(610,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">7% &#8211; 11% anual</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Dividendo trimestral distribuido</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">por el conjunto de las Fibras</text>
+  </g>
+
+  <!-- Contexto -->
+  <text x="80" y="1286" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONTEXTO · LA LECTURA PARA 2026</text>
+  <g transform="translate(80,1306)">
+    <rect width="1040" height="120" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">El capital institucional no espera: compra cuando el ciclo favorece</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Con tasas a la baja y ocupación arriba de 91%, las Fibras usan su fortaleza bursátil</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">para asegurar inventario industrial antes de que llegue el resto del capital</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: Real Estate Market, Inmobiliare, Amefibra, Milenio, Centro Urbano. Cifras de rendimiento bursátil y adquisiciones corporativas sujetas a condiciones de cierre habituales.</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
