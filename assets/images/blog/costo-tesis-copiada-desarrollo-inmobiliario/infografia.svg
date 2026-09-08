@@ -94,7 +94,7 @@
   </g>
   <g transform="translate(784,878)">
     <rect width="336" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
-    <text x="28" y="42" fill="#ffffff" font-size="24" font-weight="700">Mall clase media, mal ubicado</text>
+    <text x="28" y="42" fill="#ffffff" font-size="22" font-weight="700">Mall mal ubicado</text>
     <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Sin densidad de ingreso en 5km:</text>
     <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">la analogía sin ajuste, muere</text>
   </g>
@@ -125,6 +125,6 @@
 
   <!-- Footer -->
   <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
-  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: Cushman &amp; Wakefield, Cluster Industrial, El Financiero, Inmobiliare, análisis de submercados fronterizos e industriales 2024-2026. Cifras ilustrativas del ciclo, sujetas a actualización por reporte primario.</text>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: Cushman &amp; Wakefield, Cluster Industrial, El Financiero, Inmobiliare. Cifras ilustrativas, sujetas a verificación con reporte primario.</text>
   <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
 </svg>
