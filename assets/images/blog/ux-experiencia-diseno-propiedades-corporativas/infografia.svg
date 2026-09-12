@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">CORPORATIVO · EXPERIENCIA DE USUARIO</text>
+  <text x="80" y="216" fill="#ffffff" font-size="27" font-weight="600">El 40% ya rediseñó el espacio: UX como</text>
+  <text x="80" y="256" fill="#ffffff" font-size="27" font-weight="600">nueva métrica de valor corporativo</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Del interiorismo al underwriting: cómo se mide hoy un activo Clase A+</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">REASIGNACIÓN DE ESPACIO · MÉXICO</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">40%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">de empresas ya rediseñó su oficina</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">por nuevas formas de trabajo (CBRE)</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">NUEVO VALUE DRIVER 2026</text>
+    <text x="30" y="104" fill="#ffffff" font-size="30" font-weight="700">Conexión,</text>
+    <text x="30" y="138" fill="#ffffff" font-size="30" font-weight="700">no capacidad</text>
+    <text x="30" y="164" fill="#9aa5b1" font-size="12.5" font-family="Arial, sans-serif">Reemplaza a la ocupación (Gensler)</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ESTÁNDAR DE BIENESTAR</text>
+    <text x="30" y="104" fill="#ffffff" font-size="30" font-weight="700">WELL · BREEAM</text>
+    <text x="30" y="138" fill="#ffffff" font-size="30" font-weight="700">· LEED</text>
+    <text x="30" y="164" fill="#9aa5b1" font-size="12.5" font-family="Arial, sans-serif">De upgrade opcional a base Clase A+</text>
+  </g>
+
+  <!-- Lo que exige el usuario -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LO QUE EXIGE EL OCUPANTE EN 2026</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">BIENESTAR COMO DISEÑO BASE</text>
+    <text x="32" y="66" fill="#ffffff" font-size="19" font-weight="600">Salas de silencio, zonas de foco y descanso &mdash; ya no son amenidad, son especificación</text>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">ILUMINACIÓN CENTRADA EN EL HUMANO</text>
+    <text x="32" y="66" fill="#ffffff" font-size="19" font-weight="600">Sistemas que imitan el ritmo circadiano en zonas de trabajo profundo</text>
+  </g>
+  <g transform="translate(80,816)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">TECNOLOGÍA DE OCUPACIÓN CON IA</text>
+    <text x="32" y="66" fill="#ffffff" font-size="19" font-weight="600">Analítica de uso real del espacio &mdash; proptechs mexicanas como Spot2 ya operan esta capa</text>
+  </g>
+
+  <!-- Traducción financiera -->
+  <text x="80" y="1000" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">DE DISEÑO A CAP RATE · LA TRADUCCIÓN FINANCIERA</text>
+  <g transform="translate(80,1020)">
+    <rect width="510" height="160" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="44" fill="#ffffff" font-size="20" font-weight="700">Menor rotación</text>
+    <text x="32" y="80" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Menos fricción para el inquilino</text>
+    <text x="32" y="98" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">corporativo &mdash; renovación en</text>
+    <text x="32" y="116" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">lugar de mudanza al vencimiento</text>
+    <text x="32" y="140" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">del contrato</text>
+  </g>
+  <g transform="translate(610,1020)">
+    <rect width="510" height="160" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="44" fill="#ffffff" font-size="20" font-weight="700">Prima de renta defendible</text>
+    <text x="32" y="80" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Frente a inventario genérico con</text>
+    <text x="32" y="98" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">especificación técnica similar pero</text>
+    <text x="32" y="116" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">sin diseño de experiencia</text>
+  </g>
+
+  <!-- Contexto -->
+  <text x="80" y="1234" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA MISMA LÓGICA, MÁS ALLÁ DE LA OFICINA</text>
+  <g transform="translate(80,1254)">
+    <rect width="1040" height="120" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">Retail: la experiencia in situ, principal blindaje frente al e-commerce</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Industrial Clase A: altura libre 9m+, ESFR certificado y medición individual &mdash;</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">la misma lógica de experiencia aplicada al usuario operativo de una nave</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: CBRE México, AMIC México, Gensler, Spot2. Tendencias globales de Gensler aplicadas como marco ilustrativo al contexto mexicano.</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
