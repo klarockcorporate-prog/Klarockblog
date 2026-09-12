@@ -65,7 +65,7 @@
     <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
     <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
     <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">REFORMA</text>
-    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">10.19% de vacancia &middot; el corredor más ajustado del CBD</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">10.19% de vacancia · el corredor más ajustado del CBD</text>
     <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
     <rect x="740" y="24" width="96" height="14" rx="7" fill="#d4b45f"/>
   </g>
@@ -73,7 +73,7 @@
     <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
     <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
     <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">SANTA FE</text>
-    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">27.64% de vacancia &middot; demanda que no valida solo la ubicación</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">27.64% de vacancia · demanda que no valida solo la ubicación</text>
     <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
     <rect x="740" y="24" width="260" height="14" rx="7" fill="#d4b45f"/>
   </g>
@@ -102,14 +102,14 @@
   <text x="80" y="1074" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">RENTA PROMEDIO EN CORREDORES PREMIUM (USD/M²)</text>
   <g transform="translate(80,1094)">
     <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
-    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Lomas-Palmas &middot; $28.51</text>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Lomas-Palmas · $28.51</text>
     <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">El corredor más caro de la</text>
     <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">ciudad, por encima de Reforma</text>
     <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">y Polanco</text>
   </g>
   <g transform="translate(610,1094)">
     <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
-    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Precios 2026 &middot; +8.4%</text>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Precios 2026 · +8.4%</text>
     <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Incremento proyectado en renta</text>
     <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">de oficinas para el año (El</text>
     <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Financiero)</text>

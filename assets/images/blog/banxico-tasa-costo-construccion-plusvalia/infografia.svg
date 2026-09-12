@@ -65,7 +65,7 @@
     <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
     <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
     <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">MONTERREY</text>
-    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,275 / m² &middot; el más alto de América Latina</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,275 / m² · el más alto de América Latina</text>
     <rect x="620" y="24" width="380" height="14" rx="7" fill="#203a63"/>
     <rect x="620" y="24" width="380" height="14" rx="7" fill="#d4b45f"/>
   </g>
@@ -73,7 +73,7 @@
     <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
     <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
     <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">CIUDAD DE MÉXICO</text>
-    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,198 / m² &middot; en levantamiento industrial</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">USD $2,198 / m² · en levantamiento industrial</text>
     <rect x="620" y="24" width="380" height="14" rx="7" fill="#203a63"/>
     <rect x="620" y="24" width="367" height="14" rx="7" fill="#d4b45f"/>
   </g>
@@ -100,14 +100,14 @@
   <text x="80" y="1074" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CRECIMIENTO DE RENTA EN CORREDORES MÁS AJUSTADOS</text>
   <g transform="translate(80,1094)">
     <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
-    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Saltillo &middot; +26.5%</text>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Saltillo · +26.5%</text>
     <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Crecimiento de renta interanual</text>
     <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">con vacancia de apenas 0.8%</text>
-    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">&mdash; el corredor más ajustado del país</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">— el corredor más ajustado del país</text>
   </g>
   <g transform="translate(610,1094)">
     <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
-    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Tijuana &middot; +18.2%</text>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">Tijuana · +18.2%</text>
     <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Crecimiento de renta interanual</text>
     <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">con vacancia de 4.1%, reflejo de</text>
     <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">demanda fronteriza sostenida</text>
