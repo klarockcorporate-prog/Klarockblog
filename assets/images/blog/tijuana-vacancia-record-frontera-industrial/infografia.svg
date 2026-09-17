@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">MERCADO INDUSTRIAL · TIJUANA</text>
+  <text x="80" y="216" fill="#ffffff" font-size="30" font-weight="600">Vacancia récord en la frontera:</text>
+  <text x="80" y="256" fill="#ffffff" font-size="30" font-weight="600">el fin de la era de cero espacio</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Cómo la oferta le ganó a la demanda en el mercado industrial más ajustado del país</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">VACANCIA INDUSTRIAL · 4T25</text>
+    <text x="30" y="114" fill="#ffffff" font-size="52" font-weight="700">8.1%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La más alta entre los mercados</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">fronterizos de México</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">INVENTARIO CLASE A · 3T25</text>
+    <text x="30" y="114" fill="#ffffff" font-size="46" font-weight="700">4.4M m&#178;</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">+11% interanual, según</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">datos de CBRE</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONSTRUCCIÓN INICIADA · 1S25</text>
+    <text x="30" y="114" fill="#ffffff" font-size="46" font-weight="700">230,000 m&#178;</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Nueva superficie industrial,</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">según Solili</text>
+  </g>
+
+  <!-- La demanda que no acompañó -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA DEMANDA QUE NO ACOMPAÑÓ A LA OFERTA</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">DEMANDA INDUSTRIAL NACIONAL · 1T25</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">-20% por incertidumbre arancelaria</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="52" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN NETA EN TIJUANA · 2025</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">Negativa: se liberó más espacio del que se ocupó</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="18" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+
+  <!-- El capital que sigue apostando -->
+  <text x="80" y="858" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL CAPITAL QUE SIGUE APOSTANDO POR TIJUANA</text>
+  <g transform="translate(80,878)">
+    <rect width="335" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="26" font-weight="700">USD $4,112M</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">IED en Baja California al 1T25 &#8212;</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">1er lugar nacional ese trimestre</text>
+    <text x="28" y="110" fill="#6d7690" font-size="11" font-family="Arial, sans-serif">Secretaría de Economía</text>
+  </g>
+  <g transform="translate(432,878)">
+    <rect width="335" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="26" font-weight="700">USD $711M</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Derrama de los primeros 20</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">parques del Plan México</text>
+    <text x="28" y="110" fill="#6d7690" font-size="11" font-family="Arial, sans-serif">AMPIP</text>
+  </g>
+  <g transform="translate(784,878)">
+    <rect width="336" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="28" y="42" fill="#ffffff" font-size="26" font-weight="700">USD $150M</text>
+    <text x="28" y="70" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">HubsPark Tech Campus &#8212;</text>
+    <text x="28" y="88" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">120,000 m&#178;, ~1,500 empleos</text>
+    <text x="28" y="110" fill="#6d7690" font-size="11" font-family="Arial, sans-serif">MEOR</text>
+  </g>
+
+  <!-- Infraestructura -->
+  <text x="80" y="1074" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA INFRAESTRUCTURA QUE PUEDE REESCRIBIR EL PANORAMA</text>
+  <g transform="translate(80,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="24" font-weight="700">Otay Mesa East: +40%</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Capacidad comercial de cruce; espera</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">de camiones a 20-30 min, finales de 2026</text>
+  </g>
+  <g transform="translate(610,1094)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="24" font-weight="700">Renta Clase A: $4.85&#8211;$6.24</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">USD/m&#178;/mes, ya bajo presión por</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">la mayor disponibilidad de espacio</text>
+  </g>
+
+  <!-- Contexto -->
+  <text x="80" y="1286" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONTEXTO · LA LECTURA PARA 2026</text>
+  <g transform="translate(80,1306)">
+    <rect width="1040" height="120" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">El mercado más ajustado de la frontera es hoy el que más se reacomodó</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Vacancia récord, oferta que no se detuvo y una garita que puede cambiar el mapa: la ventana</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">para negociar condiciones en Tijuana es la más amplia que ha tenido el mercado en años</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: Solili, CBRE, Secretaría de Economía, AMPIP, Foro Económico Mundial, Cluster Industrial (2025-2026)</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
