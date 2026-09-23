@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">CORPORATIVO · MERCADO DE OFICINAS</text>
+  <text x="80" y="216" fill="#ffffff" font-size="27" font-weight="600">Monterrey: vacancia de oficinas en</text>
+  <text x="80" y="256" fill="#ffffff" font-size="27" font-weight="600">mínimos desde 2018</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">El nearshoring deja de llenar solo naves y empieza a llenar torres corporativas, 1T 2026</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">VACANCIA OFICINAS MTY · 1T 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">12.3%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Mínimo histórico desde</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">2018 (CBRE)</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CAÍDA INTERANUAL</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">-3.3 pp</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Vs. 1T 2025 · -42,000 m²</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">de espacio disponible</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN BRUTA</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">+70%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">18,000 m² vs. 11,000 m²</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">en 1T 2025 (CBRE)</text>
+  </g>
+
+  <!-- Sector demand bars -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">QUIÉN RENTA: ABSORCIÓN POR SECTOR · 1T 2026</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">MANUFACTURA</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">29% de la absorción · el nearshoring cruza de la nave a la torre</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="150" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">SECTOR FINANCIERO</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">23% de la absorción · respaldo de la banca a la operación industrial</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="120" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,816)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">LOGÍSTICA Y TRANSPORTE</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">13% de la absorción · la última milla también necesita oficina corporativa</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="68" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+
+  <!-- Oferta contenida -->
+  <text x="80" y="1000" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">OFERTA CONTENIDA · CONSTRUCCIÓN EN CURSO</text>
+  <g transform="translate(80,1020)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">74,000 m² en construcción</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Concentrados en el corredor</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">San Jerónimo–Constitución,</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">actividad de desarrollo contenida</text>
+  </g>
+  <g transform="translate(610,1020)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="26" font-weight="700">~224,000 m² disponibles</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Inventario vacante total en el</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">área metropolitana de Monterrey,</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">1T 2026 (CBRE)</text>
+  </g>
+
+  <!-- Contexto -->
+  <text x="80" y="1232" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONTEXTO · MONTERREY VS. CIUDAD DE MÉXICO</text>
+  <g transform="translate(80,1252)">
+    <rect width="1040" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">Monterrey (12.3%) opera hoy más ajustado que el promedio de la CDMX (17.2%, CBRE 1T 2026)</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La demanda de oficinas en Monterrey está ligada al ciclo de expansión industrial de la región desde</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">2021: cuando el nearshoring llena naves, también empieza a llenar corporativos de soporte —</text>
+    <text x="32" y="120" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">finanzas, compras, ingeniería— para la operación manufacturera.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: CBRE MarketView Oficinas Monterrey 1T 2026, Real Estate Market, Líder Empresarial. Cifras de precio por m² no localizadas y verificadas para el trimestre; tratar como referencia pendiente de confirmar.</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
