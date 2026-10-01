@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1560" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">INDUSTRIAL · MERCADO DE NAVES</text>
+  <text x="80" y="216" fill="#ffffff" font-size="27" font-weight="600">6.9%: Ciudad Juárez baja su</text>
+  <text x="80" y="256" fill="#ffffff" font-size="27" font-weight="600">vacancia mientras el norte pausa</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">La frontera que no esperó la resolución del T-MEC para seguir absorbiendo naves, 2T 2026</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <!-- Big stat row -->
+  <g transform="translate(80,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">VACANCIA TOTAL · 2T 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">6.9%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">-80 pb trimestral,</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">-150 pb anual (CBRE)</text>
+  </g>
+  <g transform="translate(432,356)">
+    <rect width="335" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ABSORCIÓN NETA · 2T 2026</text>
+    <text x="30" y="118" fill="#ffffff" font-size="48" font-weight="700">914,554</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">pies² · sin entregas</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">especulativas vacantes</text>
+  </g>
+  <g transform="translate(784,356)">
+    <rect width="336" height="180" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="30" y="46" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">VACANCIA CLASE A</text>
+    <text x="30" y="118" fill="#ffffff" font-size="52" font-weight="700">7.8%</text>
+    <text x="30" y="150" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">-130 pb trimestral,</text>
+    <text x="30" y="167" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">-290 pb anual (CBRE)</text>
+  </g>
+
+  <!-- Comparison bars: Juárez vs. pausa del norte -->
+  <text x="80" y="596" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">EL CONTRASTE · VACANCIA INDUSTRIAL EN EL NORTE</text>
+
+  <g transform="translate(80,616)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">VACANCIA FRONTERA NORTE · 2023</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">~1% · mercado prácticamente sin disponibilidad</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="37" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,716)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">VACANCIA FRONTERA NORTE · 2025</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">~7% · multiplicada por siete en la pausa del T-MEC</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+  <g transform="translate(80,816)">
+    <rect width="1040" height="90" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="6" height="90" fill="#d4b45f"/>
+    <text x="32" y="36" fill="#e6cf94" font-size="14" font-family="Arial, sans-serif" font-weight="700">MONTERREY · ABSORCIÓN NETA 2T 2026</text>
+    <text x="32" y="66" fill="#ffffff" font-size="20" font-weight="600">+166.7% interanual · de 259,034 a 690,857 m²</text>
+    <rect x="740" y="24" width="260" height="14" rx="7" fill="#203a63"/>
+    <rect x="740" y="24" width="247" height="14" rx="7" fill="#d4b45f"/>
+  </g>
+
+  <!-- Two boxes -->
+  <text x="80" y="1000" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA RESOLUCIÓN DE JULIO Y QUIÉN ESTÁ INVIRTIENDO</text>
+  <g transform="translate(80,1020)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="24" font-weight="700">T-MEC continúa vigente</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">1 jul 2026: México y Canadá buscaron</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">extensión de 16 años; EU no la apoyó.</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Entra en revisión anual hasta 2036</text>
+  </g>
+  <g transform="translate(610,1020)">
+    <rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/>
+    <text x="32" y="46" fill="#ffffff" font-size="24" font-weight="700">Pegatron: USD $330M en Juárez</text>
+    <text x="32" y="92" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Nueva planta de manufactura avanzada;</text>
+    <text x="32" y="110" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">data centers y manufactura ligera también</text>
+    <text x="32" y="128" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">detonan inversión en la frontera</text>
+  </g>
+
+  <!-- Contexto -->
+  <text x="80" y="1232" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">CONTEXTO · POR QUÉ IMPORTA EL TIMING</text>
+  <g transform="translate(80,1252)">
+    <rect width="1040" height="150" rx="4" fill="#0f1f38" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="32" y="42" fill="#ffffff" font-size="17" font-weight="600">El mercado se adelantó a la resolución formal del T-MEC del 1 de julio</text>
+    <text x="32" y="68" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La compresión de vacancia y la absorción de Juárez y Monterrey ocurrieron antes de que el</text>
+    <text x="32" y="94" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">tratado confirmara su continuidad, señal de que los usuarios industriales ya no esperan</text>
+    <text x="32" y="120" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">certeza total para comprometer capital en manufactura de exportación.</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1470" x2="1120" y2="1470" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="80" y="1450" fill="#6d7690" font-size="12" font-family="Arial, sans-serif">Fuentes: CBRE Industrial Figures Ciudad Juárez 2T 2026, Inmobiliare, Expansión, Vanguardia, Jornada, AmCham México. Validar cifras contra reportes trimestrales oficiales.</text>
+  <text x="1120" y="1450" fill="#d4b45f" font-size="13" font-family="Arial, sans-serif" text-anchor="end" font-weight="700">klarock.mx</text>
+</svg>
