@@ -1,0 +1,5 @@
+# Los enlaces internos, canonical, hreflang y sitemap usan la URL con .html.
+# Sin esto, Netlify reescribe los <a href> a la versión sin extensión (/blog),
+# lo que genera URLs duplicadas distintas del canonical.
+[build.processing.html]
+  pretty_urls = false

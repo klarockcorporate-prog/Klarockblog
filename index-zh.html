@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1626">
 <title>Klarock 企业地产 | 墨西哥工业与商业地产服务</title>
 <meta name="description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
 <link rel="canonical" href="https://klarock.mx/index-zh.html">
@@ -17,7 +18,9 @@
 <meta property="og:site_name" content="Klarock Corporate Real Estate">
 <meta property="og:title" content="Klarock 企业地产 | 墨西哥工业与商业地产服务">
 <meta property="og:description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
-<meta property="og:image" content="https://klarock.mx/assets/images/logo.png">
+<meta property="og:image" content="https://klarock.mx/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://klarock.mx/index-zh.html">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="es_MX">
@@ -25,7 +28,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Klarock 企业地产 | 墨西哥工业与商业地产服务">
 <meta name="twitter:description" content="Klarock 为进驻墨西哥的全球企业管理企业地产组合，销售工业与商业地产，并提供选址与扩张顾问服务。">
-<meta name="twitter:image" content="https://klarock.mx/assets/images/logo.png">
+<meta name="twitter:image" content="https://klarock.mx/assets/images/og-image.png">
 
 <!-- 结构化数据 -->
 <script type="application/ld+json">
@@ -41,8 +44,7 @@
     "@type": "Country",
     "name": "墨西哥"
   },
-  "knowsLanguage": ["es", "en", "zh"],
-  "sameAs": []
+  "knowsLanguage": ["es", "en", "zh"]
 }
 </script>
 
@@ -53,26 +55,6 @@
 
 <!-- Leaflet（地图） -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          navy: { 950:'#070f1c', 900:'#0b1626', 800:'#0f1f38', 700:'#16294a', 600:'#203a63' },
-          gold: { 300:'#e6cf94', 400:'#d4b45f', 500:'#c19a3f', 600:'#a5812f' },
-        },
-        fontFamily: {
-          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
-          sans: ['"Noto Sans SC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        },
-      }
-    }
-  }
-</script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -90,18 +72,23 @@
   .card-hover:hover { transform: translateY(-4px); border-color: rgba(212,180,95,0.5); box-shadow: 0 20px 40px -20px rgba(0,0,0,0.6); }
   .nav-blur { backdrop-filter: blur(10px); }
   ::selection { background: #d4b45f; color: #0b1626; }
+  /* Mapa: oscurece los tiles claros de OpenStreetMap para igualar el tema del sitio */
+  #properties-map .leaflet-tile-pane { filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.2) saturate(.5); }
+  #properties-map { background: #1b1f26; }
 </style>
+<link rel="stylesheet" href="assets/css/tailwind.css">
+<style>html,.font-sans{font-family:"Noto Sans SC",ui-sans-serif,system-ui,sans-serif}</style>
 </head>
 
 <body class="bg-navy-900 text-slate-200 font-sans antialiased">
-
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-gold-500 focus:text-navy-950 focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold">跳转到主要内容</a>
 <!-- ============ NAV ============ -->
 <header id="site-nav" class="fixed top-0 inset-x-0 z-50 border-b border-white/0 transition-colors duration-300">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
     <a href="#" class="flex items-center">
       <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-12 w-auto" onerror="this.style.display='none'">
     </a>
-    <nav class="hidden lg:flex items-center gap-10 text-sm font-medium text-slate-300">
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-10 text-sm font-medium text-slate-300 whitespace-nowrap">
       <a href="#servicios" class="hover:text-gold-400 transition-colors">服务</a>
       <a href="#propiedades" class="hover:text-gold-400 transition-colors">房源</a>
       <a href="#mercados" class="hover:text-gold-400 transition-colors">市场</a>
@@ -110,12 +97,12 @@
       <a href="#metricas" class="hover:text-gold-400 transition-colors">业绩</a>
       <a href="#contacto" class="hover:text-gold-400 transition-colors">联系我们</a>
     </nav>
-    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2">
+    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2 whitespace-nowrap shrink-0">
       <a href="index.html" class="hover:text-gold-400 transition-colors">ES</a>
       <span class="text-white/15">|</span>
       <a href="index-en.html" class="hover:text-gold-400 transition-colors">EN</a>
     </div>
-    <button id="menu-btn" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="打开菜单">
+    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="打开菜单">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -135,9 +122,11 @@
   </div>
 </header>
 
+<main id="contenido">
+
 <!-- ============ HERO ============ -->
 <section class="relative pt-40 pb-28 lg:pt-52 lg:pb-36 bg-grid hero-glow overflow-hidden">
-  <video autoplay muted loop playsinline class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 h-full object-cover opacity-60" onerror="this.remove()">
+  <video data-hero autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-poster.jpg" aria-hidden="true" class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 h-full object-cover opacity-60" onerror="this.remove()">
     <source src="assets/video/hero-intro.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 bg-gradient-to-r from-navy-900 via-navy-900/40 to-transparent"></div>
@@ -186,7 +175,7 @@
 <!-- ============ LOGOS DE CLIENTES ============ -->
 <section id="clientes" class="py-16 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <p class="text-center text-xs font-semibold tracking-[0.25em] uppercase text-slate-500 mb-10">
+    <p class="text-center text-xs font-semibold tracking-[0.25em] uppercase text-slate-400 mb-10">
       全球企业信赖Klarock
     </p>
     <div class="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center max-w-4xl mx-auto">
@@ -223,7 +212,7 @@
     </div>
 
     <div class="max-w-3xl">
-      <span class="font-serif text-6xl text-gold-400/40 leading-none">"</span>
+      <span aria-hidden="true" class="font-serif text-6xl text-gold-400/40 leading-none">&ldquo;</span>
       <p class="font-serif text-xl lg:text-2xl text-white leading-relaxed -mt-6">
         我们相信，管理这种规模的工业与商业资产，需要的不仅仅是完成交易。因此每一个委托都建立在全面尽职调查和稳健投资架构之上——当一笔操作涉及九位数金额时，法律保障没有商量的余地。
       </p>
@@ -465,33 +454,34 @@
       <input type="hidden" id="field-property-id" name="property_id" value="">
       <input type="hidden" id="field-property-name" name="property_name" value="">
       <input type="hidden" id="field-property-url" name="property_url" value="">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">姓名</label>
-          <input type="text" name="nombre" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="姓名">
+          <label for="f-nombre" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">姓名</label>
+          <input type="text" name="nombre" id="f-nombre" autocomplete="name" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="姓名">
         </div>
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">职位</label>
-          <input type="text" name="cargo" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="例如：拓展总监">
+          <label for="f-cargo" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">职位</label>
+          <input type="text" name="cargo" id="f-cargo" autocomplete="organization-title" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="例如：拓展总监">
         </div>
       </div>
       <div>
-        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">公司名称</label>
-        <input type="text" name="empresa" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="公司名称">
+        <label for="f-empresa" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">公司名称</label>
+        <input type="text" name="empresa" id="f-empresa" autocomplete="organization" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="公司名称">
       </div>
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">企业邮箱</label>
-          <input type="email" name="correo" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="name@company.com">
+          <label for="f-correo" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">企业邮箱</label>
+          <input type="email" name="correo" id="f-correo" autocomplete="email" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="name@company.com">
         </div>
         <div>
-          <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">电话</label>
-          <input type="tel" name="telefono" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="+52 ...">
+          <label for="f-telefono" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">电话</label>
+          <input type="tel" name="telefono" id="f-telefono" autocomplete="tel" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="+52 ...">
         </div>
       </div>
       <div>
-        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">需求类型</label>
-        <select name="necesidad" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+        <label for="f-necesidad" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">需求类型</label>
+        <select name="necesidad" id="f-necesidad" required class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
           <option value="">请选择…</option>
           <option>资产组合管理</option>
           <option>地产买卖</option>
@@ -500,16 +490,16 @@
         </select>
       </div>
       <div>
-        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">项目详情</label>
-        <textarea name="mensaje" rows="4" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400" placeholder="请简要描述您的业务或需求…"></textarea>
+        <label for="f-mensaje" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">项目详情</label>
+        <textarea name="mensaje" id="f-mensaje" rows="4" class="w-full bg-navy-900 border border-white/10 rounded-sm px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-gold-400" placeholder="请简要描述您的业务或需求…"></textarea>
       </div>
       <button id="contact-submit" type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
         联系合伙人董事
       </button>
-      <p id="contact-error" class="hidden text-xs text-red-400 text-center">提交时出现问题，请重试或直接联系我们。</p>
-      <p class="text-xs text-slate-500 text-center">您的信息将被严格保密。Klarock不会与第三方共享客户数据。</p>
+      <p id="contact-error" role="alert" class="hidden text-xs text-red-400 text-center">提交时出现问题，请稍后重试。</p>
+      <p class="text-xs text-slate-400 text-center">您的信息将被严格保密。Klarock不会与第三方共享客户数据。</p>
     </form>
-    <div id="contact-success" class="hidden bg-navy-950 border border-gold-400/40 rounded-sm p-8 text-center">
+    <div id="contact-success" role="status" class="hidden bg-navy-950 border border-gold-400/40 rounded-sm p-8 text-center">
       <p class="text-gold-400 text-2xl mb-3">✓</p>
       <h3 class="text-white text-xl font-semibold mb-2">请求已发送</h3>
       <p class="text-slate-300 text-sm">感谢您。Klarock合伙人董事将审核您的请求，并在24个工作小时内与您联系。</p>
@@ -518,6 +508,8 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+</main>
+
 <footer class="bg-navy-950 border-t border-white/10 pt-20 pb-8">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
@@ -544,7 +536,7 @@
         </ul>
       </div>
     </div>
-    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
       <p>© 2026 Klarock Corporate Real Estate. 保留所有权利。</p>
       <div class="flex gap-6">
         <a href="#" class="hover:text-gold-400">隐私声明</a>
@@ -554,6 +546,16 @@
   </div>
 </footer>
 
+<script>
+  // Hero: omitir el video si el usuario ahorra datos o prefiere menos movimiento
+  (function () {
+    var v = document.querySelector('video[data-hero]');
+    if (!v) return;
+    if (navigator.connection && navigator.connection.saveData) { v.remove(); return; }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+  })();
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
   // Nav background on scroll
   const nav = document.getElementById('site-nav');
@@ -570,12 +572,14 @@
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
     nav.classList.toggle('bg-navy-950/95', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('nav-blur', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('border-white/10', !mobileMenu.classList.contains('hidden'));
   });
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
     if (window.scrollY <= 20) {
       nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
     }
@@ -598,7 +602,7 @@
     { name: 'Nave Industrial El Cardenal — Culiacán', city: 'Culiacán, Sinaloa（西纳罗亚州库利亚坎）', size: '2,006 平方米', type: '工业厂房', corridor: '太平洋走廊', status: '2026年交付', mode: '出租', url: 'nave-cardenal-culiacan-zh.html', lat: 24.8091, lng: -107.3940,
       photos: [
         'assets/images/properties/cardenal-culiacan/interior-2.jpeg',
-        'assets/images/properties/cardenal-culiacan/aerial-1.png',
+        'assets/images/properties/cardenal-culiacan/aerial-1.jpg',
       ] },
     { name: 'Nave Industrial Clase A — San Luis Río Colorado', city: 'San Luis Río Colorado, Sonora（索诺拉州圣路易斯里奥科罗拉多）', size: '19,880 平方米 (214,000 平方英尺)', type: '工业厂房', corridor: '边境走廊', status: '现房可租', mode: '出租', url: 'nave-san-luis-rio-colorado-zh.html', lat: 32.4570, lng: -114.7728,
       photos: [
@@ -668,10 +672,10 @@
     const tipoWrap = document.getElementById('filtro-tipo');
     const corredorWrap = document.getElementById('filtro-corredor');
 
-    const tipoBtn = (label) => `<button data-tipo="${label}" class="filtro-tipo-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.tipo === label ? 'bg-gold-500 border-gold-500 text-navy-950 font-semibold' : 'border-white/15 text-slate-300 hover:border-gold-400'}">${label}</button>`;
+    const tipoBtn = (label) => `<button type="button" data-tipo="${label}" aria-pressed="${state.tipo === label}" class="filtro-tipo-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.tipo === label ? 'bg-gold-500 border-gold-500 text-navy-950 font-semibold' : 'border-white/15 text-slate-300 hover:border-gold-400'}">${label}</button>`;
     tipoWrap.innerHTML = tipoBtn('全部') + PROPERTY_TYPES.map(tipoBtn).join('');
 
-    const corredorBtn = (label) => `<button data-corredor="${label}" class="filtro-corredor-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.corredor === label ? 'bg-navy-700 border-gold-400 text-white' : 'border-white/10 text-slate-400 hover:border-gold-400'}">${label}</button>`;
+    const corredorBtn = (label) => `<button type="button" data-corredor="${label}" aria-pressed="${state.corredor === label}" class="filtro-corredor-btn text-xs sm:text-sm px-4 py-2 rounded-sm border transition-colors ${state.corredor === label ? 'bg-navy-700 border-gold-400 text-white' : 'border-white/10 text-slate-400 hover:border-gold-400'}">${label}</button>`;
     corredorWrap.innerHTML = corredorBtn('全部') + CORRIDORS.map(corredorBtn).join('');
 
     tipoWrap.querySelectorAll('.filtro-tipo-btn').forEach(btn => btn.addEventListener('click', () => {
@@ -692,7 +696,7 @@
       : 'border border-gold-400/60 text-gold-400';
     const photo = p.photos && p.photos.length ? p.photos[0] : '';
     const media = photo
-      ? `<img src="${photo}" alt="${p.name}" class="absolute inset-0 h-full w-full object-cover" onerror="this.remove()">`
+      ? `<img src="${photo}" alt="${p.name}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover" onerror="this.remove()">`
       : `<svg class="h-12 w-12 text-white/15" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="${TYPE_ICONS[p.type] || ''}"/></svg>`;
     const photoCount = p.photos && p.photos.length > 1
       ? `<span class="absolute bottom-3 right-3 bg-navy-950/80 text-white text-xs px-2 py-1 rounded-sm">1 / ${p.photos.length}</span>`
@@ -739,10 +743,24 @@
 
     const map = L.map('properties-map', { scrollWheelZoom: false }).setView([23.6, -102.5], 5);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO',
-      maxZoom: 18,
+    // Tiles de OpenStreetMap (no requieren API key). El tono oscuro se aplica por CSS (.leaflet-tile-pane).
+    // Nota: CARTO (basemaps.cartocdn.com) ahora exige API key y muestra "API KEY REQUIRED".
+    let tileErrors = 0, tileLoads = 0;
+    const baseLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
+      maxZoom: 19,
     }).addTo(map);
+    baseLayer.on('tileload', () => { tileLoads++; });
+    baseLayer.on('tileerror', () => {
+      tileErrors++;
+      if (tileErrors >= 4 && tileLoads === 0 && !mapEl.querySelector('.map-fallback-note')) {
+        const note = document.createElement('p');
+        note.className = 'map-fallback-note';
+        note.style.cssText = 'position:absolute;left:12px;right:12px;bottom:28px;z-index:1000;margin:0;padding:8px 12px;font-size:12px;color:#cbd5e1;background:rgba(7,15,28,.85);border:1px solid rgba(255,255,255,.1);';
+        note.textContent = '底图无法加载，房产列表见下方。';
+        mapEl.appendChild(note);
+      }
+    });
 
     const goldIcon = L.divIcon({
       className: '',

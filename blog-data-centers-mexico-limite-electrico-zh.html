@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1626">
 <title>墨西哥数据中心：当成功的速度超过了电力的脚步 | Klarock</title>
 <meta name="description" content="克雷塔罗州占墨西哥数据中心总容量的79%，一年内增长450%。CloudHQ正在投资48亿美元建设一座900兆瓦的园区。但电网已经触及极限——这正在重塑巴希奥地区的工业地产格局。">
 <link rel="canonical" href="https://klarock.mx/blog-data-centers-mexico-limite-electrico-zh.html">
@@ -43,25 +44,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          navy: { 950:'#070f1c', 900:'#0b1626', 800:'#0f1f38', 700:'#16294a', 600:'#203a63' },
-          gold: { 300:'#e6cf94', 400:'#d4b45f', 500:'#c19a3f', 600:'#a5812f' },
-        },
-        fontFamily: {
-          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
-          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        },
-      }
-    }
-  }
-</script>
-
-
 <style>
   html { scroll-behavior: smooth; }
   body { background:#0b1626; }
@@ -77,14 +59,16 @@
   ::selection { background: #d4b45f; color: #0b1626; }
 </style>
 
+<link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
 <body class="bg-navy-900 text-slate-200 font-sans antialiased">
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-gold-500 focus:text-navy-950 focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold">跳转到主要内容</a>
 <header id="site-nav" class="fixed top-0 inset-x-0 z-50 border-b border-white/0 transition-colors duration-300">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
     <a href="index-zh.html" class="flex items-center">
       <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-12 w-auto" onerror="this.style.display='none'">
     </a>
-    <nav class="hidden lg:flex items-center gap-10 text-sm font-medium text-slate-300">
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-10 text-sm font-medium text-slate-300 whitespace-nowrap">
       <a href="index-zh.html#servicios" class="hover:text-gold-400 transition-colors">服务</a>
       <a href="index-zh.html#propiedades" class="hover:text-gold-400 transition-colors">房源</a>
       <a href="index-zh.html#mercados" class="hover:text-gold-400 transition-colors">市场</a>
@@ -93,10 +77,10 @@
       <a href="index-zh.html#metricas" class="hover:text-gold-400 transition-colors">业绩</a>
       <a href="index-zh.html#contacto" class="hover:text-gold-400 transition-colors">联系我们</a>
     </nav>
-    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2">
+    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2 whitespace-nowrap shrink-0">
       <a href="index.html" class="hover:text-gold-400 transition-colors">ES</a><span class="text-white/15">|</span><a href="index-en.html" class="hover:text-gold-400 transition-colors">EN</a>
     </div>
-    <button id="menu-btn" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="打开菜单">
+    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="打开菜单">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -114,6 +98,8 @@
     </div>
   </div>
 </header>
+
+<main id="contenido">
 
 <section class="relative pt-36 pb-16 lg:pt-44 lg:pb-20 bg-grid overflow-hidden">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
@@ -167,6 +153,8 @@
     <a href="index-zh.html#contacto" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">联系合伙人董事</a>
   </div>
 </section>
+</main>
+
 <footer class="bg-navy-950 border-t border-white/10 pt-20 pb-8">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
@@ -191,7 +179,7 @@
         </ul>
       </div>
     </div>
-    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
       <p>© 2026 Klarock Corporate Real Estate. 保留所有权利。</p>
       <div class="flex gap-6">
         <a href="#" class="hover:text-gold-400">隐私声明</a>
@@ -213,12 +201,14 @@
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
     nav.classList.toggle('bg-navy-950/95', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('nav-blur', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('border-white/10', !mobileMenu.classList.contains('hidden'));
   });
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
     if (window.scrollY <= 20) {
       nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
     }

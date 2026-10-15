@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1626">
 <title>Blog e Insights | Klarock</title>
 <meta name="description" content="Infografías y análisis de Klarock sobre real estate industrial y corporativo, corredores logísticos y nearshoring en México.">
 <link rel="canonical" href="https://klarock.mx/blog.html">
@@ -15,12 +16,14 @@
 <meta property="og:site_name" content="Klarock Corporate Real Estate">
 <meta property="og:title" content="Blog e Insights | Klarock">
 <meta property="og:description" content="Infografías y análisis de Klarock sobre real estate industrial y corporativo, corredores logísticos y nearshoring en México.">
-<meta property="og:image" content="https://klarock.mx/assets/images/logo.png">
+<meta property="og:image" content="https://klarock.mx/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://klarock.mx/blog.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Blog e Insights | Klarock">
 <meta name="twitter:description" content="Infografías y análisis de Klarock sobre real estate industrial y corporativo, corredores logísticos y nearshoring en México.">
-<meta name="twitter:image" content="https://klarock.mx/assets/images/logo.png">
+<meta name="twitter:image" content="https://klarock.mx/assets/images/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,25 +44,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          navy: { 950:'#070f1c', 900:'#0b1626', 800:'#0f1f38', 700:'#16294a', 600:'#203a63' },
-          gold: { 300:'#e6cf94', 400:'#d4b45f', 500:'#c19a3f', 600:'#a5812f' },
-        },
-        fontFamily: {
-          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
-          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        },
-      }
-    }
-  }
-</script>
-
-
 <style>
   html { scroll-behavior: smooth; }
   body { background:#0b1626; }
@@ -75,14 +59,16 @@
   ::selection { background: #d4b45f; color: #0b1626; }
 </style>
 
+<link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
 <body class="bg-navy-900 text-slate-200 font-sans antialiased">
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-gold-500 focus:text-navy-950 focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold">Saltar al contenido</a>
 <header id="site-nav" class="fixed top-0 inset-x-0 z-50 border-b border-white/0 transition-colors duration-300">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
     <a href="index.html" class="flex items-center">
       <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-12 w-auto" onerror="this.style.display='none'">
     </a>
-    <nav class="hidden lg:flex items-center gap-10 text-sm font-medium text-slate-300">
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-10 text-sm font-medium text-slate-300 whitespace-nowrap">
       <a href="index.html#servicios" class="hover:text-gold-400 transition-colors">Servicios</a>
       <a href="index.html#propiedades" class="hover:text-gold-400 transition-colors">Propiedades</a>
       <a href="index.html#mercados" class="hover:text-gold-400 transition-colors">Mercados</a>
@@ -91,10 +77,10 @@
       <a href="index.html#metricas" class="hover:text-gold-400 transition-colors">Resultados</a>
       <a href="index.html#contacto" class="hover:text-gold-400 transition-colors">Contacto</a>
     </nav>
-    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2">
+    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2 whitespace-nowrap shrink-0">
       <a href="index-zh.html" class="hover:text-gold-400 transition-colors">中文</a><span class="text-white/15">|</span><a href="index-en.html" class="hover:text-gold-400 transition-colors">EN</a>
     </div>
-    <button id="menu-btn" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="Abrir menú">
+    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="Abrir menú">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -112,6 +98,8 @@
     </div>
   </div>
 </header>
+
+<main id="contenido">
 
 <section class="relative pt-36 pb-16 lg:pt-44 lg:pb-20 bg-grid overflow-hidden">
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
@@ -137,7 +125,7 @@
 
       <a href="blog-ciudad-juarez-vacancia-industrial-tmec-2026.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/ciudad-juarez-vacancia-industrial-tmec-2026/infografia.svg" alt="6.9%: Ciudad Juárez Baja su Vacancia Industrial Mientras el Norte Pausa por el T-MEC" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/ciudad-juarez-vacancia-industrial-tmec-2026/infografia.svg" alt="6.9%: Ciudad Juárez Baja su Vacancia Industrial Mientras el Norte Pausa por el T-MEC" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Industrial · 2026-10-01</p>
@@ -149,7 +137,7 @@
 
       <a href="blog-oficinas-monterrey-nearshoring-vacancia-minima.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/oficinas-monterrey-nearshoring-vacancia-minima/infografia.svg" alt="12.3%: La Vacancia de Oficinas en Monterrey Toca su Mínimo Desde 2018" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/oficinas-monterrey-nearshoring-vacancia-minima/infografia.svg" alt="12.3%: La Vacancia de Oficinas en Monterrey Toca su Mínimo Desde 2018" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Corporativo · 2026-09-23</p>
@@ -161,7 +149,7 @@
 
       <a href="blog-shelter-empresa-propia-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/shelter-empresa-propia-mexico/infografia.svg" alt="Shelter o Empresa Propia: Las 3 Preguntas que Todo Cliente Corporativo Hace Antes de Instalarse en México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/shelter-empresa-propia-mexico/infografia.svg" alt="Shelter o Empresa Propia: Las 3 Preguntas que Todo Cliente Corporativo Hace Antes de Instalarse en México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Industrial · 2026-09-21</p>
@@ -173,7 +161,7 @@
 
       <a href="blog-rotacion-capital-plusvalia-emergente-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/rotacion-capital-plusvalia-emergente-mexico/infografia.svg" alt="6.50% Es el Nuevo Normal: Por Qué el Capital Institucional Ya Rotó Hacia los Corredores de Plusvalía Emergente" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/rotacion-capital-plusvalia-emergente-mexico/infografia.svg" alt="6.50% Es el Nuevo Normal: Por Qué el Capital Institucional Ya Rotó Hacia los Corredores de Plusvalía Emergente" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Financiero · 2026-09-18</p>
@@ -185,7 +173,7 @@
 
       <a href="blog-tijuana-vacancia-record-frontera-industrial.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/tijuana-vacancia-record-frontera-industrial/infografia.svg" alt="Tijuana Toca Máximo Histórico de Vacancia Industrial: El Fin de la Era de Cero Espacio Disponible" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/tijuana-vacancia-record-frontera-industrial/infografia.svg" alt="Tijuana Toca Máximo Histórico de Vacancia Industrial: El Fin de la Era de Cero Espacio Disponible" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Mercado · 2026-09-17</p>
@@ -197,7 +185,7 @@
 
       <a href="blog-ux-experiencia-diseno-propiedades-corporativas.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/ux-experiencia-diseno-propiedades-corporativas/infografia.svg" alt="El 40% Ya Rediseñó el Espacio: La Experiencia de Usuario Como Nueva Métrica de Valor Corporativo" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/ux-experiencia-diseno-propiedades-corporativas/infografia.svg" alt="El 40% Ya Rediseñó el Espacio: La Experiencia de Usuario Como Nueva Métrica de Valor Corporativo" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Corporativo · 2026-09-12</p>
@@ -209,7 +197,7 @@
 
       <a href="blog-costo-tesis-copiada-desarrollo-inmobiliario.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/costo-tesis-copiada-desarrollo-inmobiliario/infografia.svg" alt="El Costo Oculto de Copiar y Pegar Tesis Inmobiliarias" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/costo-tesis-copiada-desarrollo-inmobiliario/infografia.svg" alt="El Costo Oculto de Copiar y Pegar Tesis Inmobiliarias" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Mercado · 2026-09-08</p>
@@ -221,7 +209,7 @@
 
       <a href="blog-plan-mexico-100-parques-industriales-2026.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/plan-mexico-100-parques-industriales-2026/infografia.svg" alt="Plan México Entrega sus Primeros 20 Parques Industriales: USD $711M y Rumbo a 100" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/plan-mexico-100-parques-industriales-2026/infografia.svg" alt="Plan México Entrega sus Primeros 20 Parques Industriales: USD $711M y Rumbo a 100" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Industrial · 2026-09-07</p>
@@ -233,7 +221,7 @@
 
       <a href="blog-fibras-mexico-2026-capital-bursatil-industrial.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/fibras-mexico-2026-capital-bursatil-industrial/infografia.svg" alt="Fibras +10.5% en 2026: El Capital Bursátil que Financia la Nueva Ola Industrial" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/fibras-mexico-2026-capital-bursatil-industrial/infografia.svg" alt="Fibras +10.5% en 2026: El Capital Bursátil que Financia la Nueva Ola Industrial" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Macro · 2026-09-04</p>
@@ -245,7 +233,7 @@
 
       <a href="blog-retail-premium-cap-rate-mexico-2026.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/retail-premium-cap-rate-mexico-2026/infografia.svg" alt="El Retail Premium en México Sube de Categoría: Rentas +11%" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/retail-premium-cap-rate-mexico-2026/infografia.svg" alt="El Retail Premium en México Sube de Categoría: Rentas +11%" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Comercial · 2026-09-03</p>
@@ -257,7 +245,7 @@
 
       <a href="blog-corredor-interoceanico-istmo-tehuantepec-nueva-frontera.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/corredor-interoceanico-istmo-tehuantepec-nueva-frontera/infografia.svg" alt="El Corredor Interoceánico: la Nueva Frontera Industrial de México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/corredor-interoceanico-istmo-tehuantepec-nueva-frontera/infografia.svg" alt="El Corredor Interoceánico: la Nueva Frontera Industrial de México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Industrial · 2026-09-01</p>
@@ -269,7 +257,7 @@
 
       <a href="blog-agua-cuello-botella-nearshoring-nuevo-leon.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/agua-cuello-botella-nearshoring-nuevo-leon/infografia.svg" alt="El Cuarto Cuello de Botella del Nearshoring: el Agua en Nuevo León" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/agua-cuello-botella-nearshoring-nuevo-leon/infografia.svg" alt="El Cuarto Cuello de Botella del Nearshoring: el Agua en Nuevo León" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Industrial · 2026-08-29</p>
@@ -281,7 +269,7 @@
 
       <a href="blog-corredores-industriales-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/corredores-industriales-mexico/infografia.svg" alt="Los 5 Corredores Industriales de México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/corredores-industriales-mexico/infografia.svg" alt="Los 5 Corredores Industriales de México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Mercado · 2026-08-01</p>
@@ -293,7 +281,7 @@
 
       <a href="blog-radiografia-mercado-industrial-guadalajara-1s26.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/radiografia-mercado-industrial-guadalajara-1s26/infografia.svg" alt="Radiografía del Mercado Industrial en Guadalajara (1S26): Resiliencia y Expansión Controlada" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/radiografia-mercado-industrial-guadalajara-1s26/infografia.svg" alt="Radiografía del Mercado Industrial en Guadalajara (1S26): Resiliencia y Expansión Controlada" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Mercado · 2026-08-02</p>
@@ -305,7 +293,7 @@
 
       <a href="blog-logistica-bajo-presion-ia-almacenes.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/logistica-bajo-presion-ia-almacenes/infografia.svg" alt="Logística bajo presión: ¿Están los almacenes listos para la era de la Inteligencia Artificial?" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/logistica-bajo-presion-ia-almacenes/infografia.svg" alt="Logística bajo presión: ¿Están los almacenes listos para la era de la Inteligencia Artificial?" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Tecnología · 2026-08-02</p>
@@ -317,7 +305,7 @@
 
       <a href="blog-sonora-semiconductores-arizona.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/sonora-semiconductores-arizona/infografia.svg" alt="Sonora, la Llave del Éxito: el Aliado Estratégico en la Revolución de los Semiconductores en Norteamérica" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/sonora-semiconductores-arizona/infografia.svg" alt="Sonora, la Llave del Éxito: el Aliado Estratégico en la Revolución de los Semiconductores en Norteamérica" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Nearshoring · 2026-08-06</p>
@@ -329,7 +317,7 @@
 
       <a href="blog-dark-stores-retail-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/dark-stores-retail-mexico/infografia.svg" alt="La reconfiguración silenciosa del retail: por qué Walmart, Rappi y las farmacias apuestan por las dark stores en las zonas metropolitanas de México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/dark-stores-retail-mexico/infografia.svg" alt="La reconfiguración silenciosa del retail: por qué Walmart, Rappi y las farmacias apuestan por las dark stores en las zonas metropolitanas de México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Retail · 2026-08-06</p>
@@ -341,7 +329,7 @@
 
       <a href="blog-wellness-gastronomia-entretenimiento-centros-comerciales.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/shoppingtainment-centros-comerciales/infografia.svg" alt="Wellness, gastronomía y entretenimiento: el nuevo blindaje de los centros comerciales frente al e-commerce" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/shoppingtainment-centros-comerciales/infografia.svg" alt="Wellness, gastronomía y entretenimiento: el nuevo blindaje de los centros comerciales frente al e-commerce" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Retail · 2026-08-06</p>
@@ -353,7 +341,7 @@
 
       <a href="blog-data-centers-mexico-limite-electrico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/data-centers-mexico-limite-electrico/infografia.svg" alt="Data Centers en México: Cuando el Éxito Crece más Rápido que la Energía" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/data-centers-mexico-limite-electrico/infografia.svg" alt="Data Centers en México: Cuando el Éxito Crece más Rápido que la Energía" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Tecnología · 2026-08-12</p>
@@ -365,7 +353,7 @@
 
       <a href="blog-bajio-automotriz-movilidad-electrica.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/bajio-automotriz-movilidad-electrica/infografia.svg" alt="El Bajío Automotriz: Motor de la Movilidad Eléctrica de Norteamérica" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/bajio-automotriz-movilidad-electrica/infografia.svg" alt="El Bajío Automotriz: Motor de la Movilidad Eléctrica de Norteamérica" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Nearshoring · 2026-08-13</p>
@@ -377,7 +365,7 @@
 
       <a href="blog-banxico-tasa-costo-construccion-plusvalia.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/banxico-tasa-costo-construccion-plusvalia/infografia.svg" alt="Tasa en Pausa, Costo al Alza: La Nueva Ecuación de la Plusvalía Industrial en México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/banxico-tasa-costo-construccion-plusvalia/infografia.svg" alt="Tasa en Pausa, Costo al Alza: La Nueva Ecuación de la Plusvalía Industrial en México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Financiero · 2026-08-14</p>
@@ -389,7 +377,7 @@
 
       <a href="blog-polarizacion-oficinas-cdmx-reforma-santa-fe.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/polarizacion-oficinas-cdmx-reforma-santa-fe/infografia.svg" alt="Reforma al 10%, Santa Fe al 28%: La Polarización del Mercado de Oficinas en CDMX" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/polarizacion-oficinas-cdmx-reforma-santa-fe/infografia.svg" alt="Reforma al 10%, Santa Fe al 28%: La Polarización del Mercado de Oficinas en CDMX" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Corporativo · 2026-08-19</p>
@@ -401,7 +389,7 @@
 
       <a href="blog-capital-institucional-cap-rate-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/capital-institucional-cap-rate-mexico/infografia.svg" alt="El 83% Ya Decidió: Por Qué el Capital Institucional No Espera la Próxima Baja de Tasa en México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/capital-institucional-cap-rate-mexico/infografia.svg" alt="El 83% Ya Decidió: Por Qué el Capital Institucional No Espera la Próxima Baja de Tasa en México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Financiero · 2026-08-21</p>
@@ -413,7 +401,7 @@
 
       <a href="blog-cedis-ultima-milla-ecommerce-mexico.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/cedis-ultima-milla-ecommerce-mexico/infografia.svg" alt="El Nuevo Mapa del CEDIS: Cómo el E-commerce Redibuja la Última Milla en México" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/cedis-ultima-milla-ecommerce-mexico/infografia.svg" alt="El Nuevo Mapa del CEDIS: Cómo el E-commerce Redibuja la Última Milla en México" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Mercado · 2026-08-25</p>
@@ -425,7 +413,7 @@
 
       <a href="blog-consolidacion-demanda-oficinas-cdmx.html" class="block border border-white/10 rounded-sm overflow-hidden card-hover">
         <div class="aspect-[4/5] bg-navy-800 bg-grid overflow-hidden">
-          <img src="assets/images/blog/consolidacion-demanda-oficinas-cdmx/infografia.svg" alt="El 75% No Es Crecimiento, Es Consolidación: La Demanda Real de Oficinas en CDMX" class="w-full h-full object-cover" onerror="this.remove()">
+          <img loading="lazy" decoding="async" src="assets/images/blog/consolidacion-demanda-oficinas-cdmx/infografia.svg" alt="El 75% No Es Crecimiento, Es Consolidación: La Demanda Real de Oficinas en CDMX" class="w-full h-full object-cover" onerror="this.remove()">
         </div>
         <div class="p-6">
           <p class="text-xs uppercase tracking-wider text-gold-400 mb-2">Corporativo · 2026-08-26</p>
@@ -436,6 +424,8 @@
       </a></div>
   </div>
 </section>
+</main>
+
 <footer class="bg-navy-950 border-t border-white/10 pt-20 pb-8">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
@@ -460,7 +450,7 @@
         </ul>
       </div>
     </div>
-    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
       <p>© 2026 Klarock Corporate Real Estate. Todos los derechos reservados.</p>
       <div class="flex gap-6">
         <a href="#" class="hover:text-gold-400">Aviso de Privacidad</a>
@@ -482,12 +472,14 @@
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
     nav.classList.toggle('bg-navy-950/95', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('nav-blur', !mobileMenu.classList.contains('hidden'));
     nav.classList.toggle('border-white/10', !mobileMenu.classList.contains('hidden'));
   });
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
     if (window.scrollY <= 20) {
       nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
     }
