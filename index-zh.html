@@ -86,6 +86,16 @@
   gtag('js', new Date());
   gtag('config', 'G-8R4KR50Q9C');
 </script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '134669933338112');
+fbq('track', 'PageView');
+</script>
 </head>
 
 <body class="bg-navy-900 text-slate-200 font-sans antialiased">
@@ -864,6 +874,12 @@
           };
           if (typeof gtag === 'function') gtag('event', 'generate_lead_property', leadParams);
           if (typeof fbq === 'function') fbq('trackCustom', 'generate_lead_property', leadParams);
+          if (typeof fbq === 'function') {
+            const leadMeta = {};
+            if (leadParams.property_name) leadMeta.content_name = leadParams.property_name;
+            if (leadParams.necesidad) leadMeta.content_category = leadParams.necesidad;
+            fbq('track', 'Lead', leadMeta);
+          }
         } catch (err) { /* 追踪出错也不能影响提交确认 */ }
       } else {
         throw new Error('submit failed');
