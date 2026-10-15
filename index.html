@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1626">
-<title>Klarock | Real Estate Corporativo e Industrial en México</title>
-<meta name="description" content="Klarock administra portafolios corporativos, comercializa inmuebles industriales y comerciales, y asesora la selección de sitio y expansión en México.">
+<title>Naves y Terrenos Industriales en México | Klarock</title>
+<meta name="description" content="Renta y venta de naves industriales y terrenos industriales en México. Klarock administra portafolios corporativos y asesora la selección de sitio.">
 <link rel="canonical" href="https://klarock.mx/">
 <link rel="alternate" hreflang="es" href="https://klarock.mx/">
 <link rel="alternate" hreflang="en" href="https://klarock.mx/index-en.html">
@@ -16,8 +16,8 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Klarock Corporate Real Estate">
-<meta property="og:title" content="Klarock | Real Estate Corporativo e Industrial en México">
-<meta property="og:description" content="Administración de portafolios, venta de grandes inmuebles y asesoría en selección de sitio para multinacionales que operan y crecen en México.">
+<meta property="og:title" content="Naves y Terrenos Industriales en México | Klarock">
+<meta property="og:description" content="Renta y venta de naves industriales y terrenos industriales en México. Klarock administra portafolios corporativos y asesora la selección de sitio.">
 <meta property="og:image" content="https://klarock.mx/assets/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -26,25 +26,87 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Klarock | Real Estate Corporativo e Industrial en México">
-<meta name="twitter:description" content="Administración de portafolios, venta de grandes inmuebles y asesoría en selección de sitio para multinacionales que operan y crecen en México.">
+<meta name="twitter:title" content="Naves y Terrenos Industriales en México | Klarock">
+<meta name="twitter:description" content="Renta y venta de naves industriales y terrenos industriales en México. Klarock administra portafolios corporativos y asesora la selección de sitio.">
 <meta name="twitter:image" content="https://klarock.mx/assets/images/og-image.png">
 
 <!-- Datos estructurados -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Klarock Corporate Real Estate",
-  "url": "https://klarock.mx/",
-  "logo": "https://klarock.mx/assets/images/logo.png",
-  "image": "https://klarock.mx/assets/images/logo.png",
-  "description": "Klarock administra portafolios corporativos, comercializa inmuebles industriales y comerciales, y asesora la selección de sitio y expansión de empresas globales en México.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "México"
-  },
-  "knowsLanguage": ["es", "en", "zh"]
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://klarock.mx/#organization",
+      "name": "Klarock Corporate Real Estate",
+      "alternateName": "Klarock",
+      "url": "https://klarock.mx/",
+      "logo": "https://klarock.mx/assets/images/logo.png",
+      "image": "https://klarock.mx/assets/images/og-image.png",
+      "description": "Renta y venta de naves industriales y terrenos industriales en México. Klarock administra portafolios corporativos y asesora la selección de sitio.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "knowsLanguage": [
+        "es",
+        "en",
+        "zh"
+      ],
+      "knowsAbout": [
+        "Naves industriales",
+        "Terrenos industriales",
+        "Parques industriales",
+        "Selección de sitio",
+        "Administración de portafolios corporativos",
+        "Nearshoring en México"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Administración de Portafolios Corporativos",
+              "description": "Gestión integral de portafolios industriales y corporativos."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Venta y Comercialización de Grandes Inmuebles",
+              "description": "Naves industriales, terrenos industriales, activos comerciales y oficinas Clase AAA."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asesoría en Selección de Sitio y Expansión",
+              "description": "Selección de sitio, dictamen de viabilidad y expansión de operaciones en México."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://klarock.mx/#website",
+      "url": "https://klarock.mx/",
+      "name": "Klarock",
+      "inLanguage": [
+        "es-MX",
+        "en-US",
+        "zh-Hans"
+      ],
+      "publisher": {
+        "@id": "https://klarock.mx/#organization"
+      }
+    }
+  ]
 }
 </script>
 
@@ -342,6 +404,8 @@ fbq('track', 'PageView');
       <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">Portafolio</p>
       <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">Propiedades disponibles</h2>
       <p class="mt-5 text-slate-300 leading-relaxed">Portafolio de activos industriales, comerciales y corporativos que administramos actualmente para nuestros clientes institucionales.</p>
+      <p class="mt-5 text-sm text-slate-400">Explora por ciudad: <a href="naves-industriales-guadalajara.html" class="text-gold-400 hover:text-gold-300">Guadalajara</a> · <a href="naves-industriales-san-luis-rio-colorado.html" class="text-gold-400 hover:text-gold-300">San Luis Río Colorado</a> · <a href="naves-industriales-nogales-sonora.html" class="text-gold-400 hover:text-gold-300">Nogales</a> · <a href="nave-industrial-clase-aaa-monterrey.html" class="text-gold-400 hover:text-gold-300">Monterrey</a> · <a href="naves-industriales-culiacan.html" class="text-gold-400 hover:text-gold-300">Culiacán</a></p>
+      <p class="mt-2 text-sm text-slate-400">Guías: <a href="naves-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Naves industriales en México</a> · <a href="terrenos-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Terrenos industriales en México</a></p>
     </div>
 
     <!-- Mapa de cobertura -->
@@ -542,6 +606,8 @@ fbq('track', 'PageView');
           <li><a href="#servicios" class="hover:text-gold-400">Administración de Portafolios</a></li>
           <li><a href="#servicios" class="hover:text-gold-400">Venta de Grandes Inmuebles</a></li>
           <li><a href="#servicios" class="hover:text-gold-400">Asesoría Industrial</a></li>
+          <li><a href="naves-industriales-mexico.html" class="hover:text-gold-400">Naves industriales en México</a></li>
+          <li><a href="terrenos-industriales-mexico.html" class="hover:text-gold-400">Terrenos industriales en México</a></li>
         </ul>
       </div>
       <div>

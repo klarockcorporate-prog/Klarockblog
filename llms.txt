@@ -1,0 +1,37 @@
+# Klarock Corporate Real Estate
+
+> Klarock es una firma de real estate corporativo e industrial en México. Renta y vende naves industriales y terrenos industriales, administra portafolios corporativos y asesora la selección de sitio y expansión de empresas globales en los corredores Frontera, Norte, Bajío, Centro y Pacífico. / Klarock is a corporate and industrial real estate firm in Mexico: industrial buildings and industrial land for lease and sale, corporate portfolio management and site selection advisory.
+
+Sitio / Site: https://klarock.mx/
+Idiomas / Languages: español (default), English, 中文
+Datos de inventario: superficies, rentas y especificaciones provienen de las fichas publicadas; confirma disponibilidad con un socio director.
+
+## Inventario y guías (es)
+- [Naves industriales en renta y venta en México](https://klarock.mx/naves-industriales-mexico.html): guía y todo el inventario de naves, por ciudad
+- [Terrenos industriales en venta en México](https://klarock.mx/terrenos-industriales-mexico.html): cómo evaluar un terreno industrial y cómo trabajamos la selección de sitio
+- [Naves industriales en renta en Guadalajara (Zapopan y Tonalá)](https://klarock.mx/naves-industriales-guadalajara.html): 11 naves de 577 a 1,976 m²
+- [Naves industriales en San Luis Río Colorado, Sonora](https://klarock.mx/naves-industriales-san-luis-rio-colorado.html): 2 naves Clase A
+- [Naves industriales en renta en Nogales, Sonora](https://klarock.mx/naves-industriales-nogales-sonora.html): 8 naves en Parque Industrial San Ramón
+- [Nave industrial Clase AAA en renta, Monterrey (Ciénega de Flores)](https://klarock.mx/nave-industrial-clase-aaa-monterrey.html): 67,220 m² rentables
+- [Naves industriales y terrenos en Culiacán, Sinaloa](https://klarock.mx/naves-industriales-culiacan.html)
+
+## Inventory and guides (en)
+- [Industrial buildings for lease and sale in Mexico](https://klarock.mx/naves-industriales-mexico-en.html)
+- [Industrial land for sale in Mexico](https://klarock.mx/terrenos-industriales-mexico-en.html)
+- [Industrial buildings in Guadalajara](https://klarock.mx/naves-industriales-guadalajara-en.html)
+- [Industrial buildings in San Luis Río Colorado](https://klarock.mx/naves-industriales-san-luis-rio-colorado-en.html)
+- [Industrial buildings in Nogales](https://klarock.mx/naves-industriales-nogales-sonora-en.html)
+- [Class AAA building in Monterrey](https://klarock.mx/nave-industrial-clase-aaa-monterrey-en.html)
+- [Industrial buildings and land in Culiacán](https://klarock.mx/naves-industriales-culiacan-en.html)
+
+## Servicios / Services
+- [Administración de Portafolios Corporativos](https://klarock.mx/servicio-administracion-portafolios.html)
+- [Venta y Comercialización de Grandes Inmuebles](https://klarock.mx/servicio-venta-inmuebles.html)
+- [Asesoría en Selección de Sitio y Expansión](https://klarock.mx/servicio-asesoria-industrial.html)
+
+## Análisis de mercado / Market insights
+- [Blog e Insights](https://klarock.mx/blog.html): análisis de mercados industriales y corporativos de México
+- [Insights (English)](https://klarock.mx/blog-en.html)
+
+## Contacto / Contact
+- [Formulario de contacto](https://klarock.mx/index.html#contacto): un socio director responde en menos de 24 horas hábiles
