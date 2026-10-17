@@ -612,12 +612,13 @@ fbq('track', 'PageView');
   }));
 
   // ===== 房源：数据 + 筛选 =====
-  const PROPERTY_TYPES = ['工业厂房', '工业用地', '商业用地', '甲级写字楼', '商业资产'];
+  const PROPERTY_TYPES = ['工业厂房', '工业用地', '商业用地', '多用途土地', '甲级写字楼', '商业资产'];
   const CORRIDORS = ['边境走廊', '北部走廊', '巴希奥走廊', '中部走廊', '太平洋走廊'];
 
   const TYPE_ICONS = {
     '工业厂房': 'M3 21h18M5 21V7l8-4v18M13 21V11l6 3v7M9 9h1m-1 4h1m-1 4h1',
     '工业用地': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
+    '多用途土地': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
     '商业用地': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
     '甲级写字楼': 'M3 21h18M6 21V9l6-4 6 4v12M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01',
     '商业资产': 'M3 9l1-5h16l1 5M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9M4 9h16M9 21v-6h6v6',
@@ -668,7 +669,7 @@ fbq('track', 'PageView');
         'assets/images/properties/terreno-camaron-sabalo-mazatlan/aerial-lotes.jpeg',
         'assets/images/properties/terreno-camaron-sabalo-mazatlan/ubicacion-zona-dorada.jpeg',
       ] },
-    { name: '38-Hectare Land — Tijuana–Rosarito Free Highway', city: 'Tijuana, Baja California（下加利福尼亚州蒂华纳）', size: '38公顷（380,000平方米）', type: '商业用地', corridor: '边境走廊', status: '现房可售', mode: '出售', url: 'terreno-38-hectareas-tijuana-rosarito-zh.html', lat: 32.4176, lng: -117.0403,
+    { name: '38-Hectare Land — Tijuana–Rosarito Free Highway', city: 'Tijuana, Baja California（下加利福尼亚州蒂华纳）', size: '38公顷（380,000平方米）', type: '多用途土地', corridor: '边境走廊', status: '现房可售', mode: '出售', url: 'terreno-38-hectareas-tijuana-rosarito-zh.html', lat: 32.4176, lng: -117.0403,
       photos: [
         'assets/images/properties/terreno-38-hectareas-tijuana-rosarito/aerial-poligono.jpeg',
         'assets/images/properties/terreno-38-hectareas-tijuana-rosarito/vista-3d-oblicua.jpeg',

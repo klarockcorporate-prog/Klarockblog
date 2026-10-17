@@ -675,12 +675,13 @@ fbq('track', 'PageView');
   // ===== Propiedades: datos + filtros =====
   // Para cargar el inventario real, reemplaza este arreglo por las ~30 propiedades reales.
   // Cada propiedad usa: name, city, size, type (uno de PROPERTY_TYPES), corridor (uno de CORRIDORS), status ('Disponible' | 'En negociación' | 'Rentada'), mode ('Venta' | 'Renta' | 'Venta / Renta').
-  const PROPERTY_TYPES = ['Nave Industrial', 'Terreno Industrial', 'Terreno Comercial', 'Oficina Corporativa AAA', 'Activo Comercial'];
+  const PROPERTY_TYPES = ['Nave Industrial', 'Terreno Industrial', 'Terreno Comercial', 'Terreno de Uso Flexible', 'Oficina Corporativa AAA', 'Activo Comercial'];
   const CORRIDORS = ['Frontera', 'Norte', 'Bajío', 'Centro', 'Pacífico'];
 
   const TYPE_ICONS = {
     'Nave Industrial': 'M3 21h18M5 21V7l8-4v18M13 21V11l6 3v7M9 9h1m-1 4h1m-1 4h1',
     'Terreno Industrial': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
+    'Terreno de Uso Flexible': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
     'Terreno Comercial': 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.83V8.05a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
     'Oficina Corporativa AAA': 'M3 21h18M6 21V9l6-4 6 4v12M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01',
     'Activo Comercial': 'M3 9l1-5h16l1 5M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9M4 9h16M9 21v-6h6v6',
@@ -731,7 +732,7 @@ fbq('track', 'PageView');
         'assets/images/properties/terreno-camaron-sabalo-mazatlan/aerial-lotes.jpeg',
         'assets/images/properties/terreno-camaron-sabalo-mazatlan/ubicacion-zona-dorada.jpeg',
       ] },
-    { name: 'Terreno de 38 Hectáreas — Carretera Libre Tijuana–Rosarito', city: 'Tijuana, Baja California', size: '38 hectáreas (380,000 m²)', type: 'Terreno Comercial', corridor: 'Frontera', status: 'Disponible', mode: 'Venta', url: 'terreno-38-hectareas-tijuana-rosarito.html', lat: 32.4176, lng: -117.0403,
+    { name: 'Terreno de 38 Hectáreas — Carretera Libre Tijuana–Rosarito', city: 'Tijuana, Baja California', size: '38 hectáreas (380,000 m²)', type: 'Terreno de Uso Flexible', corridor: 'Frontera', status: 'Disponible', mode: 'Venta', url: 'terreno-38-hectareas-tijuana-rosarito.html', lat: 32.4176, lng: -117.0403,
       photos: [
         'assets/images/properties/terreno-38-hectareas-tijuana-rosarito/aerial-poligono.jpeg',
         'assets/images/properties/terreno-38-hectareas-tijuana-rosarito/vista-3d-oblicua.jpeg',

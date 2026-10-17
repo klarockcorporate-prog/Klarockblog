@@ -14,6 +14,7 @@ Datos de inventario: superficies, rentas y especificaciones provienen de las fic
 - [Naves industriales en renta en Nogales, Sonora](https://klarock.mx/naves-industriales-nogales-sonora.html): 8 naves en Parque Industrial San Ramón
 - [Nave industrial Clase AAA en renta, Monterrey (Ciénega de Flores)](https://klarock.mx/nave-industrial-clase-aaa-monterrey.html): 67,220 m² rentables
 - [Naves industriales y terrenos en Culiacán, Sinaloa](https://klarock.mx/naves-industriales-culiacan.html)
+- [Terreno de 38 hectáreas en Tijuana–Rosarito](https://klarock.mx/terreno-38-hectareas-tijuana-rosarito.html): vocación comercial, industrial o habitacional (sujeta a uso de suelo); 150 USD/m² el predio completo
 
 ## Inventory and guides (en)
 - [Industrial buildings for lease and sale in Mexico](https://klarock.mx/naves-industriales-mexico-en.html)
@@ -23,6 +24,7 @@ Datos de inventario: superficies, rentas y especificaciones provienen de las fic
 - [Industrial buildings in Nogales](https://klarock.mx/naves-industriales-nogales-sonora-en.html)
 - [Class AAA building in Monterrey](https://klarock.mx/nave-industrial-clase-aaa-monterrey-en.html)
 - [Industrial buildings and land in Culiacán](https://klarock.mx/naves-industriales-culiacan-en.html)
+- [38-hectare land in Tijuana–Rosarito](https://klarock.mx/terreno-38-hectareas-tijuana-rosarito-en.html): commercial, industrial or residential use (subject to land use); USD 150/m² for the whole parcel
 
 ## Servicios / Services
 - [Administración de Portafolios Corporativos](https://klarock.mx/servicio-administracion-portafolios.html)
