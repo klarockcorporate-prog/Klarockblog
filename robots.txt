@@ -1,4 +1,71 @@
+# Klarock Corporate Real Estate - se permite a buscadores y a rastreadores/asistentes de IA.
 User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT): indice de busqueda, navegacion a peticion del usuario y entrenamiento
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google: Gemini y AI Overviews usan el indice de Googlebot; Google-Extended controla su uso en Gemini
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft (Bing y Copilot), Apple, Meta, Amazon, DuckDuckGo
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# Otros asistentes y conjuntos de datos abiertos (Mistral, Cohere, You.com, Common Crawl)
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://klarock.mx/sitemap.xml
