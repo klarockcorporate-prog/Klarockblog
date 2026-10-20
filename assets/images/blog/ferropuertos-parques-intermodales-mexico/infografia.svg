@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">INFRAESTRUCTURA INTERMODAL · MERCADO INDUSTRIAL</text>
+  <text x="80" y="216" fill="#ffffff" font-size="28" font-weight="600">Ferropuertos y parques intermodales:</text>
+  <text x="80" y="256" fill="#ffffff" font-size="28" font-weight="600">tren, puerto y planta en un mismo sitio</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Cada vez pesa más qué tan bien se conecta un sitio industrial con el tren y con el puerto</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <text x="80" y="380" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">1 · QUÉ ES CADA UNO</text>
+  <g transform="translate(80,400)"><rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="42" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">PARQUE INTERMODAL</text>
+    <text x="28" y="86" fill="#ffffff" font-size="26" font-weight="700">Mueve carga entre modos</text>
+    <text x="28" y="114" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Desarrollo diseñado para pasar la carga entre tren y</text>
+    <text x="28" y="132" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">camión sin coordinar cada traspaso por separado</text></g>
+  <g transform="translate(610,400)"><rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.7"/>
+    <text x="28" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">FERROPUERTO</text>
+    <text x="28" y="86" fill="#ffffff" font-size="26" font-weight="700">Conexión ferroviaria directa</text>
+    <text x="28" y="114" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Su pieza clave es la espuela: el ramal de vía que llega</text>
+    <text x="28" y="132" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">al predio y permite cargar o descargar vagones</text></g>
+
+  <text x="80" y="620" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">2 · POR QUÉ IMPORTA AHORA</text>
+  <g transform="translate(80,640)"><rect width="340" height="190" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="22" y="48" fill="#d4b45f" font-size="30" font-weight="700">01</text><text x="22" y="86" fill="#ffffff" font-size="18" font-weight="700">Cambió el mapa</text><text x="22" y="108" fill="#ffffff" font-size="18" font-weight="700">de la manufactura</text><text x="22" y="140" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">El nearshoring mueve proyectos a corredores</text><text x="22" y="158" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">con acceso a EE. UU. y a los puertos</text></g>
+  <g transform="translate(440,640)"><rect width="340" height="190" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="22" y="48" fill="#d4b45f" font-size="30" font-weight="700">02</text><text x="22" y="86" fill="#ffffff" font-size="18" font-weight="700">Una segunda opción</text><text x="22" y="108" fill="#ffffff" font-size="18" font-weight="700">frente al camión</text><text x="22" y="140" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Diésel, operadores y cruces saturados: el tren</text><text x="22" y="158" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">es alternativa para carga pesada o de volumen</text></g>
+  <g transform="translate(800,640)"><rect width="340" height="190" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="22" y="48" fill="#d4b45f" font-size="30" font-weight="700">03</text><text x="22" y="86" fill="#ffffff" font-size="18" font-weight="700">Corredores</text><text x="22" y="108" fill="#ffffff" font-size="18" font-weight="700">en formación</text><text x="22" y="140" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Istmo de Tehuantepec y puertos secos como</text><text x="22" y="158" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">el de Celaya, Guanajuato</text></g>
+
+  <text x="80" y="900" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">3 · NO TODO PARQUE CERCA DE LAS VÍAS ES INTERMODAL</text>
+  <g transform="translate(80,920)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">1</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Espuela construida y certificada</text><text x="440" y="36" fill="#9aa5b1" font-size="14" font-family="Arial, sans-serif">Con la certificación del operador ferroviario</text></g>
+  <g transform="translate(80,988)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">2</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Patio de maniobras</text><text x="440" y="36" fill="#9aa5b1" font-size="14" font-family="Arial, sans-serif">Espacio para posicionar y mover vagones</text></g>
+  <g transform="translate(80,1056)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">3</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Acceso a carretera y a puerto</text><text x="440" y="36" fill="#9aa5b1" font-size="14" font-family="Arial, sans-serif">El último tramo sigue siendo camión: debe ser eficiente</text></g>
+
+  <text x="80" y="1160" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">4 · LA CIFRA A VIGILAR</text>
+  <g transform="translate(80,1180)"><rect width="1040" height="96" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="66" fill="#d4b45f" font-size="50" font-weight="700">~86%</text>
+    <text x="210" y="42" fill="#ffffff" font-size="16" font-weight="700" font-family="Arial, sans-serif">de la carga ferroviaria del primer semestre de 2024 la concentraron Ferromex y CPKC</text>
+    <text x="210" y="66" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Pocos operadores: menos competencia en tarifas. Fuente: Info-Transportes.</text></g>
+
+  <g transform="translate(80,1304)"><rect width="1040" height="110" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.6"/>
+    <text x="28" y="40" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA LECTURA KLAROCK</text>
+    <text x="28" y="74" fill="#ffffff" font-size="21" font-weight="600">Los sitios con conexión ferroviaria real y certificada son escasos:</text>
+    <text x="28" y="98" fill="#ffffff" font-size="21" font-weight="600">esa escasez es una ventaja estructural frente a naves sin tren.</text></g>
+
+  <text x="80" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">klarock.mx · Real estate corporativo e industrial en México</text>
+  <text x="1120" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif" text-anchor="end">Análisis Klarock · 2026</text>
+</svg>

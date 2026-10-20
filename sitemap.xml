@@ -1409,4 +1409,33 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://klarock.mx/blog-ferropuertos-parques-intermodales-mexico.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/blog-ferropuertos-parques-intermodales-mexico.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/blog-ferropuertos-parques-intermodales-mexico.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://klarock.mx/aviso-privacidad.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/aviso-privacidad.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://klarock.mx/aviso-privacidad-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/aviso-privacidad.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://klarock.mx/aviso-privacidad-en.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/aviso-privacidad.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://klarock.mx/aviso-privacidad-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/aviso-privacidad.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
