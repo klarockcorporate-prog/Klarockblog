@@ -66,6 +66,8 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500});
+  try { if (localStorage.getItem('klarock_cookie_consent') === 'granted') gtag('consent', 'update', {ad_storage: 'granted', analytics_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted'}); } catch (e) {}
   gtag('js', new Date());
   gtag('config', 'G-8R4KR50Q9C');
 </script>
@@ -76,7 +78,9 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('consent', 'revoke');
 fbq('init', '288640598135718');
+try { if (localStorage.getItem('klarock_cookie_consent') === 'granted') fbq('consent', 'grant'); } catch (e) {}
 fbq('track', 'PageView');
 </script>
 </head>
@@ -165,6 +169,7 @@ fbq('track', 'PageView');
   <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span><strong class="text-white">Reproductor de YouTube incrustado:</strong> al reproducir un video, Google puede recopilar datos conforme a su propia política de privacidad.</span></li>
 </ul>
 <p class="text-slate-300 leading-relaxed mb-4">Puedes deshabilitar las cookies en la configuración de tu navegador, usar el complemento de inhabilitación de Google Analytics o ajustar tus preferencias de anuncios en Meta. Al hacerlo, algunas funciones del sitio podrían verse afectadas.</p>
+<p class="text-slate-300 leading-relaxed mb-4">Al entrar al sitio te mostramos un aviso para aceptar o rechazar las cookies de analítica y publicidad. Hasta que aceptes, no se activan; puedes cambiar tu decisión en cualquier momento con el enlace “Cookies” del pie de página.</p>
 <h2 class="font-serif text-2xl text-white mt-10 mb-4">5. Encargados, proveedores y transferencias</h2>
 <p class="text-slate-300 leading-relaxed mb-4">Para operar el sitio usamos proveedores que tratan datos por cuenta de Klarock y cuyos servidores pueden estar fuera de México, principalmente en Estados Unidos: Formspree (recepción del formulario), Netlify (alojamiento del sitio), Google (analítica y YouTube) y Meta (Pixel).</p>
 <p class="text-slate-300 leading-relaxed mb-4">No vendemos tus datos personales. Solo los compartimos con terceros distintos de los anteriores (i) con el propietario, desarrollador o representante del inmueble, para atender tu solicitud; (ii) cuando lo exija una autoridad competente; o (iii) con tu consentimiento. Al enviar el formulario aceptas estos tratamientos y las transferencias necesarias para atender tu solicitud.</p>
@@ -248,5 +253,6 @@ fbq('track', 'PageView');
     }
   }));
 </script>
+<script src="assets/js/cookie-consent.js" defer></script>
 </body>
 </html>
