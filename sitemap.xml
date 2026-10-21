@@ -1458,4 +1458,13 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://klarock.mx/blog-ia-naves-industriales-especificaciones.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/blog-ia-naves-industriales-especificaciones.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/blog-ia-naves-industriales-especificaciones.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

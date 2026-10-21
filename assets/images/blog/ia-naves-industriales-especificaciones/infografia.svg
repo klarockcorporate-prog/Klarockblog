@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">INTELIGENCIA ARTIFICIAL · NAVES INDUSTRIALES</text>
+  <text x="80" y="216" fill="#ffffff" font-size="28" font-weight="600">Naves industriales en la era de la IA:</text>
+  <text x="80" y="256" fill="#ffffff" font-size="28" font-weight="600">las especificaciones difíciles de cambiar</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Altura, piso y energía se deciden antes de firmar, no después</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <text x="80" y="380" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">1 · POR DÓNDE LLEGA LA IA A LA NAVE</text>
+  <g transform="translate(80,400)"><rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="42" fill="#9aa5b1" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA OPERACIÓN</text>
+    <text x="28" y="86" fill="#ffffff" font-size="24" font-weight="700">Robots, AS/RS y cómputo local</text>
+    <text x="28" y="114" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">AMR, montacargas autónomos, transportadores</text>
+    <text x="28" y="132" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">y servidores de IA en el borde</text></g>
+  <g transform="translate(610,400)"><rect width="510" height="150" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.7"/>
+    <text x="28" y="42" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA DECISIÓN</text>
+    <text x="28" y="86" fill="#ffffff" font-size="24" font-weight="700">Ubicación y diseño asistidos</text>
+    <text x="28" y="114" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Herramientas de IA para evaluar terrenos,</text>
+    <text x="28" y="132" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">tráfico y viabilidad antes de construir</text></g>
+
+  <text x="80" y="620" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">2 · LAS 5 ESPECIFICACIONES QUE MÁS PESAN</text>
+  <g transform="translate(80,640)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">1</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Altura libre</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">≥ 32 ft (≈ 9.8 m) en operaciones automatizadas · 40 ft+ (≈ 12.2 m) en AS/RS</text></g>
+  <g transform="translate(80,708)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">2</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Piso (planicidad y nivel)</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Más exigente con AS/RS y robótica; las losas existentes pueden requerir rectificado</text></g>
+  <g transform="translate(80,776)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">3</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Energía</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">AS/RS: alta (transformador, trifásico) · AMR: carga y circuitos · IA local: UPS</text></g>
+  <g transform="translate(80,844)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">4</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Conectividad</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Wi-Fi 6/6E, fibra de alta velocidad y sala de servidores o cómputo en el borde</text></g>
+  <g transform="translate(80,912)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">5</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Capacidad y redundancia</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Más potencia, respaldo eléctrico y control de temperatura (NAIOP)</text></g>
+
+  <text x="80" y="1030" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">3 · PLAZOS HASTA OCUPAR (REFERENCIA DE EE. UU.)</text>
+  <g transform="translate(80,1050)"><rect width="510" height="100" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="52" fill="#d4b45f" font-size="34" font-weight="700">3–12 meses</text>
+    <text x="28" y="80" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Adecuar una nave existente</text></g>
+  <g transform="translate(610,1050)"><rect width="510" height="100" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="52" fill="#d4b45f" font-size="34" font-weight="700">18–36 meses</text>
+    <text x="28" y="80" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Proyecto a la medida (build to suit), para usos de 10 años o más</text></g>
+
+  <text x="80" y="1190" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">4 · ADOPCIÓN EN MÉXICO</text>
+  <g transform="translate(80,1210)"><rect width="1040" height="82" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="28" y="56" fill="#d4b45f" font-size="40" font-weight="700">~1 de 4</text>
+    <text x="230" y="36" fill="#ffffff" font-size="16" font-weight="700" font-family="Arial, sans-serif">empresas con más de 100 trabajadores usa o planea usar IA (Banco de México)</text>
+    <text x="230" y="60" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La mayoría sigue en etapa de prueba: la presión sobre las naves crecerá de forma gradual.</text></g>
+
+  <g transform="translate(80,1320)"><rect width="1040" height="100" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.6"/>
+    <text x="28" y="36" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA LECTURA KLAROCK</text>
+    <text x="28" y="66" fill="#ffffff" font-size="21" font-weight="600">Altura, piso y energía son lo más caro de cambiar después:</text>
+    <text x="28" y="90" fill="#ffffff" font-size="21" font-weight="600">se revisan antes de firmar, junto con el precio.</text></g>
+
+  <text x="80" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">klarock.mx · Real estate corporativo e industrial en México</text>
+  <text x="1120" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif" text-anchor="end">Análisis Klarock · 2026</text>
+</svg>
