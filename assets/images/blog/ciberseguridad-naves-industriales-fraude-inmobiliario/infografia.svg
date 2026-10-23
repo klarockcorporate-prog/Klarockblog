@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">CIBERSEGURIDAD · NAVES INDUSTRIALES</text>
+  <text x="80" y="216" fill="#ffffff" font-size="28" font-weight="600">Dónde está el riesgo real:</text>
+  <text x="80" y="256" fill="#ffffff" font-size="28" font-weight="600">la operación y la transacción</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Dos caminos distintos, ambos se previenen antes de firmar y antes de pagar</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <text x="80" y="380" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">1 · MÉXICO, 1S 2025 (FORTINET Y CHECK POINT)</text>
+  <g transform="translate(80,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">40,600 M</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">millones de intentos de ciberataque</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Segundo lugar de América Latina</text></g>
+  <g transform="translate(435,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">#1</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">manufactura, la más atacada</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Por segundo año consecutivo</text></g>
+  <g transform="translate(790,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">+80%</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">ataques semanales a manufactura</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">México, 2024 a 2025 (Check Point)</text></g>
+
+  <text x="80" y="570" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">2 · LA OPERACIÓN: ALMACENES AUTOMATIZADOS (MIT CTL)</text>
+  <g transform="translate(80,590)"><rect width="1040" height="130" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="24" y="62" fill="#d4b45f" font-size="44" font-weight="700">26</text>
+    <text x="100" y="42" fill="#ffffff" font-size="16" font-weight="700" font-family="Arial, sans-serif">vulnerabilidades en 5 tipos de interrupción</text>
+    <text x="100" y="66" fill="#c3cad9" font-size="13" font-family="Arial, sans-serif">Ciberataques · apagones y fallas de red · sabotaje · fallas de tecnología · accidentes</text>
+    <text x="100" y="92" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">La nube y los robots como servicio amplían la superficie de ataque</text>
+    <text x="100" y="112" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Respuesta: exigir estándares a proveedores, redundancia y procedimiento manual</text></g>
+
+  <text x="80" y="780" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">3 · LA TRANSACCIÓN: FRAUDE POR CORREO (FBI IC3 2025, EE. UU.)</text>
+  <g transform="translate(80,800)"><rect width="510" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">12,368</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">quejas por fraude inmobiliario</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Pérdidas de 275.1 millones de dólares</text></g>
+  <g transform="translate(610,800)"><rect width="510" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">24,768</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">quejas por correo empresarial comprometido (BEC)</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Cerca de 3,040 millones de dólares, todos los sectores</text></g>
+
+  <text x="80" y="970" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">4 · QUÉ REVISAR ANTES DE FIRMAR Y ANTES DE PAGAR</text>
+  <g transform="translate(80,990)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">1</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Doble acceso</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Dos entradas de fibra y respaldo de energía en la nave</text></g>
+  <g transform="translate(80,1058)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">2</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Redes separadas</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Operación, oficinas y sistemas del edificio en redes distintas</text></g>
+  <g transform="translate(80,1126)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">3</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Proveedores</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Quién administra el acceso remoto y qué estándares exige</text></g>
+  <g transform="translate(80,1194)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">4</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Plan manual</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Cómo se opera el día que el sistema no funciona</text></g>
+  <g transform="translate(80,1262)"><rect width="1040" height="58" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="36" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">5</text><text x="60" y="36" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Pagos</text><text x="320" y="36" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Cambio de cuenta bancaria: se confirma por llamada, siempre</text></g>
+
+  <g transform="translate(80,1340)"><rect width="1040" height="86" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.6"/>
+    <text x="28" y="34" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA LECTURA KLAROCK</text>
+    <text x="28" y="66" fill="#ffffff" font-size="20" font-weight="600">Empieza en el inmueble y en el proceso, no solo en un software.</text></g>
+
+  <text x="80" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">klarock.mx · Real estate corporativo e industrial en México</text>
+  <text x="1120" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif" text-anchor="end">Análisis Klarock · 2026</text>
+</svg>

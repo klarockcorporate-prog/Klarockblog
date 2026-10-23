@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1626">
+<title>Ciberseguridad en Naves Industriales y Fraude Inmobiliario | Klarock</title>
+<meta name="description" content="Dónde está el riesgo cibernético en una nave industrial: sistemas de almacén, redes y fraude en pagos, con datos de Fortinet, MIT y el FBI.">
+<link rel="canonical" href="https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html">
+<link rel="alternate" hreflang="es" href="https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html">
+<link rel="alternate" hreflang="x-default" href="https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Klarock Corporate Real Estate">
+<meta property="og:title" content="Ciberseguridad en Naves Industriales y Fraude Inmobiliario | Klarock">
+<meta property="og:description" content="Dónde está el riesgo cibernético en una nave industrial: sistemas de almacén, redes y fraude en pagos, con datos de Fortinet, MIT y el FBI.">
+<meta property="og:image" content="https://klarock.mx/assets/images/blog/ciberseguridad-naves-industriales-fraude-inmobiliario/infografia.svg">
+<meta property="og:url" content="https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ciberseguridad en Naves Industriales y Fraude Inmobiliario | Klarock">
+<meta name="twitter:description" content="Dónde está el riesgo cibernético en una nave industrial: sistemas de almacén, redes y fraude en pagos, con datos de Fortinet, MIT y el FBI.">
+<meta name="twitter:image" content="https://klarock.mx/assets/images/blog/ciberseguridad-naves-industriales-fraude-inmobiliario/infografia.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ciberseguridad en naves industriales y operaciones inmobiliarias: dónde está el riesgo real",
+  "description": "Dónde está el riesgo cibernético en una nave industrial: sistemas de almacén, redes y fraude en pagos, con datos de Fortinet, MIT y el FBI.",
+  "image": "https://klarock.mx/assets/images/blog/ciberseguridad-naves-industriales-fraude-inmobiliario/infografia.svg",
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "url": "https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html",
+  "mainEntityOfPage": "https://klarock.mx/blog-ciberseguridad-naves-industriales-fraude-inmobiliario.html",
+  "inLanguage": "es-MX",
+  "author": {
+    "@type": "Organization",
+    "name": "Klarock Corporate Real Estate",
+    "url": "https://klarock.mx/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Klarock Corporate Real Estate",
+    "url": "https://klarock.mx/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://klarock.mx/assets/images/logo.png"
+    }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0b1626; }
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(212,180,95,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,180,95,0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .card-hover { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(212,180,95,0.5); box-shadow: 0 20px 40px -20px rgba(0,0,0,0.6); }
+  .nav-blur { backdrop-filter: blur(10px); }
+  ::selection { background: #d4b45f; color: #0b1626; }
+</style>
+
+<link rel="stylesheet" href="assets/css/tailwind.css">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8R4KR50Q9C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500});
+  try { if (localStorage.getItem('klarock_cookie_consent') === 'granted') gtag('consent', 'update', {ad_storage: 'granted', analytics_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted'}); } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', 'G-8R4KR50Q9C');
+</script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('consent', 'revoke');
+fbq('init', '288640598135718');
+try { if (localStorage.getItem('klarock_cookie_consent') === 'granted') fbq('consent', 'grant'); } catch (e) {}
+fbq('track', 'PageView');
+</script>
+</head>
+<body class="bg-navy-900 text-slate-200 font-sans antialiased">
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-gold-500 focus:text-navy-950 focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold">Saltar al contenido</a>
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 border-b border-white/0 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-12 w-auto" onerror="this.style.display='none'">
+    </a>
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-10 text-sm font-medium text-slate-300 whitespace-nowrap">
+      <a href="index.html#servicios" class="hover:text-gold-400 transition-colors">Servicios</a>
+      <a href="index.html#propiedades" class="hover:text-gold-400 transition-colors">Propiedades</a>
+      <a href="index.html#mercados" class="hover:text-gold-400 transition-colors">Mercados</a>
+      <a href="blog.html" class="hover:text-gold-400 transition-colors">Blog</a>
+      <a href="index.html#autoridad" class="hover:text-gold-400 transition-colors">Por qué Klarock</a>
+      <a href="index.html#metricas" class="hover:text-gold-400 transition-colors">Resultados</a>
+      <a href="index.html#contacto" class="hover:text-gold-400 transition-colors">Contacto</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3 text-sm font-medium text-slate-400 mr-2 whitespace-nowrap shrink-0">
+      <a href="index-zh.html" class="hover:text-gold-400 transition-colors">中文</a><span class="text-white/15">|</span><a href="index-en.html" class="hover:text-gold-400 transition-colors">EN</a>
+    </div>
+    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden flex items-center justify-center h-11 w-11 border border-gold-400/40 rounded-sm text-gold-400 bg-navy-950/60" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed top-20 inset-x-0 z-40 bg-navy-950 border-t border-white/10 px-6 py-8 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto">
+    <a href="index.html#servicios" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Servicios</a>
+    <a href="index.html#propiedades" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Propiedades</a>
+    <a href="index.html#mercados" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Mercados</a>
+    <a href="blog.html" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Blog</a>
+    <a href="index.html#autoridad" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Por qué Klarock</a>
+    <a href="index.html#metricas" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Resultados</a>
+    <a href="index.html#contacto" class="block py-3 text-base font-medium text-white hover:text-gold-400 border-b border-white/5">Contacto</a>
+    <div class="flex gap-4 py-3 text-base font-medium text-slate-400">
+      <a href="index-zh.html" class="hover:text-gold-400">中文</a>
+      <a href="index-en.html" class="hover:text-gold-400">EN</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="relative pt-36 pb-16 lg:pt-44 lg:pb-20 bg-grid overflow-hidden">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <a href="blog.html" class="text-sm text-gold-400 hover:text-gold-300">← Volver al blog</a>
+    <p class="mt-6 text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase">Industrial · 2026-10-23</p>
+    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white mt-4 leading-tight">Ciberseguridad en naves industriales y operaciones inmobiliarias: dónde está el riesgo real</h1>
+    <p class="mt-4 text-slate-300 text-lg leading-relaxed">Una nave industrial moderna ya no es solo un edificio: tiene robots, sistemas de almacén, cámaras, control de accesos y redes que se conectan con proveedores. Cada una de esas conexiones es una puerta.</p>
+  </div>
+</section>
+<section class="py-10 border-t border-white/5">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10 space-y-8">
+    <img src="assets/images/blog/ciberseguridad-naves-industriales-fraude-inmobiliario/infografia.svg" alt="Ciberseguridad en naves industriales y operaciones inmobiliarias: dónde está el riesgo real" class="w-full rounded-sm border border-white/10">
+    <div class="blog-body"><h2 class="font-serif text-2xl text-white mt-10 mb-4">Resumen ejecutivo</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Una nave industrial moderna ya no es solo un edificio: tiene robots, sistemas de almacén, cámaras, control de accesos y redes que se conectan con proveedores. Cada una de esas conexiones es una puerta. Al mismo tiempo, México es uno de los países más atacados de la región y la manufactura es el sector con más intentos de ataque.</p>
+<p class="text-slate-300 leading-relaxed mb-4">El riesgo para una empresa inmobiliaria o industrial viene por dos caminos distintos: <strong class="text-white">la operación</strong> (sistemas que se detienen o se secuestran) y <strong class="text-white">la transacción</strong> (correos falsos que desvían un pago). Los dos se previenen con decisiones sencillas, tomadas antes de firmar y antes de pagar.</p>
+<p class="text-slate-300 leading-relaxed mb-4">Este artículo resume qué dicen los datos más recientes, qué vulnerabilidades identifica la investigación sobre almacenes automatizados y qué revisar según cada perfil: inquilino, propietario e inversionista.</p>
+<h2 class="font-serif text-2xl text-white mt-10 mb-4">1. El contexto: México y el sector industrial</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Según Fortinet, México registró 40,600 millones de intentos de ciberataque en el primer semestre de 2025, el segundo lugar de América Latina. La manufactura fue, por segundo año consecutivo, la industria más atacada. Fortinet advierte además que los entornos de tecnología operativa (OT, los sistemas que controlan máquinas y procesos) ya no son un daño colateral, sino que empiezan a ser objetivos principales.</p>
+<p class="text-slate-300 leading-relaxed mb-4">Un análisis de Check Point sobre manufactura, citado por México Industry en abril de 2026, estima que los ataques semanales a ese sector en México aumentaron 80% entre 2024 y 2025, el sexto mayor aumento del mundo.</p>
+<p class="text-slate-300 leading-relaxed mb-4">Estas cifras miden intentos y tendencias, no daños confirmados. Lo que sí muestran es que quien opera en una nave industrial está en el sector que más atención recibe de los atacantes.</p>
+<h2 class="font-serif text-2xl text-white mt-10 mb-4">2. Qué se puede romper dentro de un almacén automatizado</h2>
+<p class="text-slate-300 leading-relaxed mb-4">El Centro de Transporte y Logística del MIT (Rodríguez García, Betts y Ponce, febrero de 2025) estudió los almacenes altamente automatizados y agrupó sus riesgos en cinco tipos de interrupción: ciberataques, apagones o fallas de red y energía, sabotaje, fallas de tecnología y accidentes. En total identificó 26 vulnerabilidades. Entre sus conclusiones:</p>
+<ul class="space-y-4 text-slate-300 leading-relaxed mb-2">
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>Los sistemas en la nube y los robots contratados como servicio (Robotics-as-a-Service) amplían la superficie de ataque.</span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>Los sistemas heredados limitan qué protecciones se pueden aplicar.</span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>Las recomendaciones centrales son exigir estándares de seguridad a los proveedores, capacitar al personal, construir redundancia en los sistemas críticos y mantener procedimientos manuales para seguir operando si la tecnología falla.</span></li>
+</ul>
+<p class="text-slate-300 leading-relaxed mb-4">La conexión con el edificio es directa. Redundancia significa más de un acceso de red y de energía; seguir operando significa también espacio y procesos para trabajar sin automatización. Lo vimos en nuestro análisis sobre <a href="blog-ia-naves-industriales-especificaciones.html" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">qué le pide la IA a una nave industrial</a>: conectividad, energía y respaldo se deciden desde la especificación del inmueble.</p>
+<h2 class="font-serif text-2xl text-white mt-10 mb-4">3. El otro riesgo: el fraude en la transacción</h2>
+<p class="text-slate-300 leading-relaxed mb-4">El segundo camino no toca ninguna máquina. Es el correo que parece venir de la contraparte y pide cambiar la cuenta de pago de una renta, un anticipo o una compraventa.</p>
+<p class="text-slate-300 leading-relaxed mb-4">La referencia más completa viene de Estados Unidos. El informe 2025 del Centro de Quejas de Delitos en Internet del FBI (IC3) registró 12,368 quejas por fraude inmobiliario, con pérdidas de 275.1 millones de dólares. Aparte, el fraude por correo empresarial comprometido (BEC) sumó 24,768 quejas y cerca de 3,040 millones de dólares. Esta segunda cifra incluye todos los sectores, no solo el inmobiliario.</p>
+<p class="text-slate-300 leading-relaxed mb-4">México no publica una estadística equivalente por sector, así que estos datos sirven como orden de magnitud, no como cifra local. La mecánica, sin embargo, no depende del país: un correo creíble, urgencia y un cambio de datos bancarios.</p>
+<h2 class="font-serif text-2xl text-white mt-10 mb-4">4. Qué revisar según tu perfil</h2>
+<ul class="space-y-4 text-slate-300 leading-relaxed mb-2">
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span><strong class="text-white">Inquilino.</strong> Antes de firmar, pregunta qué redes y accesos remotos usarán tus proveedores de automatización y quién los administra. Verifica que la nave ofrezca doble acceso de fibra, respaldo de energía y espacio para separar la red de operación de la red de oficinas. Define un procedimiento manual para el día en que el sistema no funcione.</span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span><strong class="text-white">Propietario o desarrollador.</strong> Documenta en la ficha la conectividad (entradas de fibra, cuartos de telecomunicaciones) y la energía disponible. Separa las redes de los sistemas del edificio (cámaras, control de accesos, climatización) de las de los inquilinos y limita el acceso remoto de contratistas.</span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span><strong class="text-white">Inversionista.</strong> Pregunta si el activo permite a un inquilino exigente cumplir sus propios requisitos de seguridad y redundancia. Un inmueble sin esas condiciones es más difícil de reposicionar.</span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span><strong class="text-white">Cualquiera que pague o cobre una operación.</strong> Confirma por llamada, a un número que ya tenías, cualquier cambio de datos bancarios. Protege el correo del dominio de tu empresa con autenticación en dos pasos y con los registros SPF, DKIM y DMARC, que dificultan que alguien envíe correos haciéndose pasar por ti.</span></li>
+</ul>
+<h2 class="font-serif text-2xl text-white mt-10 mb-4">5. Perspectiva Klarock</h2>
+<p class="text-slate-300 leading-relaxed mb-4">La ciberseguridad de una operación industrial no se resuelve con un software: empieza en el inmueble y en el proceso. Por eso, al comparar naves, recomendamos revisar la conectividad y la energía como parte de las especificaciones, y al cerrar una operación, verificar siempre los datos de pago por un segundo canal.</p>
+<p class="text-slate-300 leading-relaxed mb-4">Si su empresa evalúa una nave para operar con automatización o va a cerrar una operación inmobiliaria, el equipo de Klarock puede acompañarle en el análisis. Puede ver el inventario por ciudad en <a href="naves-industriales-mexico.html" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">naves industriales en México</a>.</p>
+<p class="text-slate-300 leading-relaxed mb-4"><em>Para una conversación sobre selección de sitio y especificaciones de naves, contáctenos al 668 189 4960.</em></p>
+<hr class="border-white/10 mt-12 mb-8"><h3 class="font-serif text-xl text-white mt-8 mb-3">Fuentes consultadas</h3>
+<ul class="space-y-3 text-sm text-slate-400 leading-relaxed">
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>Mexico Business News, "Mexico Records 40.6 Billion Cyberattacks Attempts in 1H25", con datos de Fortinet FortiGuard Labs (19 de agosto de 2025): <a href="https://mexicobusiness.news/cybersecurity/news/mexico-records-406-billion-cyberattacks-attempts-1h25" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">mexicobusiness.news</a></span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>México Industry, "México y el reto de la ciberseguridad industrial: ataques suben 80%", con datos del Manufacturing Threat Landscape 2025 de Check Point (17 de abril de 2026): <a href="https://mexicoindustry.com/noticia/mexico-y-el-reto-de-la-ciberseguridad-industrial-ataques-suben-80" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">mexicoindustry.com</a></span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>MIT Center for Transportation and Logistics, "Identifying the Key Vulnerabilities in the Warehouses of the Future" (28 de febrero de 2025): <a href="https://ctl.mit.edu/publications/identifying-key-vulnerabilities-warehouses-future" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">ctl.mit.edu</a></span></li>
+  <li class="flex gap-3"><span class="text-gold-400 shrink-0">&mdash;</span><span>HousingWire, "FBI cybercrime losses: real estate fraud hits $275M", sobre el informe 2025 del FBI IC3 (10 de abril de 2026): <a href="https://www.housingwire.com/articles/fbi-cybercrime-losses-real-estate-fraud-hits-275m/" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline-offset-2 hover:underline">housingwire.com</a></span></li>
+</ul></div>
+  </div>
+</section>
+<section class="py-16 bg-navy-950 border-t border-white/5 text-center mt-10">
+  <div class="max-w-2xl mx-auto px-6">
+    <h2 class="font-serif text-2xl lg:text-3xl text-white mb-3">¿Te interesa esta oportunidad?</h2>
+    <p class="text-slate-300 mb-7">Escríbenos y un socio director te contactará en menos de 24 horas hábiles.</p>
+    <a href="index.html#contacto" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">Contactar a un Socio Director</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-950 border-t border-white/10 pt-20 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
+      <div class="lg:col-span-2">
+        <img src="assets/images/logo.svg" alt="Klarock Corporate Real Estate" class="h-11 w-auto mb-5" onerror="this.style.display='none'">
+        <p class="text-sm text-slate-400 leading-relaxed max-w-sm">Real estate corporativo e industrial para las operaciones que están construyendo el futuro económico de México.</p>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold mb-4">Servicios</h4>
+        <ul class="space-y-3 text-sm text-slate-400">
+          <li><a href="index.html#servicios" class="hover:text-gold-400">Administración de Portafolios</a></li>
+          <li><a href="index.html#servicios" class="hover:text-gold-400">Venta de Grandes Inmuebles</a></li>
+          <li><a href="index.html#servicios" class="hover:text-gold-400">Asesoría Industrial</a></li>
+          <li><a href="naves-industriales-mexico.html" class="hover:text-gold-400">Naves industriales en México</a></li>
+          <li><a href="terrenos-industriales-mexico.html" class="hover:text-gold-400">Terrenos industriales en México</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold mb-4">Compañía</h4>
+        <ul class="space-y-3 text-sm text-slate-400">
+          <li><a href="index.html#autoridad" class="hover:text-gold-400">Por qué Klarock</a></li>
+          <li><a href="index.html#mercados" class="hover:text-gold-400">Mercados</a></li>
+          <li><a href="index.html#contacto" class="hover:text-gold-400">Contacto</a></li>
+          <li><a href="https://www.linkedin.com/company/grgrealty" target="_blank" rel="noopener noreferrer me" class="hover:text-gold-400">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@Klarockmedia" target="_blank" rel="noopener noreferrer me" class="hover:text-gold-400">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+      <p>© 2026 Klarock Corporate Real Estate. Todos los derechos reservados.</p>
+      <div class="flex gap-6">
+        <a href="aviso-privacidad.html" class="hover:text-gold-400">Aviso de Privacidad</a>
+        <a href="terminos-y-condiciones.html" class="hover:text-gold-400">Términos y Condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('bg-navy-950/95','nav-blur','border-white/10');
+    } else {
+      nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
+    }
+  });
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
+    nav.classList.toggle('bg-navy-950/95', !mobileMenu.classList.contains('hidden'));
+    nav.classList.toggle('nav-blur', !mobileMenu.classList.contains('hidden'));
+    nav.classList.toggle('border-white/10', !mobileMenu.classList.contains('hidden'));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    if (window.scrollY <= 20) {
+      nav.classList.remove('bg-navy-950/95','nav-blur','border-white/10');
+    }
+  }));
+</script>
+<script src="assets/js/cookie-consent.js" defer></script>
+</body>
+</html>
