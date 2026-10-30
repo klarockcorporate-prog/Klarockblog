@@ -165,6 +165,7 @@ fbq('init', '288640598135718');
 try { if (localStorage.getItem('klarock_cookie_consent') === 'granted') fbq('consent', 'grant'); } catch (e) {}
 fbq('track', 'PageView');
 </script>
+<link rel="stylesheet" href="assets/css/site-enhancements.css">
 </head>
 
 <body class="bg-navy-900 text-slate-200 font-sans antialiased">
@@ -229,13 +230,14 @@ fbq('track', 'PageView');
       Klarock gestiona portafolios corporativos, comercializa espacios comerciales y naves de gran escala, y diseña estrategias de renta y expansión para las multinacionales que operan y crecen en el país.
     </p>
     <div class="mt-10 flex flex-col sm:flex-row gap-4">
-      <a href="#contacto" class="inline-flex justify-center items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
-        Agenda una Consultoría Ejecutiva
+      <a href="#propiedades" class="inline-flex justify-center items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
+        Ver propiedades disponibles
       </a>
-      <a href="#servicios" class="inline-flex justify-center items-center gap-2 border border-white/20 hover:border-gold-400 text-white font-medium px-7 py-4 rounded-sm transition-colors">
-        Explora nuestro Portafolio Institucional
+      <a href="#contacto" class="inline-flex justify-center items-center gap-2 border border-white/20 hover:border-gold-400 text-white font-medium px-7 py-4 rounded-sm transition-colors">
+        Agenda una consultoría ejecutiva
       </a>
     </div>
+    <div class="kl-quick"><span>Explora por ciudad:</span><a href="nave-industrial-clase-aaa-monterrey.html">Monterrey</a><a href="naves-industriales-guadalajara.html">Guadalajara</a><a href="naves-industriales-culiacan.html">Culiacán</a><a href="naves-industriales-nogales-sonora.html">Nogales</a><a href="naves-industriales-san-luis-rio-colorado.html">San Luis Río Colorado</a><a href="terrenos-industriales-mexico.html">Terrenos</a></div>
 
     <!-- Trust metrics strip -->
     <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/10 pt-10">
@@ -289,6 +291,51 @@ fbq('track', 'PageView');
 </section>
 
 <!-- ============ AUTORIDAD / PROPUESTA DE VALOR ============ -->
+<section id="propiedades" class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mb-10">
+      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">Portafolio</p>
+      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">Propiedades disponibles</h2>
+      <p class="mt-5 text-slate-300 leading-relaxed">Portafolio de activos industriales, comerciales y corporativos que administramos actualmente para nuestros clientes institucionales.</p>
+      <p class="mt-5 text-sm text-slate-400">Explora por ciudad: <a href="naves-industriales-guadalajara.html" class="text-gold-400 hover:text-gold-300">Guadalajara</a> · <a href="naves-industriales-san-luis-rio-colorado.html" class="text-gold-400 hover:text-gold-300">San Luis Río Colorado</a> · <a href="naves-industriales-nogales-sonora.html" class="text-gold-400 hover:text-gold-300">Nogales</a> · <a href="nave-industrial-clase-aaa-monterrey.html" class="text-gold-400 hover:text-gold-300">Monterrey</a> · <a href="naves-industriales-culiacan.html" class="text-gold-400 hover:text-gold-300">Culiacán</a></p>
+      <p class="mt-2 text-sm text-slate-400">Guías: <a href="naves-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Naves industriales en México</a> · <a href="terrenos-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Terrenos industriales en México</a></p>
+    </div>
+
+    <!-- Mapa de cobertura -->
+    <div class="grid lg:grid-cols-5 gap-8 mb-16 items-stretch">
+      <div class="lg:col-span-2 border border-white/10 rounded-sm p-8 flex flex-col justify-center bg-navy-900">
+        <h3 class="font-serif text-2xl text-white mb-3">Cobertura nacional</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6">Nuestras propiedades activas se ubican en los corredores más estratégicos de México — desde la frontera con Estados Unidos hasta el Pacífico.</p>
+        <a href="#propiedades-grid" class="inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">Ver todas las propiedades ↓</a>
+      </div>
+      <div class="lg:col-span-3">
+        <div id="properties-map" class="h-80 lg:h-full min-h-[360px] rounded-sm overflow-hidden border border-white/10"></div>
+      </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="space-y-4 mb-12">
+      <div id="filtro-tipo" class="flex flex-wrap gap-2"></div>
+      <div id="filtro-corredor" class="flex flex-wrap gap-2"></div>
+    </div>
+
+    <p id="propiedades-count" class="text-sm text-slate-400 mb-6"></p>
+
+    <div id="propiedades-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+    <p id="propiedades-empty" class="hidden text-center text-slate-400 py-16 border border-dashed border-white/10 rounded-sm">
+      No hay propiedades que coincidan con ese filtro.
+    </p>
+
+    <div class="mt-16 text-center border-t border-white/10 pt-12">
+      <p class="text-slate-300 mb-5">¿No encuentras lo que buscas? Tenemos inventario off-market adicional.</p>
+      <a href="#contacto" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
+        Solicitar portafolio completo
+      </a>
+    </div>
+  </div>
+</section>
+
 <section id="autoridad" class="py-24 lg:py-32 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="max-w-2xl mb-16">
@@ -406,51 +453,6 @@ fbq('track', 'PageView');
 </section>
 
 <!-- ============ PROPIEDADES / LISTING ============ -->
-<section id="propiedades" class="py-24 lg:py-32 bg-navy-950 border-t border-white/5">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="max-w-2xl mb-10">
-      <p class="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase mb-4">Portafolio</p>
-      <h2 class="font-serif text-3xl lg:text-4xl text-white leading-tight">Propiedades disponibles</h2>
-      <p class="mt-5 text-slate-300 leading-relaxed">Portafolio de activos industriales, comerciales y corporativos que administramos actualmente para nuestros clientes institucionales.</p>
-      <p class="mt-5 text-sm text-slate-400">Explora por ciudad: <a href="naves-industriales-guadalajara.html" class="text-gold-400 hover:text-gold-300">Guadalajara</a> · <a href="naves-industriales-san-luis-rio-colorado.html" class="text-gold-400 hover:text-gold-300">San Luis Río Colorado</a> · <a href="naves-industriales-nogales-sonora.html" class="text-gold-400 hover:text-gold-300">Nogales</a> · <a href="nave-industrial-clase-aaa-monterrey.html" class="text-gold-400 hover:text-gold-300">Monterrey</a> · <a href="naves-industriales-culiacan.html" class="text-gold-400 hover:text-gold-300">Culiacán</a></p>
-      <p class="mt-2 text-sm text-slate-400">Guías: <a href="naves-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Naves industriales en México</a> · <a href="terrenos-industriales-mexico.html" class="text-gold-400 hover:text-gold-300">Terrenos industriales en México</a></p>
-    </div>
-
-    <!-- Mapa de cobertura -->
-    <div class="grid lg:grid-cols-5 gap-8 mb-16 items-stretch">
-      <div class="lg:col-span-2 border border-white/10 rounded-sm p-8 flex flex-col justify-center bg-navy-900">
-        <h3 class="font-serif text-2xl text-white mb-3">Cobertura nacional</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-6">Nuestras propiedades activas se ubican en los corredores más estratégicos de México — desde la frontera con Estados Unidos hasta el Pacífico.</p>
-        <a href="#propiedades-grid" class="inline-flex items-center gap-1 text-sm text-gold-400 hover:text-gold-300 font-medium">Ver todas las propiedades ↓</a>
-      </div>
-      <div class="lg:col-span-3">
-        <div id="properties-map" class="h-80 lg:h-full min-h-[360px] rounded-sm overflow-hidden border border-white/10"></div>
-      </div>
-    </div>
-
-    <!-- Filtros -->
-    <div class="space-y-4 mb-12">
-      <div id="filtro-tipo" class="flex flex-wrap gap-2"></div>
-      <div id="filtro-corredor" class="flex flex-wrap gap-2"></div>
-    </div>
-
-    <p id="propiedades-count" class="text-sm text-slate-400 mb-6"></p>
-
-    <div id="propiedades-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
-
-    <p id="propiedades-empty" class="hidden text-center text-slate-400 py-16 border border-dashed border-white/10 rounded-sm">
-      No hay propiedades que coincidan con ese filtro.
-    </p>
-
-    <div class="mt-16 text-center border-t border-white/10 pt-12">
-      <p class="text-slate-300 mb-5">¿No encuentras lo que buscas? Tenemos inventario off-market adicional.</p>
-      <a href="#contacto" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-4 rounded-sm transition-colors">
-        Solicitar portafolio completo
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ MERCADOS / CORREDORES ============ -->
 <section id="mercados" class="py-24 lg:py-32 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
@@ -979,5 +981,6 @@ fbq('track', 'PageView');
 </script>
 
 <script src="assets/js/cookie-consent.js" defer></script>
+<script src="assets/js/site-enhancements.js" defer></script>
 </body>
 </html>
