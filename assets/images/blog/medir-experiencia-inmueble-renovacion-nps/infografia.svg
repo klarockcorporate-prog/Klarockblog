@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0c37a"/>
+      <stop offset="100%" stop-color="#a5812f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <g stroke="#d4b45f" stroke-opacity="0.05">
+    <path d="M0,0 H1200 M0,48 H1200 M0,96 H1200 M0,144 H1200"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(80,58)">
+    <rect x="0" y="0" width="46" height="46" rx="6" fill="#c9a84c"/>
+    <g transform="translate(13,10) scale(0.32)">
+      <rect x="0" y="0" width="16" height="76" rx="3" fill="#0f2647"/>
+      <rect x="20" y="44" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="37" y="29" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="54" y="14" width="15" height="15" rx="3" fill="#0f2647"/>
+      <rect x="20" y="17" width="15" height="15" rx="3" fill="#0f2647"/>
+    </g>
+    <text x="62" y="20" fill="#f5f5f0" font-size="20" font-weight="600" letter-spacing="2">KLAROCK</text>
+    <text x="62" y="38" fill="#9aa5b1" font-size="9" letter-spacing="3" font-family="Arial, sans-serif">CORPORATE REAL ESTATE</text>
+  </g>
+
+  <text x="80" y="172" fill="#d4b45f" font-size="14" letter-spacing="4" font-family="Arial, sans-serif" font-weight="700">EXPERIENCIA DEL INMUEBLE · MEDICIÓN</text>
+  <text x="80" y="216" fill="#ffffff" font-size="28" font-weight="600">Cómo medir si la experiencia</text>
+  <text x="80" y="256" fill="#ffffff" font-size="28" font-weight="600">de un inmueble vale lo que cuesta</text>
+  <text x="80" y="292" fill="#c3cad9" font-size="16" font-family="Arial, sans-serif">Qué dice la evidencia y qué indicadores seguir, sin confundir lo que mide cada uno</text>
+  <rect x="80" y="316" width="120" height="4" fill="url(#goldbar)"/>
+
+  <text x="80" y="380" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">1 · LA EVIDENCIA (OFICINAS EN EE. UU., ERES 2023)</text>
+  <g transform="translate(80,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">55,951</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">inquilinos en 2,965 edificios</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Hu, Kok y Palacios</text></g>
+  <g transform="translate(435,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">+8.36%</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">disposición a renovar</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Por cada punto más de satisfacción (1 a 5)</text></g>
+  <g transform="translate(790,400)"><rect width="330" height="120" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/><text x="24" y="58" fill="#d4b45f" font-size="38" font-weight="700">−19.40%</text><text x="24" y="88" fill="#ffffff" font-size="14" font-weight="700" font-family="Arial, sans-serif">probabilidad de mudarse</text><text x="24" y="108" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Por cada punto más de satisfacción (1 a 5)</text></g>
+  <g transform="translate(80,540)"><rect width="1040" height="62" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.6"/>
+    <text x="24" y="28" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">ASOCIACIÓN, NO GARANTÍA</text>
+    <text x="24" y="50" fill="#ffffff" font-size="14" font-family="Arial, sans-serif">Con 10% más de satisfacción promedio del edificio: +0.66% de crecimiento de la renta efectiva. Efecto pequeño.</text></g>
+
+  <text x="80" y="650" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">2 · SIETE INDICADORES Y QUÉ MIDE CADA UNO</text>
+  <g transform="translate(80,666)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">1</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Renovación de contratos</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Renovados entre los que vencen; las salidas se registran aparte</text></g>
+  <g transform="translate(80,726)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">2</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Tiempo de permanencia</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Cuánto dura la relación con cada ocupante</text></g>
+  <g transform="translate(80,786)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">3</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">NPS</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">% promotores (9–10) − % detractores (0–6); de −100 a +100</text></g>
+  <g transform="translate(80,846)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">4</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Uso de amenidades</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Frecuencia y duración; uso alto no implica disposición a pagar</text></g>
+  <g transform="translate(80,906)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">5</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Ingresos por servicios</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Membresías, eventos y atención, contra su costo</text></g>
+  <g transform="translate(80,966)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">6</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Satisfacción percibida</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Encuestas; no sustituyen una medición directa de productividad</text></g>
+  <g transform="translate(80,1026)"><rect width="1040" height="52" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.25"/><text x="24" y="33" fill="#d4b45f" font-size="18" font-family="Georgia, serif" font-weight="700">7</text><text x="60" y="33" fill="#ffffff" font-size="15" font-weight="700" font-family="Arial, sans-serif">Ahorros operativos</text><text x="400" y="33" fill="#9aa5b1" font-size="13" font-family="Arial, sans-serif">Energía y mantenimiento, contra una base definida de antemano</text></g>
+
+  <text x="80" y="1110" fill="#d4b45f" font-size="13" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">3 · EJEMPLOS ILUSTRATIVOS</text>
+  <g transform="translate(80,1130)"><rect width="510" height="110" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="24" y="52" fill="#d4b45f" font-size="34" font-weight="700">NPS = +30</text>
+    <text x="24" y="78" fill="#ffffff" font-size="13" font-weight="700" font-family="Arial, sans-serif">50 respuestas: 25 promotores, 15 pasivos, 10 detractores</text>
+    <text x="24" y="96" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">50% promotores − 20% detractores</text></g>
+  <g transform="translate(610,1130)"><rect width="510" height="110" rx="4" fill="#16294a" stroke="#d4b45f" stroke-opacity="0.35"/>
+    <text x="24" y="52" fill="#d4b45f" font-size="34" font-weight="700">Renovación = 70%</text>
+    <text x="24" y="78" fill="#ffffff" font-size="13" font-weight="700" font-family="Arial, sans-serif">Vencen 40 contratos y se renuevan 28</text>
+    <text x="24" y="96" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">Las 12 salidas se anotan aparte, con su motivo</text></g>
+
+  <g transform="translate(80,1280)"><rect width="1040" height="100" rx="4" fill="#0f1f38" stroke="#d4b45f" stroke-opacity="0.6"/>
+    <text x="28" y="34" fill="#d4b45f" font-size="12" letter-spacing="2" font-family="Arial, sans-serif" font-weight="700">LA LECTURA KLAROCK</text>
+    <text x="28" y="62" fill="#ffffff" font-size="20" font-weight="600">Definir qué se mide antes de gastar, probar en pequeño</text>
+    <text x="28" y="86" fill="#ffffff" font-size="20" font-weight="600">y ampliar solo lo que los datos confirmen.</text></g>
+
+  <text x="80" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif">klarock.mx · Real estate corporativo e industrial en México</text>
+  <text x="1120" y="1456" fill="#9aa5b1" font-size="12" font-family="Arial, sans-serif" text-anchor="end">Análisis Klarock · 2026</text>
+</svg>
