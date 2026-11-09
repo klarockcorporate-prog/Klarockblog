@@ -214,8 +214,8 @@ fbq('track', 'PageView');
 
 <!-- ============ HERO ============ -->
 <section class="relative pt-40 pb-28 lg:pt-52 lg:pb-36 bg-grid hero-glow overflow-hidden">
-  <video data-hero autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-poster.jpg" aria-hidden="true" class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 h-full object-cover opacity-60" onerror="this.remove()">
-    <source src="assets/video/hero-intro.mp4" type="video/mp4">
+  <video data-hero muted loop playsinline preload="metadata" poster="assets/images/hero-poster.jpg" aria-hidden="true" class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 h-full object-cover opacity-60" onerror="this.remove()">
+    <source data-src="assets/video/hero-intro.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-y-0 right-0 w-full sm:w-2/3 lg:w-2/5 bg-gradient-to-r from-navy-900 via-navy-900/40 to-transparent"></div>
   <div class="absolute inset-0 bg-navy-900/30"></div>
@@ -643,12 +643,19 @@ fbq('track', 'PageView');
 </footer>
 
 <script>
-  // Hero: omitir el video si el usuario ahorra datos o prefiere menos movimiento
+  // Hero: el video solo se descarga en pantallas amplias, sin ahorro de datos y sin "reducir movimiento"; en celular queda la imagen de portada
   (function () {
     var v = document.querySelector('video[data-hero]');
     if (!v) return;
-    if (navigator.connection && navigator.connection.saveData) { v.remove(); return; }
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+    var s = v.querySelector('source[data-src]');
+    if (!s) return;
+    var save = navigator.connection && navigator.connection.saveData;
+    var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var wide = window.matchMedia('(min-width: 768px)').matches;
+    if (!wide || save || calm) return;
+    s.src = s.getAttribute('data-src');
+    v.load();
+    var p = v.play(); if (p && p.catch) p.catch(function () {});
   })();
 </script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
