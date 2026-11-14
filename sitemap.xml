@@ -1504,4 +1504,23 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra-en.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://klarock.mx/blog-data-centers-mexico-energia-agua-tierra.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
